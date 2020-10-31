@@ -4,3 +4,4 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 
 * [Cats](cats/): showcase of relations, atlas and dataviz
 * [QGIS Information](qgis_info/): Get QGIS Server version information
+* [Lizmap Edition tests project](tests_edition/): test lizmap edition capabilities
