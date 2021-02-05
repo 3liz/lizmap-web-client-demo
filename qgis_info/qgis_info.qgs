@@ -50,10 +50,10 @@
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1000" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>null_island20200414115730489</id>
-      <datasource>./null_island.geojson</datasource>
+      <datasource>./data_qgis_info/null_island.geojson</datasource>
       <shortname>null_island_qgis_info</shortname>
       <title>Null island with QGIS info</title>
-      <abstract>The null island with QGIS information : version and release name.</abstract>
+      <abstract>The null island with a label using a QGIS expression which is evaluated on runtime : version and release name.</abstract>
       <keywordList>
         <value></value>
       </keywordList>
