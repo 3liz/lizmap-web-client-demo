@@ -7,4 +7,4 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 * [QGIS Information](qgis_info/): Get QGIS Server version information
 * [Covid demo](covid_france/): Show a simple dashboard with Covid-19 data in France
 * [Paris demo](lampadaires/): Use a personal javascript script to activate/deactivate a layer
-
+* [Atlas demo](multi_atlas/): Use the atlas feature
