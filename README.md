@@ -6,4 +6,5 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 * [Time Manager](time_manager_earthquake/): Use the time manager feature
 * [QGIS Information](qgis_info/): Get QGIS Server version information
 * [Covid demo](covid_france/): Show a simple dashboard with Covid-19 data in France
+* [Paris demo](lampadaires/): Use a personal javascript script to activate/deactivate a layer
 
