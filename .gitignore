@@ -5,3 +5,6 @@
 *~
 *-shm
 *-wal
+
+*.qgs~
+*.zip
