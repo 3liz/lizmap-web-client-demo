@@ -153,23 +153,24 @@ def main():
         if project_name.endswith('/'):
             project_name = project_name[0:-1]
 
-        print(f"Deploying {project_name} into {destination}")
+        print(f"Deploying {project_name} into {destination}\n")
 
+        print("Copying :")
         for a_file in folder.iterdir():
 
             if a_file.name.endswith('~'):
                 continue
 
             if a_file.name.endswith(('jpg', 'png', 'qgs', 'qgs.cfg',)):
-                print(f" Copy file {a_file.name}")
+                print(f"  file {a_file.name}")
                 shutil.copy(a_file, destination)
 
             if a_file.name.startswith('data') and a_file.is_dir():
-                print(f" Copy data folder {a_file.name}")
+                print(f"  data folder {a_file.name}")
                 copy_tree(str(a_file), str(destination / a_file.name))
 
             if a_file.name == 'media' and a_file.is_dir():
-                print(f" Copy media folder {a_file.name}")
+                print(f"  media folder")
                 for media_file in a_file.iterdir():
                     if media_file.name == 'js':
                         destination_js = destination / 'media' / 'js'
@@ -178,8 +179,9 @@ def main():
 
                         copy_tree(str(media_file), str(destination_js))
 
+        print("\n")
         # Generate zip
-        print("Generating ZIP file for project and download link")
+        print("Generating ZIP file :")
 
         destination_folder = destination / 'media' / 'js' / project_name
         destination_folder.mkdir(exist_ok=True, parents=True)
@@ -188,10 +190,15 @@ def main():
             for file in list(folder.iterdir()):
                 if file.name.endswith('~'):
                     continue
+                print(f'     {file.name}')
                 zip_file.write(file)
 
-        with open(destination_folder / '_download.js', 'w') as f:
+        download_file = destination_folder / '_download.js'
+        print(f"\nGenerating JS file {download_file}")
+        with open(download_file, 'w') as f:
             f.write(JS_DOWNLOAD.replace('FOLDER', project_name))
+
+        print("\nEnd !")
 
     # elif args.command == 'package':
     #     basename = basename_from_project(args.QGS_PROJECT)
