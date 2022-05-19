@@ -4,7 +4,6 @@ import argparse
 import os
 import shutil
 from pathlib import Path
-from zipfile import ZipFile
 from distutils.dir_util import copy_tree
 
 
@@ -93,7 +92,8 @@ def main():
     subparsers = parser.add_subparsers(dest='command')
 
     # package
-    package_parser = subparsers.add_parser('package', help='creates a ZIP archive of the project in the media folder')
+    package_parser = subparsers.add_parser(
+        'package', help='creates a ZIP archive of the project in the media folder')
     package_parser.add_argument('QGS_PROJECT', help='The QGS project file name')
 
     # copy to dedicated git repo
@@ -155,6 +155,13 @@ def main():
 
         print(f"Deploying {project_name} into {destination}\n")
 
+        with open(Path(project_name) / f'{project_name}.qgs') as f:
+            data = f.read()
+        use_pg_service = "PG_SERVICE" in data
+        print(f"\nCheck if the project is using a PG service : {use_pg_service}\n")
+
+        service_name = os.getenv("PG_SERVICE")
+
         print("Copying :")
         for a_file in folder.iterdir():
 
@@ -165,12 +172,22 @@ def main():
                 print(f"  file {a_file.name}")
                 shutil.copy(a_file, destination)
 
+                if a_file.name.endswith('.qgs') and use_pg_service:
+                    print("Replace the service")
+                    with open(destination / a_file.name, 'r') as f:
+                        data = f.read()
+
+                    data = data.replace("PG_SERVICE", service_name)
+
+                    with open(destination / a_file.name, 'w') as f:
+                        f.write(data)
+
             if a_file.name.startswith('data') and a_file.is_dir():
                 print(f"  data folder {a_file.name}")
                 copy_tree(str(a_file), str(destination / a_file.name))
 
             if a_file.name == 'media' and a_file.is_dir():
-                print(f"  media folder")
+                print("  media folder")
                 for media_file in a_file.iterdir():
                     if media_file.name == 'js':
                         destination_js = destination / 'media' / 'js'
@@ -186,17 +203,16 @@ def main():
         destination_folder = destination / 'media' / 'js' / project_name
         destination_folder.mkdir(exist_ok=True, parents=True)
 
-        with ZipFile(destination / 'media' / f'{project_name}.zip', 'w') as zip_file:
-            for file in list(folder.iterdir()):
-                if file.name.endswith('~'):
-                    continue
-                print(f'     {file.name}')
-                zip_file.write(file)
+        shutil.make_archive(str(destination / 'media' / f'{project_name}'), 'zip', str(folder))
 
         download_file = destination_folder / '_download.js'
         print(f"\nGenerating JS file {download_file}")
         with open(download_file, 'w') as f:
             f.write(JS_DOWNLOAD.replace('FOLDER', project_name))
+
+        if use_pg_service:
+            print("\nDo not forget to run")
+            print(f"psql service={service_name} -f {project_name}/sql/data.sql")
 
         print("\nEnd !")
 
