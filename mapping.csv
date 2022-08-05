@@ -1,7 +1,6 @@
 project,folder
 cats,features
-covid_france,webgis
+covid_19_fr,webgis
 lampadaires,features
 multi_atlas,features
 time_manager_earthquake,features
-snapping,features
