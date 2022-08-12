@@ -18,6 +18,19 @@ lizMap.events.on({
         $('#title').append(
             '<a class="btn btn-info" href="'+mediaLink+'" target="_blank"><i class="icon-download"></i>Download project</a>'
         );
+    },
+
+    'layersadded': function(e) {
+        var html = '';
+        html+= '<div class="modal-header"><a class="close" data-dismiss="modal">Ã—</a><h3>Welcome on this map</h3></div>';
+
+        html+= '<div class="modal-body">';
+        html+= $('#metadata').html();
+        html+= '</div>';
+
+        html+= '<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Ok</button></div>';
+
+        $('#lizmap-modal').html(html).modal('show');
     }
 });
 """
@@ -104,6 +117,9 @@ def main():
     # copy to dedicated git repo
     package_parser = subparsers.add_parser('deploy', help='deploy the project to an FTP directory')
     package_parser.add_argument('FOLDER', help='The folder to deploy')
+    package_parser.add_argument('DESTINATION', help='The FTP folder to deploy')
+
+    package_parser = subparsers.add_parser('deploy-all', help='deploy all projects following the mapping file')
     package_parser.add_argument('DESTINATION', help='The FTP folder to deploy')
 
     args = parser.parse_args()
