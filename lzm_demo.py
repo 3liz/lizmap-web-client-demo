@@ -4,8 +4,7 @@ import argparse
 import os
 import shutil
 from pathlib import Path
-from distutils.dir_util import copy_tree
-
+from shutil import copytree as copy_tree
 
 JS_DOWNLOAD = """
 lizMap.events.on({
@@ -177,6 +176,9 @@ def main():
         print(f"\nCheck if the project is using a PG service : {use_pg_service}\n")
 
         service_name = os.getenv("PG_SERVICE")
+        if not service_name and use_pg_service:
+            print('No PG_SERVICE environment variable detected, exit')
+            exit(1)
 
         print("Copying :")
         for a_file in folder.iterdir():
@@ -200,7 +202,11 @@ def main():
 
             if a_file.name.startswith('data') and a_file.is_dir():
                 print(f"  data folder {a_file.name}")
-                copy_tree(str(a_file), str(destination / a_file.name))
+                copy_tree(
+                    str(a_file),
+                    str(destination / a_file.name),
+                    dirs_exist_ok=True,
+                )
 
             if a_file.name == 'media' and a_file.is_dir():
                 print("  media folder")
@@ -210,7 +216,11 @@ def main():
                         if not destination_js.exists():
                             destination_js.mkdir(parents=True)
 
-                        copy_tree(str(media_file), str(destination_js))
+                        copy_tree(
+                            str(media_file),
+                            str(destination_js),
+                            dirs_exist_ok=True,
+                        )
 
         print("\n")
         # Generate zip
