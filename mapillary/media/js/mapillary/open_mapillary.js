@@ -1,6 +1,28 @@
 lizMap.events.on({
     'uicreated': () => {
-        document.getElementById('button-Mapillary').click();
-        $('#button-switcher').hide();
+        function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+
+        waitForElm('#button-Mapillary').then((elm) => {
+            elm.click();
+            $('#button-switcher').hide();
+        });
     }
 });
