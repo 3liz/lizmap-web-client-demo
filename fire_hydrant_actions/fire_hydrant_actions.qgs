@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.22.13-Białowieża" saveUser="etienne" saveDateTime="2022-11-21T17:58:51" projectname="" saveUserFull="Etienne Trimaille">
+<qgis version="3.22.13-Białowieża" saveUser="etienne" saveDateTime="2022-11-21T22:29:32" projectname="" saveUserFull="Etienne Trimaille">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -22,6 +22,11 @@
     <customproperties>
       <Option/>
     </customproperties>
+    <layer-tree-layer checked="Qt::Checked" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;stations&quot; (geom)" legend_exp="" name="stations" legend_split_behavior="0" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" expanded="1" patch_size="-1,-1">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
     <layer-tree-layer checked="Qt::Checked" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;emergency_fire_hydrant&quot; (geom)" legend_exp="" name="emergency_fire_hydrant" legend_split_behavior="0" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" expanded="1" patch_size="-1,-1">
       <customproperties>
         <Option/>
@@ -47,13 +52,15 @@
       <item>emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091</item>
       <item>building_90f7692a_0ae2_4a7d_91de_b63cddb92963</item>
       <item>boundary_1f12e774_2493_474c_a52f_f7823e6cf639</item>
+      <item>stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings mode="2" type="1" intersection-snapping="0" enabled="0" scaleDependencyMode="0" tolerance="12" maxScale="0" unit="1" self-snapping="0" minScale="0">
     <individual-layer-settings>
-      <layer-setting type="1" enabled="0" tolerance="12" maxScale="0" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" units="1" minScale="0"/>
       <layer-setting type="1" enabled="0" tolerance="12" maxScale="0" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" units="1" minScale="0"/>
       <layer-setting type="1" enabled="0" tolerance="12" maxScale="0" id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" units="1" minScale="0"/>
+      <layer-setting type="1" enabled="0" tolerance="12" maxScale="0" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" units="1" minScale="0"/>
+      <layer-setting type="1" enabled="0" tolerance="12" maxScale="0" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" units="1" minScale="0"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -61,10 +68,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>379813.13062638201517984</xmin>
-      <ymin>5405839.21878688503056765</ymin>
-      <xmax>382250.96224849083228037</xmax>
-      <ymax>5411323.51266228128224611</ymax>
+      <xmin>379342.55009187484392896</xmin>
+      <ymin>5406907.83094776794314384</ymin>
+      <xmax>381390.10327913606306538</xmax>
+      <ymax>5408300.21747623383998871</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -85,6 +92,11 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Checked" open="true" name="stations" drawingOrder="-1" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer checked="Qt::Checked" open="true" name="emergency_fire_hydrant" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" visible="1" layerid="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091"/>
@@ -891,6 +903,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
         <DiagramCategory scaleDependency="Area" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" labelPlacementMethod="XHeight" spacingUnitScale="3x:0,0,0,0,0,0" enabled="0" barWidth="5" backgroundAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" penAlpha="255" scaleBasedVisibility="0" penWidth="0" height="15" minScaleDenominator="0" penColor="#000000" rotationOffset="270" spacingUnit="MM" direction="0" spacing="5" width="15" opacity="1" lineSizeType="MM">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute color="#000000" field="" label="" colorOpacity="1"/>
           <axisSymbol>
             <symbol type="line" force_rhr="0" clip_to_extent="1" alpha="1" name="">
               <data_defined_properties>
@@ -1237,7 +1250,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="MM" name="outline_width_unit"/>
                 <Option name="parameters"/>
                 <Option type="QString" value="diameter" name="scale_method"/>
-                <Option type="QString" value="8.4" name="size"/>
+                <Option type="QString" value="5" name="size"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
                 <Option type="QString" value="MM" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
@@ -1256,7 +1269,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="MM" k="outline_width_unit"/>
               <prop v="" k="parameters"/>
               <prop v="diameter" k="scale_method"/>
-              <prop v="8.4" k="size"/>
+              <prop v="5" k="size"/>
               <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
               <prop v="MM" k="size_unit"/>
               <prop v="1" k="vertical_anchor_point"/>
@@ -1294,6 +1307,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
         <DiagramCategory scaleDependency="Area" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" labelPlacementMethod="XHeight" spacingUnitScale="3x:0,0,0,0,0,0" enabled="0" barWidth="5" backgroundAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" penAlpha="255" scaleBasedVisibility="0" penWidth="0" height="15" minScaleDenominator="0" penColor="#000000" rotationOffset="270" spacingUnit="MM" direction="0" spacing="5" width="15" opacity="1" lineSizeType="MM">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute color="#000000" field="" label="" colorOpacity="1"/>
           <axisSymbol>
             <symbol type="line" force_rhr="0" clip_to_extent="1" alpha="1" name="">
               <data_defined_properties>
@@ -1498,12 +1512,227 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>"full_id"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
+    <maplayer legendPlaceholderImage="" wkbType="Point" labelsEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyDrawingHints="1" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" type="vector" minScale="100000000" readOnly="0" maxScale="0" simplifyAlgorithm="0" autoRefreshTime="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" geometry="Point" symbologyReferenceScale="-1" simplifyDrawingTol="1">
+      <extent>
+        <xmin>733843.6778892909642309</xmin>
+        <ymin>6280228.95680186990648508</ymin>
+        <xmax>736704.54010134795680642</xmax>
+        <ymax>6282051.48262389004230499</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>3.41916778516972908</xmin>
+        <ymin>43.62015927181049335</ymin>
+        <xmax>3.45472997111944125</xmax>
+        <ymax>43.636700209709403</ymax>
+      </wgs84extent>
+      <id>stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44</id>
+      <datasource>service='PG_SERVICE' sslmode=disable key='id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table="fire_hydrant_actions"."stations" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>stations</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 v1 / Lambert-93",BASEGEOGCRS["RGF93 v1",DATUM["Reseau Geodesique Francais 1993 v1",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["France - onshore and offshore, mainland and Corsica."],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 v1 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 v1 / Lambert-93",BASEGEOGCRS["RGF93 v1",DATUM["Reseau Geodesique Francais 1993 v1",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["France - onshore and offshore, mainland and Corsica."],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 v1 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" durationField="" mode="0" durationUnit="min" enabled="0" startField="" fixedDuration="0" startExpression="" limitMode="0" endExpression="" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 referencescale="-1" type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="marker" force_rhr="0" clip_to_extent="1" alpha="1" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" pass="0" locked="0" class="SvgMarker">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="255,153,1,255" name="color"/>
+                <Option type="QString" value="0" name="fixedAspectRatio"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="amenity/amenity_firestation.svg" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="50,87,128,255" name="outline_color"/>
+                <Option type="QString" value="0.4" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option name="parameters"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="9.2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="255,153,1,255" k="color"/>
+              <prop v="0" k="fixedAspectRatio"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="amenity/amenity_firestation.svg" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="50,87,128,255" k="outline_color"/>
+              <prop v="0.4" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="" k="parameters"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="9.2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="id" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="id" name=""/>
+        <alias index="1" field="name" name=""/>
+      </aliases>
+      <defaults>
+        <default applyOnUpdate="0" field="id" expression=""/>
+        <default applyOnUpdate="0" field="name" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" unique_strength="1" constraints="3" field="id" notnull_strength="1"/>
+        <constraint exp_strength="0" unique_strength="0" constraints="1" field="name" notnull_strength="1"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
   </projectlayers>
   <layerorder>
     <layer id="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1"/>
     <layer id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091"/>
     <layer id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963"/>
     <layer id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639"/>
+    <layer id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44"/>
   </layerorder>
   <properties>
     <DefaultStyles>
@@ -1578,9 +1807,11 @@ def my_form_open(dialog, layer, feature):
     <WCSUrl type="QString"></WCSUrl>
     <WFSLayers type="QStringList">
       <value>building_90f7692a_0ae2_4a7d_91de_b63cddb92963</value>
+      <value>stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44</value>
     </WFSLayers>
     <WFSLayersPrecision>
       <building_90f7692a_0ae2_4a7d_91de_b63cddb92963 type="int">8</building_90f7692a_0ae2_4a7d_91de_b63cddb92963>
+      <stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44 type="int">8</stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44>
     </WFSLayersPrecision>
     <WFSTLayers>
       <Delete type="QStringList"/>
@@ -1600,10 +1831,10 @@ def my_form_open(dialog, layer, feature):
     </WMSCrsList>
     <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
     <WMSExtent type="QStringList">
-      <value>367358.55537644267315045</value>
-      <value>5398270.14196570497006178</value>
-      <value>392741.9827173882513307</value>
-      <value>5420207.31746728997677565</value>
+      <value>374297.39412058558082208</value>
+      <value>5403132.95489238761365414</value>
+      <value>390804.89069716754602268</value>
+      <value>5414272.04712011478841305</value>
     </WMSExtent>
     <WMSFeatureInfoUseAttributeFormSettings type="bool">false</WMSFeatureInfoUseAttributeFormSettings>
     <WMSFees type="QString">conditions unknown</WMSFees>
@@ -1684,7 +1915,7 @@ The query will execute a 150 meters buffer. As a result of the action, all build
   <Bookmarks/>
   <ProjectViewSettings rotation="0" UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent ymin="5405839.21878688503056765" xmax="385044.52794652146985754" ymax="5411323.51266228128224611" xmin="377019.56492835137760267">
+    <DefaultViewExtent ymin="5406907.83094776794314384" xmax="381398.04522154183359817" ymax="5408300.21747623383998871" xmin="379334.60814946907339618">
       <spatialrefsys>
         <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>

@@ -75,20 +75,37 @@ BEGIN
     layer_table:= parameters->>'layer_table';
 
     -- Action buffer_150
-    -- Written here as an example
     -- Performs a buffer on the geometry
     IF action_name = 'buffer_150' THEN
         datasource:= format('
             SELECT %1$s AS id,
-            ''Buildings within '' || %4$s || ''m of the fire hydrant have been selected'' AS message,
-            ST_Buffer(geom, %4$s) AS geom
+            ''Buildings within 150m of the fire hydrant have been selected'' AS message,
+            ST_Buffer(geom, 150) AS geom
             FROM "%2$s"."%3$s"
             WHERE osm_id = ''%1$s''
         ',
         feature_id,
         layer_schema,
-        layer_table,
-        parameters->>'buffer_size'
+        layer_table
+        );
+    ELSEIF action_name = 'closest_fire_station' THEN
+        -- Draw a line to the closest fire station
+        datasource:= format('
+            WITH tmp_hydrant AS (
+                SELECT geom FROM fire_hydrant_actions.emergency_fire_hydrant WHERE osm_id = ''%1$s''
+            )
+            SELECT
+                id, name, ST_Distance(hydrant.geom, stations.geom),
+                ''The closest is :  '' || stations.name || '', '' || ST_Distance(hydrant.geom, stations.geom)::integer || ''m, flying air distance'' AS message,
+                ST_MakeLine(stations.geom, hydrant.geom) AS geom,
+                stations.id AS station_id
+            FROM
+                fire_hydrant_actions.stations stations,
+                tmp_hydrant hydrant
+            ORDER BY ST_Distance(hydrant.geom, stations.geom)
+            LIMIT 1
+        ',
+        feature_id
         );
     ELSE
     -- Default : return geometry
@@ -7742,6 +7759,42 @@ CREATE INDEX sidx_building_geom ON fire_hydrant_actions.building USING gist (geo
 --
 
 CREATE INDEX sidx_emergency_fire_hydrant_geom ON fire_hydrant_actions.emergency_fire_hydrant USING gist (geom);
+
+--
+-- Name: stations; Type: TABLE; Schema: fire_hydrant_actions; Owner: -
+--
+
+CREATE TABLE fire_hydrant_actions.stations (
+    id character varying NOT NULL,
+    name text NOT NULL,
+    geom public.geometry(Point,2154)
+);
+
+
+--
+-- Data for Name: stations; Type: TABLE DATA; Schema: fire_hydrant_actions; Owner: -
+--
+
+COPY fire_hydrant_actions.stations (id, name, geom) FROM stdin;
+1	East station	01010000206A080000F3298814817B2641E53D3C3D09F55741
+2	North-West Station	01010000206A0800001E4E145B276526414F4FE3DED0F65741
+\.
+
+
+--
+-- Name: stations stations_pkey; Type: CONSTRAINT; Schema: fire_hydrant_actions; Owner: -
+--
+
+ALTER TABLE ONLY fire_hydrant_actions.stations
+    ADD CONSTRAINT stations_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: sidx_stations_geom; Type: INDEX; Schema: fire_hydrant_actions; Owner: -
+--
+
+CREATE INDEX sidx_stations_geom ON fire_hydrant_actions.stations USING gist (geom);
+
 
 
 --
