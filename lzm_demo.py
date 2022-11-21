@@ -186,7 +186,7 @@ def main():
             if a_file.name.endswith('~'):
                 continue
 
-            if a_file.name.endswith(('jpg', 'png', 'qgs', 'qgs.cfg',)):
+            if a_file.name.endswith(('jpg', 'png', 'qgs', 'qgs.cfg', 'qgs.action',)):
                 print(f"  file {a_file.name}")
                 shutil.copy(a_file, destination)
 

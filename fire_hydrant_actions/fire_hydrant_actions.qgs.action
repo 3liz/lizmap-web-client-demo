@@ -1,0 +1,30 @@
+{
+    "emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091": [
+        {
+            "name": "buffer_150",
+            "title": "Buildings in the fire hydrant area (150m)",
+            "confirm": "Do you want to select buildings within 150m from this fire hydrant ?",
+            "icon": "icon-home",
+            "options": {
+                "buffer_size": 150,
+                "other_param": "yes"
+            },
+            "style": {
+                "graphicName": "circle",
+                "pointRadius": 6,
+                "fill": true,
+                "fillColor": "lightred",
+                "fillOpacity": 0.3,
+                "stroke": true,
+                "strokeWidth": 4,
+                "strokeColor": "red",
+                "strokeOpacity": 0.8
+            },
+            "callbacks": [
+                {"method": "zoom"},
+                {"method": "select", "layerId": "building_90f7692a_0ae2_4a7d_91de_b63cddb92963"},
+                {"method": "redraw", "layerId": "building_90f7692a_0ae2_4a7d_91de_b63cddb92963"}
+            ]
+        }
+    ]
+}
