@@ -3,6 +3,10 @@
 
 # Python
 .venv
+__pycache__/
+
+# Service file
+env.py
 
 *.bak
 *~

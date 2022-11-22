@@ -6,6 +6,8 @@ import shutil
 from pathlib import Path
 from shutil import copytree as copy_tree
 
+
+
 JS_DOWNLOAD = """
 lizMap.events.on({
     'uicreated': function(evt){
@@ -176,9 +178,23 @@ def main():
         print(f"\nCheck if the project is using a PG service : {use_pg_service}\n")
 
         service_name = os.getenv("PG_SERVICE")
-        if not service_name and use_pg_service:
-            print('No PG_SERVICE environment variable detected, exit')
-            exit(1)
+        if use_pg_service:
+            if not service_name:
+                print('No PG_SERVICE environment variable detected')
+
+                try:
+                    from env import SERVICES
+                except ImportError:
+                    print("No env.py files, quit")
+                    exit(1)
+                print("Checking instance name LWC_INSTANCE from environment variable")
+                if not os.getenv("LWC_INSTANCE"):
+                    print("No LWC_INSTANCE environment variable")
+                    exit(2)
+                service_name = SERVICES.get(os.getenv("LWC_INSTANCE"))
+                if not service_name:
+                    print(f"No service found for {os.getenv('LWC_INSTANCE')}")
+                    exit(3)
 
         print("Copying :")
         for a_file in folder.iterdir():
