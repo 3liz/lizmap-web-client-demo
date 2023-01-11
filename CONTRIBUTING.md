@@ -2,7 +2,18 @@
 
 Each project must have the same structure.
 
+* Edit the `mapping.csv` in which repository the project must land
+
 ## SQL
+
+### Remove some lines
+
+```sql
+SELECT pg_catalog.set_config('search_path', '', false);
+SET default_table_access_method = heap;
+```
+
+### Manage
 
 * To extract data from a service for the whole schema
 

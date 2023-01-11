@@ -5,8 +5,7 @@ import os
 import shutil
 from pathlib import Path
 from shutil import copytree as copy_tree
-
-
+from typing import Tuple
 
 JS_DOWNLOAD = """
 lizMap.events.on({
@@ -163,109 +162,179 @@ def main():
         #         print('Renaming the markdown file')
         #         target_file.rename(Path(target_file.parent.joinpath('README.md')))
 
+    elif args.command == 'deploy-all':
+        if not os.getenv("LWC_INSTANCE"):
+            print("No LWC_INSTANCE environment variable")
+            exit(2)
+
+        destination = Path(args.DESTINATION)
+
+        for i in destination.iterdir():
+            print(i)
+        if any(destination.iterdir()):
+            print("The destination is not empty.")
+            exit(1)
+
+        import csv
+
+        service_name = read_service_name()
+
+        with open('mapping.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+
+            psql = []
+            for row in reader:
+                destination_folder = destination / row['folder']
+                if not destination_folder.exists():
+                    Path(destination / row['folder']).mkdir()
+
+                result, sql = deploy_project(row['project'], destination_folder)
+                if not result:
+                    exit(1)
+                if sql:
+                    psql.append(sql)
+
+            print("FTP directory ready")
+            if psql:
+                print("Please run")
+                print(
+                    f"psql service={service_name} "
+                    f"-c \""
+                    f"DROP SCHEMA IF EXISTS pgmetadata CASCADE;"
+                    f"DROP SCHEMA IF EXISTS pgmetadata_demo CASCADE;"
+                    f"DROP SCHEMA IF EXISTS demo_snapping CASCADE;"
+                    f"\"")
+                print(f"psql service={service_name} -f {' -f '.join(psql)}")
+
     elif args.command == 'deploy':
         destination = Path(args.DESTINATION)
-        folder = Path(args.FOLDER)
         project_name = args.FOLDER
-        if project_name.endswith('/'):
-            project_name = project_name[0:-1]
+        deploy_project(project_name, destination)
 
-        print(f"Deploying {project_name} into {destination}\n")
 
-        with open(Path(project_name) / f'{project_name}.qgs') as f:
-            data = f.read()
-        use_pg_service = "PG_SERVICE" in data
-        print(f"\nCheck if the project is using a PG service : {use_pg_service}\n")
+def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
+    """Deploy a single project into a folder. """
+    folder = Path(project_name)
+    if project_name.endswith('/'):
+        project_name = project_name[0:-1]
 
-        service_name = os.getenv("PG_SERVICE")
-        if use_pg_service:
-            if not service_name:
-                print('No PG_SERVICE environment variable detected')
+    print(f"Deploying {project_name} into {destination}\n")
 
-                try:
-                    from env import SERVICES
-                except ImportError:
-                    print("No env.py files, quit")
-                    exit(1)
-                print("Checking instance name LWC_INSTANCE from environment variable")
-                if not os.getenv("LWC_INSTANCE"):
-                    print("No LWC_INSTANCE environment variable")
-                    exit(2)
-                service_name = SERVICES.get(os.getenv("LWC_INSTANCE"))
-                if not service_name:
-                    print(f"No service found for {os.getenv('LWC_INSTANCE')}")
-                    exit(3)
+    with open(Path(project_name) / f'{project_name}.qgs') as f:
+        data = f.read()
+    use_pg_service = "PG_SERVICE" in data
+    print(f"\nCheck if the project is using a PG service : {use_pg_service}\n")
 
-        print("Copying :")
-        for a_file in folder.iterdir():
+    if use_pg_service:
+        service_name = read_service_name()
 
-            if a_file.name.endswith('~'):
-                continue
+    print("Copying :")
+    for from_file in folder.iterdir():
 
-            if a_file.name.endswith(('jpg', 'png', 'qgs', 'qgs.cfg', 'qgs.action',)):
-                print(f"  file {a_file.name}")
-                shutil.copy(a_file, destination)
+        if from_file.name.endswith('~'):
+            continue
 
-                if a_file.name.endswith('.qgs') and use_pg_service:
-                    print("Replace the service")
-                    with open(destination / a_file.name, 'r') as f:
-                        data = f.read()
+        if from_file.name.endswith(('.qgs.jpg', '.qgs.png', 'qgs', 'qgs.cfg', 'qgs.action',)):
+            print(f"  file {from_file.name}")
+            shutil.copy(from_file, destination)
 
-                    data = data.replace("PG_SERVICE", service_name)
+            if from_file.name.endswith('.qgs') and use_pg_service:
+                print("Replace the service")
+                with open(destination / from_file.name, 'r') as f:
+                    data = f.read()
 
-                    with open(destination / a_file.name, 'w') as f:
-                        f.write(data)
+                data = data.replace("PG_SERVICE", service_name)
 
-            if a_file.name.startswith('data') and a_file.is_dir():
-                print(f"  data folder {a_file.name}")
-                copy_tree(
-                    str(a_file),
-                    str(destination / a_file.name),
-                    dirs_exist_ok=True,
-                )
+                with open(destination / from_file.name, 'w') as f:
+                    f.write(data)
 
-            if a_file.name == 'media' and a_file.is_dir():
-                print("  media folder")
-                for media_file in a_file.iterdir():
-                    if media_file.name == 'js':
-                        destination_js = destination / 'media' / 'js'
-                        if not destination_js.exists():
-                            destination_js.mkdir(parents=True)
+        if from_file.name.startswith('data') and from_file.is_dir():
+            print(f"  data folder {from_file.name}")
+            Path(destination / from_file.name).mkdir(parents=True)
 
-                        copy_tree(
-                            str(media_file),
-                            str(destination_js),
-                            dirs_exist_ok=True,
-                        )
+            for data_file in from_file.iterdir():
+                if data_file.name.endswith(('-shm', '-wal',)):
+                    continue
 
-        print("\n")
-        # Generate zip
-        print("Generating ZIP file :")
+                print(data_file.name)
+                if data_file.is_file():
+                    shutil.copy(
+                        str(data_file),
+                        str(destination / from_file.name),
+                    )
+                else:
+                    copy_tree(
+                        str(data_file),
+                        str(destination / from_file.name),
+                        dirs_exist_ok=True,
+                    )
 
-        destination_folder = destination / 'media' / 'js' / project_name
-        destination_folder.mkdir(exist_ok=True, parents=True)
+        if from_file.name == 'media' and from_file.is_dir():
+            for media_file in from_file.iterdir():
+                if media_file.name == 'js':
+                    print("  JS media folder")
+                    destination_js = destination / 'media' / 'js'
+                    if not destination_js.exists():
+                        destination_js.mkdir(parents=True)
 
-        shutil.make_archive(str(destination / 'media' / f'{project_name}'), 'zip', str(folder))
+                    copy_tree(
+                        str(media_file),
+                        str(destination_js),
+                        dirs_exist_ok=True,
+                    )
+                elif media_file.name.startswith("data_"):
+                    print(f"  media folder related to this project : {media_file}")
+                    destination_media = destination / 'media' / f"data_{project_name}"
+                    copy_tree(
+                        str(media_file),
+                        str(destination_media),
+                        dirs_exist_ok=True,
+                    )
 
-        download_file = destination_folder / '_download.js'
-        print(f"\nGenerating JS file {download_file}")
-        with open(download_file, 'w') as f:
-            f.write(JS_DOWNLOAD.replace('FOLDER', project_name))
+    print("\n")
+    # Generate zip
+    print("Generating ZIP file :")
 
-        if use_pg_service:
-            print("\nDo not forget to run")
-            print(f"psql service={service_name} -f {project_name}/sql/data.sql")
+    destination_folder = destination / 'media' / 'js' / project_name
+    destination_folder.mkdir(exist_ok=True, parents=True)
 
-        print("\nEnd !")
+    shutil.make_archive(str(destination / 'media' / f'{project_name}'), 'zip', str(folder))
 
-    # elif args.command == 'package':
-    #     basename = basename_from_project(args.QGS_PROJECT)
-    #     files = project_related_files(basename)
-    #
-    #     with ZipFile(f'media/{basename}.zip', 'w') as zip_file:
-    #         for file in files:
-    #             print(file)
-    #             zip_file.write(file)
+    download_file = destination_folder / '_download.js'
+    print(f"\nGenerating JS file {download_file}")
+    with open(download_file, 'w') as f:
+        f.write(JS_DOWNLOAD.replace('FOLDER', project_name))
+
+    psql = ''
+    if use_pg_service:
+        print("\nDo not forget to run")
+        psql = f"{project_name}/sql/data.sql"
+        print(f"psql service={service_name} -f {psql}")
+
+    print("\nEnd !")
+    return True, psql
+
+
+def read_service_name() -> str:
+    service_name = os.getenv("PG_SERVICE")
+    if not service_name:
+        print('No PG_SERVICE environment variable detected')
+
+        try:
+            from env import SERVICES
+        except ImportError:
+            print("No env.py files, quit")
+            exit(1)
+        print("Checking instance name LWC_INSTANCE from environment variable")
+        if not os.getenv("LWC_INSTANCE"):
+            print("No LWC_INSTANCE environment variable")
+            exit(2)
+        service_name = SERVICES.get(os.getenv("LWC_INSTANCE"))
+        if not service_name:
+            print(f"No service found for {os.getenv('LWC_INSTANCE')}")
+            exit(3)
+
+    return service_name
 
 
 if __name__ == "__main__":

@@ -1,7 +1,11 @@
 project,folder
 cats,features
 covid_19_fr,webgis
-lampadaires,features
-multi_atlas,features
-time_manager_earthquake,features
 expression_map,features
+fire_hydrant_actions,features
+lampadaires,features
+mapillary,features
+multi_atlas,features
+pgmetadata,modules
+snapping,features
+time_manager_earthquake,features
