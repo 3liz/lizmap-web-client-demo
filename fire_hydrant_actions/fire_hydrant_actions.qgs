@@ -1,10 +1,9 @@
-<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.22.13-Białowieża" saveDateTime="2022-11-22T11:25:45" saveUser="etienne" saveUserFull="Etienne Trimaille" projectname="">
-  <homePath path=""/>
+<qgis projectname="" saveDateTime="2023-01-10T12:32:00" saveUser="etienne" saveUserFull="Etienne Trimaille" version="3.22.14-Białowieża">
+  <homePath path=""></homePath>
   <title></title>
-  <autotransaction active="0"/>
-  <evaluateDefaultValues active="0"/>
-  <trust active="0"/>
+  <autotransaction active="0"></autotransaction>
+  <evaluateDefaultValues active="0"></evaluateDefaultValues>
+  <trust active="0"></trust>
   <projectCrs>
     <spatialrefsys>
       <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
@@ -20,31 +19,31 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties>
-      <Option/>
+      <Option></Option>
     </customproperties>
-    <layer-tree-layer name="stations" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" legend_exp="" source="service='PG_SERVICE' sslmode=disable key='id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;stations&quot; (geom)" providerKey="postgres" legend_split_behavior="0" expanded="1" patch_size="-1,-1" checked="Qt::Checked">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" legend_exp="" legend_split_behavior="0" name="stations" patch_size="-1,-1" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;stations&quot; (geom)">
       <customproperties>
-        <Option/>
+        <Option></Option>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer name="emergency_fire_hydrant" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" legend_exp="" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;emergency_fire_hydrant&quot; (geom)" providerKey="postgres" legend_split_behavior="0" expanded="1" patch_size="-1,-1" checked="Qt::Checked">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" legend_exp="" legend_split_behavior="0" name="emergency_fire_hydrant" patch_size="-1,-1" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;emergency_fire_hydrant&quot; (geom)">
       <customproperties>
-        <Option/>
+        <Option></Option>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer name="building" id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" legend_exp="" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;building&quot; (geom)" providerKey="postgres" legend_split_behavior="0" expanded="1" patch_size="-1,-1" checked="Qt::Checked">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" legend_exp="" legend_split_behavior="0" name="building" patch_size="-1,-1" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;building&quot; (geom)">
       <customproperties>
-        <Option/>
+        <Option></Option>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer name="boundary" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" legend_exp="" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;boundary&quot; (geom)" providerKey="postgres" legend_split_behavior="0" expanded="1" patch_size="-1,-1" checked="Qt::Checked">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" legend_exp="" legend_split_behavior="0" name="boundary" patch_size="-1,-1" providerKey="postgres" source="service='PG_SERVICE' sslmode=disable key='osm_id' srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;fire_hydrant_actions&quot;.&quot;boundary&quot; (geom)">
       <customproperties>
-        <Option/>
+        <Option></Option>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer name="stamen" id="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1" legend_exp="" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://stamen-tiles.a.ssl.fastly.net/toner-lite/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=20&amp;zmin=0" providerKey="wms" legend_split_behavior="0" expanded="1" patch_size="-1,-1" checked="Qt::Checked">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1" legend_exp="" legend_split_behavior="0" name="stamen" patch_size="-1,-1" providerKey="wms" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://stamen-tiles.a.ssl.fastly.net/toner-lite/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=20&amp;zmin=0">
       <customproperties>
-        <Option/>
+        <Option></Option>
       </customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -55,17 +54,17 @@
       <item>stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings intersection-snapping="0" minScale="0" unit="1" tolerance="12" mode="2" scaleDependencyMode="0" self-snapping="0" enabled="0" maxScale="0" type="1">
+  <snapping-settings enabled="0" intersection-snapping="0" maxScale="0" minScale="0" mode="2" scaleDependencyMode="0" self-snapping="0" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting units="1" minScale="0" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" tolerance="12" enabled="0" maxScale="0" type="1"/>
-      <layer-setting units="1" minScale="0" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" tolerance="12" enabled="0" maxScale="0" type="1"/>
-      <layer-setting units="1" minScale="0" id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" tolerance="12" enabled="0" maxScale="0" type="1"/>
-      <layer-setting units="1" minScale="0" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" tolerance="12" enabled="0" maxScale="0" type="1"/>
+      <layer-setting enabled="0" id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="0" id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="0" id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="0" id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
-  <relations/>
-  <polymorphicRelations/>
-  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+  <relations></relations>
+  <polymorphicRelations></polymorphicRelations>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
       <xmin>379298.75067051150836051</xmin>
@@ -88,39 +87,39 @@
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
+    <expressionContextScope></expressionContextScope>
   </mapcanvas>
-  <projectModels/>
+  <projectModels></projectModels>
   <legend updateDrawingOrder="true">
-    <legendlayer name="stations" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="stations" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" isInOverview="0" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
-    <legendlayer name="emergency_fire_hydrant" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="emergency_fire_hydrant" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" isInOverview="0" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
-    <legendlayer name="building" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="building" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" isInOverview="0" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="building_90f7692a_0ae2_4a7d_91de_b63cddb92963" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
-    <legendlayer name="boundary" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="boundary" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" isInOverview="0" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="boundary_1f12e774_2493_474c_a52f_f7823e6cf639" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
-    <legendlayer name="stamen" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="stamen" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1" isInOverview="0" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
   </legend>
-  <mapViewDocks/>
-  <mapViewDocks3D/>
-  <main-annotation-layer autoRefreshTime="0" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="annotation">
+  <mapViewDocks></mapViewDocks>
+  <mapViewDocks3D></mapViewDocks3D>
+  <main-annotation-layer autoRefreshEnabled="0" autoRefreshTime="0" legendPlaceholderImage="" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="annotation">
     <id>Annotations_9e3179c3_8555_4e2e_9542_429045fa5604</id>
     <datasource></datasource>
     <keywordList>
@@ -147,7 +146,7 @@
       <type></type>
       <title></title>
       <abstract></abstract>
-      <links/>
+      <links></links>
       <fees></fees>
       <encoding></encoding>
       <crs>
@@ -163,15 +162,15 @@
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </crs>
-      <extent/>
+      <extent></extent>
     </resourceMetadata>
-    <items/>
+    <items></items>
     <layerOpacity>1</layerOpacity>
     <blendMode>0</blendMode>
-    <paintEffect/>
+    <paintEffect></paintEffect>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer autoRefreshTime="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" legendPlaceholderImage="" minScale="1e+08" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" maxScale="0" type="raster">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" maxScale="0" minScale="1e+08" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="raster">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278924763202667</ymin>
@@ -211,7 +210,7 @@
         <type>dataset</type>
         <title></title>
         <abstract></abstract>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -227,23 +226,23 @@
             <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
-        <extent/>
+        <extent></extent>
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"></noDataList>
       </noData>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <metadataUrls/>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal fetchMode="0" mode="0" enabled="0">
+      <temporal enabled="0" fetchMode="0" mode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -251,22 +250,22 @@
       </temporal>
       <customproperties>
         <Option type="Map">
-          <Option name="identify/format" value="Value" type="QString"/>
+          <Option name="identify/format" type="QString" value="Value"></Option>
         </Option>
       </customproperties>
       <pipe-data-defined-properties>
         <Option type="Map">
-          <Option name="name" value="" type="QString"/>
-          <Option name="properties"/>
-          <Option name="type" value="collection" type="QString"/>
+          <Option name="name" type="QString" value=""></Option>
+          <Option name="properties"></Option>
+          <Option name="type" type="QString" value="collection"></Option>
         </Option>
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling enabled="false" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour"></resampling>
         </provider>
-        <rasterrenderer alphaBand="-1" opacity="1" nodataColor="" type="singlebandcolordata" band="1">
-          <rasterTransparency/>
+        <rasterrenderer alphaBand="-1" band="1" nodataColor="" opacity="1" type="singlebandcolordata">
+          <rasterTransparency></rasterTransparency>
           <minMaxOrigin>
             <limits>None</limits>
             <extent>WholeRaster</extent>
@@ -276,14 +275,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
-        <huesaturation colorizeRed="255" grayscaleMode="0" invertColors="0" saturation="0" colorizeOn="0" colorizeBlue="128" colorizeStrength="100" colorizeGreen="128"/>
-        <rasterresampler maxOversampling="2"/>
+        <brightnesscontrast brightness="0" contrast="0" gamma="1"></brightnesscontrast>
+        <huesaturation colorizeBlue="128" colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeStrength="100" grayscaleMode="0" invertColors="0" saturation="0"></huesaturation>
+        <rasterresampler maxOversampling="2"></rasterresampler>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" autoRefreshEnabled="0" symbologyReferenceScale="-1" simplifyDrawingHints="1" simplifyMaxScale="1" labelsEnabled="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" readOnly="0" autoRefreshTime="0" geometry="Polygon" minScale="100000000" wkbType="MultiPolygon" legendPlaceholderImage="">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="MultiPolygon">
       <extent>
         <xmin>726548.78523215604946017</xmin>
         <ymin>6277604.45709741022437811</ymin>
@@ -332,7 +331,7 @@
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <rights>© contributeurs OpenStreetMap</rights>
         <license>https://openstreetmap.org/copyright</license>
@@ -351,7 +350,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="EPSG:2154" minx="0" miny="0" maxz="0" dimensions="2" maxx="0"/>
+          <spatial crs="EPSG:2154" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -361,170 +360,170 @@
         </extent>
       </resourceMetadata>
       <provider encoding="">postgres</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <metadataUrls/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" startExpression="" durationUnit="min" mode="0" accumulate="0" enabled="0" limitMode="0" startField="" durationField="" fixedDuration="0" endField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 preprocessing="0" forceraster="0" referencescale="-1" type="invertedPolygonRenderer" symbollevels="0" enableorderby="0">
-        <renderer-v2 forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 enableorderby="0" forceraster="0" preprocessing="0" referencescale="-1" symbollevels="0" type="invertedPolygonRenderer">
+        <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="singleSymbol">
           <symbols>
-            <symbol name="0" force_rhr="0" type="fill" alpha="0.402" clip_to_extent="1">
+            <symbol alpha="0.402" clip_to_extent="1" force_rhr="0" name="0" type="fill">
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
-              <layer locked="0" enabled="1" class="SimpleFill" pass="0">
+              <layer class="SimpleFill" enabled="1" locked="0" pass="0">
                 <Option type="Map">
-                  <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="color" value="150,150,150,255" type="QString"/>
-                  <Option name="joinstyle" value="bevel" type="QString"/>
-                  <Option name="offset" value="0,0" type="QString"/>
-                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="offset_unit" value="MM" type="QString"/>
-                  <Option name="outline_color" value="247,247,247,255" type="QString"/>
-                  <Option name="outline_style" value="solid" type="QString"/>
-                  <Option name="outline_width" value="0.26" type="QString"/>
-                  <Option name="outline_width_unit" value="MM" type="QString"/>
-                  <Option name="style" value="solid" type="QString"/>
+                  <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="color" type="QString" value="150,150,150,255"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="offset" type="QString" value="0,0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="outline_color" type="QString" value="247,247,247,255"></Option>
+                  <Option name="outline_style" type="QString" value="solid"></Option>
+                  <Option name="outline_width" type="QString" value="0.26"></Option>
+                  <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                  <Option name="style" type="QString" value="solid"></Option>
                 </Option>
-                <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="color" v="150,150,150,255"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="offset" v="0,0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="247,247,247,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0.26"/>
-                <prop k="outline_width_unit" v="MM"/>
-                <prop k="style" v="solid"/>
+                <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="color" v="150,150,150,255"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="offset" v="0,0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="outline_color" v="247,247,247,255"></prop>
+                <prop k="outline_style" v="solid"></prop>
+                <prop k="outline_width" v="0.26"></prop>
+                <prop k="outline_width_unit" v="MM"></prop>
+                <prop k="style" v="solid"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" value="" type="QString"/>
-                    <Option name="properties"/>
-                    <Option name="type" value="collection" type="QString"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
             </symbol>
           </symbols>
-          <rotation/>
-          <sizescale/>
+          <rotation></rotation>
+          <sizescale></sizescale>
         </renderer-v2>
       </renderer-v2>
       <customproperties>
         <Option type="Map">
-          <Option name="OnConvertFormatRegeneratePrimaryKey" value="false" type="bool"/>
+          <Option name="OnConvertFormatRegeneratePrimaryKey" type="bool" value="false"></Option>
           <Option name="dualview/previewExpressions" type="List">
-            <Option value="&quot;source:name:oc&quot;" type="QString"/>
+            <Option type="QString" value="&quot;source:name:oc&quot;"></Option>
           </Option>
-          <Option name="embeddedWidgets/count" value="0" type="int"/>
+          <Option name="embeddedWidgets/count" type="int" value="0"></Option>
           <Option name="variableNames" type="StringList">
-            <Option value="quickosm_query" type="QString"/>
+            <Option type="QString" value="quickosm_query"></Option>
           </Option>
           <Option name="variableValues" type="StringList">
-            <Option value="[out:xml] [timeout:25];&#xa;(&#xa;    node[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xa;    way[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xa;    relation[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xa;);&#xa;(._;>;);&#xa;out body;" type="QString"/>
+            <Option type="QString" value="[out:xml] [timeout:25];&#xA;(&#xA;    node[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xA;    way[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xA;    relation[&quot;admin_level&quot;=&quot;8&quot;]( 43.59331,3.36365,43.66463,3.50415);&#xA;);&#xA;(._;>;);&#xA;out body;"></Option>
           </Option>
         </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory sizeType="MM" backgroundAlpha="255" scaleDependency="Area" enabled="0" rotationOffset="270" width="15" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" scaleBasedVisibility="0" height="15" sizeScale="3x:0,0,0,0,0,0" opacity="1" showAxis="1" minimumSize="0" barWidth="5" penAlpha="255" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" minScaleDenominator="0" spacing="5" direction="0" spacingUnit="MM" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" backgroundColor="#ffffff">
-          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-          <attribute field="" label="" color="#000000" colorOpacity="1"/>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="0" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="5" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" colorOpacity="1" field="" label=""></attribute>
           <axisSymbol>
-            <symbol name="" force_rhr="0" type="line" alpha="1" clip_to_extent="1">
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
-              <layer locked="0" enabled="1" class="SimpleLine" pass="0">
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
                 <Option type="Map">
-                  <Option name="align_dash_pattern" value="0" type="QString"/>
-                  <Option name="capstyle" value="square" type="QString"/>
-                  <Option name="customdash" value="5;2" type="QString"/>
-                  <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="customdash_unit" value="MM" type="QString"/>
-                  <Option name="dash_pattern_offset" value="0" type="QString"/>
-                  <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-                  <Option name="draw_inside_polygon" value="0" type="QString"/>
-                  <Option name="joinstyle" value="bevel" type="QString"/>
-                  <Option name="line_color" value="35,35,35,255" type="QString"/>
-                  <Option name="line_style" value="solid" type="QString"/>
-                  <Option name="line_width" value="0.26" type="QString"/>
-                  <Option name="line_width_unit" value="MM" type="QString"/>
-                  <Option name="offset" value="0" type="QString"/>
-                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="offset_unit" value="MM" type="QString"/>
-                  <Option name="ring_filter" value="0" type="QString"/>
-                  <Option name="trim_distance_end" value="0" type="QString"/>
-                  <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-                  <Option name="trim_distance_start" value="0" type="QString"/>
-                  <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-                  <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-                  <Option name="use_custom_dash" value="0" type="QString"/>
-                  <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
                 </Option>
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="trim_distance_end" v="0"/>
-                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_end_unit" v="MM"/>
-                <prop k="trim_distance_start" v="0"/>
-                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_start_unit" v="MM"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" value="" type="QString"/>
-                    <Option name="properties"/>
-                    <Option name="type" value="collection" type="QString"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -532,161 +531,161 @@
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" priority="0" showAll="1" placement="1" dist="0" zIndex="0" linePlacementFlags="18">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
         <checkConfiguration type="Map">
           <Option name="QgsGeometryGapCheck" type="Map">
-            <Option name="allowedGapsBuffer" value="0" type="double"/>
-            <Option name="allowedGapsEnabled" value="false" type="bool"/>
-            <Option name="allowedGapsLayer" value="" type="QString"/>
+            <Option name="allowedGapsBuffer" type="double" value="0"></Option>
+            <Option name="allowedGapsEnabled" type="bool" value="false"></Option>
+            <Option name="allowedGapsLayer" type="QString" value=""></Option>
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector" showLabelLegend="0"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="osm_id" configurationFlags="None">
+        <field configurationFlags="None" name="osm_id">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="ref:INSEE" configurationFlags="None">
+        <field configurationFlags="None" name="ref:INSEE">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="postal_code" configurationFlags="None">
+        <field configurationFlags="None" name="postal_code">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="population:date" configurationFlags="None">
+        <field configurationFlags="None" name="population:date">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="population" configurationFlags="None">
+        <field configurationFlags="None" name="population">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="name" configurationFlags="None">
+        <field configurationFlags="None" name="name">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="osm_id" index="0"/>
-        <alias name="" field="ref:INSEE" index="1"/>
-        <alias name="" field="postal_code" index="2"/>
-        <alias name="" field="population:date" index="3"/>
-        <alias name="" field="population" index="4"/>
-        <alias name="" field="name" index="5"/>
+        <alias field="osm_id" index="0" name=""></alias>
+        <alias field="ref:INSEE" index="1" name=""></alias>
+        <alias field="postal_code" index="2" name=""></alias>
+        <alias field="population:date" index="3" name=""></alias>
+        <alias field="population" index="4" name=""></alias>
+        <alias field="name" index="5" name=""></alias>
       </aliases>
       <defaults>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="ref:INSEE" expression="" applyOnUpdate="0"/>
-        <default field="postal_code" expression="" applyOnUpdate="0"/>
-        <default field="population:date" expression="" applyOnUpdate="0"/>
-        <default field="population" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="osm_id"></default>
+        <default applyOnUpdate="0" expression="" field="ref:INSEE"></default>
+        <default applyOnUpdate="0" expression="" field="postal_code"></default>
+        <default applyOnUpdate="0" expression="" field="population:date"></default>
+        <default applyOnUpdate="0" expression="" field="population"></default>
+        <default applyOnUpdate="0" expression="" field="name"></default>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" field="osm_id" unique_strength="1" notnull_strength="1" constraints="3"/>
-        <constraint exp_strength="0" field="ref:INSEE" unique_strength="0" notnull_strength="0" constraints="0"/>
-        <constraint exp_strength="0" field="postal_code" unique_strength="0" notnull_strength="0" constraints="0"/>
-        <constraint exp_strength="0" field="population:date" unique_strength="0" notnull_strength="0" constraints="0"/>
-        <constraint exp_strength="0" field="population" unique_strength="0" notnull_strength="0" constraints="0"/>
-        <constraint exp_strength="0" field="name" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint constraints="3" exp_strength="0" field="osm_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="ref:INSEE" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="postal_code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population:date" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="name" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint field="osm_id" desc="" exp=""/>
-        <constraint field="ref:INSEE" desc="" exp=""/>
-        <constraint field="postal_code" desc="" exp=""/>
-        <constraint field="population:date" desc="" exp=""/>
-        <constraint field="population" desc="" exp=""/>
-        <constraint field="name" desc="" exp=""/>
+        <constraint desc="" exp="" field="osm_id"></constraint>
+        <constraint desc="" exp="" field="ref:INSEE"></constraint>
+        <constraint desc="" exp="" field="postal_code"></constraint>
+        <constraint desc="" exp="" field="population:date"></constraint>
+        <constraint desc="" exp="" field="population"></constraint>
+        <constraint desc="" exp="" field="name"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-        <actionsetting name="Navigateur OSM" shortTitle="Navigateur OSM" id="{2a166315-e7d9-4d3c-813b-f31fb932fb1f}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+        <actionsetting action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0" icon="" id="{2a166315-e7d9-4d3c-813b-f31fb932fb1f}" isEnabledOnlyWhenEditable="0" name="Navigateur OSM" notificationMessage="" shortTitle="Navigateur OSM" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="JOSM" shortTitle="JOSM" id="{7204323b-9385-42cb-9397-492fc750e995}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" id="{7204323b-9385-42cb-9397-492fc750e995}" isEnabledOnlyWhenEditable="0" name="JOSM" notificationMessage="" shortTitle="JOSM" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Éditeur de l'utilisateur par défaut" shortTitle="Éditeur de l'utilisateur par défaut" id="{b6e7e7b1-79e9-420b-ba90-2abcd4f82c5d}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0" icon="" id="{b6e7e7b1-79e9-420b-ba90-2abcd4f82c5d}" isEnabledOnlyWhenEditable="0" name="Éditeur de l'utilisateur par défaut" notificationMessage="" shortTitle="Éditeur de l'utilisateur par défaut" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="website" shortTitle="website" id="{7d5e42b7-20b4-42b3-9946-c52f68b0960d}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/external_link.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;website&quot;,&quot;[% &quot;website&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;website&quot;,&quot;[% &quot;website&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/external_link.png" id="{7d5e42b7-20b4-42b3-9946-c52f68b0960d}" isEnabledOnlyWhenEditable="0" name="website" notificationMessage="" shortTitle="website" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="wikipedia" shortTitle="wikipedia" id="{4829c020-53fe-4f1a-975a-01c82baf290d}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikipedia.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikipedia&quot;,&quot;[% &quot;wikipedia&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikipedia&quot;,&quot;[% &quot;wikipedia&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikipedia.png" id="{4829c020-53fe-4f1a-975a-01c82baf290d}" isEnabledOnlyWhenEditable="0" name="wikipedia" notificationMessage="" shortTitle="wikipedia" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="wikidata" shortTitle="wikidata" id="{005d6c04-fbd0-48fb-9cf9-280634e76589}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikidata.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikidata&quot;,&quot;[% &quot;wikidata&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikidata&quot;,&quot;[% &quot;wikidata&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikidata.png" id="{005d6c04-fbd0-48fb-9cf9-280634e76589}" isEnabledOnlyWhenEditable="0" name="wikidata" notificationMessage="" shortTitle="wikidata" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Relancer la requête dans un nouveau fichier" shortTitle="Relancer la requête dans un nouveau fichier" id="{0ad961eb-bccf-4263-a430-cd33c4ff8bce}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="" action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;admin_level_8&quot;)" capture="0">
-          <actionScope id="Layer"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;admin_level_8&quot;)" capture="0" icon="" id="{0ad961eb-bccf-4263-a430-cd33c4ff8bce}" isEnabledOnlyWhenEditable="0" name="Relancer la requête dans un nouveau fichier" notificationMessage="" shortTitle="Relancer la requête dans un nouveau fichier" type="1">
+          <actionScope id="Layer"></actionScope>
         </actionsetting>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="osm_id" width="-1" hidden="0" type="field"/>
-          <column name="ref:INSEE" width="-1" hidden="0" type="field"/>
-          <column name="postal_code" width="-1" hidden="0" type="field"/>
-          <column name="population:date" width="-1" hidden="0" type="field"/>
-          <column name="population" width="-1" hidden="0" type="field"/>
-          <column name="name" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" name="osm_id" type="field" width="-1"></column>
+          <column hidden="0" name="ref:INSEE" type="field" width="-1"></column>
+          <column hidden="0" name="postal_code" type="field" width="-1"></column>
+          <column hidden="0" name="population:date" type="field" width="-1"></column>
+          <column hidden="0" name="population" type="field" width="-1"></column>
+          <column hidden="0" name="name" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
 ouvert.
@@ -702,39 +701,39 @@ from qgis.PyQt.QtWidgets import QWidget
 def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="name" editable="1"/>
-        <field name="osm_id" editable="1"/>
-        <field name="population" editable="1"/>
-        <field name="population:date" editable="1"/>
-        <field name="postal_code" editable="1"/>
-        <field name="ref:INSEE" editable="1"/>
+        <field editable="1" name="name"></field>
+        <field editable="1" name="osm_id"></field>
+        <field editable="1" name="population"></field>
+        <field editable="1" name="population:date"></field>
+        <field editable="1" name="postal_code"></field>
+        <field editable="1" name="ref:INSEE"></field>
       </editable>
       <labelOnTop>
-        <field name="name" labelOnTop="0"/>
-        <field name="osm_id" labelOnTop="0"/>
-        <field name="population" labelOnTop="0"/>
-        <field name="population:date" labelOnTop="0"/>
-        <field name="postal_code" labelOnTop="0"/>
-        <field name="ref:INSEE" labelOnTop="0"/>
+        <field labelOnTop="0" name="name"></field>
+        <field labelOnTop="0" name="osm_id"></field>
+        <field labelOnTop="0" name="population"></field>
+        <field labelOnTop="0" name="population:date"></field>
+        <field labelOnTop="0" name="postal_code"></field>
+        <field labelOnTop="0" name="ref:INSEE"></field>
       </labelOnTop>
       <reuseLastValue>
-        <field name="name" reuseLastValue="0"/>
-        <field name="osm_id" reuseLastValue="0"/>
-        <field name="population" reuseLastValue="0"/>
-        <field name="population:date" reuseLastValue="0"/>
-        <field name="postal_code" reuseLastValue="0"/>
-        <field name="ref:INSEE" reuseLastValue="0"/>
+        <field name="name" reuseLastValue="0"></field>
+        <field name="osm_id" reuseLastValue="0"></field>
+        <field name="population" reuseLastValue="0"></field>
+        <field name="population:date" reuseLastValue="0"></field>
+        <field name="postal_code" reuseLastValue="0"></field>
+        <field name="ref:INSEE" reuseLastValue="0"></field>
       </reuseLastValue>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>"source:name:oc"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" autoRefreshEnabled="0" symbologyReferenceScale="-1" simplifyDrawingHints="1" simplifyMaxScale="1" labelsEnabled="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" readOnly="0" autoRefreshTime="0" geometry="Polygon" minScale="100000000" wkbType="MultiPolygon" legendPlaceholderImage="">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="MultiPolygon">
       <extent>
         <xmin>731048.45724896900355816</xmin>
         <ymin>6278033.93197724968194962</ymin>
@@ -784,7 +783,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <rights>© contributeurs OpenStreetMap</rights>
         <license>https://openstreetmap.org/copyright</license>
@@ -803,7 +802,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="EPSG:2154" minx="0" miny="0" maxz="0" dimensions="2" maxx="0"/>
+          <spatial crs="EPSG:2154" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -813,168 +812,168 @@ def my_form_open(dialog, layer, feature):
         </extent>
       </resourceMetadata>
       <provider encoding="">postgres</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <metadataUrls/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" startExpression="" durationUnit="min" mode="0" accumulate="0" enabled="0" limitMode="0" startField="" durationField="" fixedDuration="0" endField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol name="0" force_rhr="0" type="fill" alpha="1" clip_to_extent="1">
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
-                <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
               </Option>
             </data_defined_properties>
-            <layer locked="0" enabled="1" class="SimpleFill" pass="0">
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <Option type="Map">
-                <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="color" value="153,153,153,255" type="QString"/>
-                <Option name="joinstyle" value="bevel" type="QString"/>
-                <Option name="offset" value="0,0" type="QString"/>
-                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="MM" type="QString"/>
-                <Option name="outline_color" value="35,35,35,255" type="QString"/>
-                <Option name="outline_style" value="solid" type="QString"/>
-                <Option name="outline_width" value="0.26" type="QString"/>
-                <Option name="outline_width_unit" value="MM" type="QString"/>
-                <Option name="style" value="solid" type="QString"/>
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="153,153,153,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="35,35,35,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
               </Option>
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="153,153,153,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="153,153,153,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="35,35,35,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
-        <rotation/>
-        <sizescale/>
+        <rotation></rotation>
+        <sizescale></sizescale>
       </renderer-v2>
       <customproperties>
         <Option type="Map">
-          <Option name="OnConvertFormatRegeneratePrimaryKey" value="false" type="bool"/>
+          <Option name="OnConvertFormatRegeneratePrimaryKey" type="bool" value="false"></Option>
           <Option name="dualview/previewExpressions" type="List">
-            <Option value="&quot;official_name&quot;" type="QString"/>
+            <Option type="QString" value="&quot;official_name&quot;"></Option>
           </Option>
-          <Option name="embeddedWidgets/count" value="0" type="int"/>
+          <Option name="embeddedWidgets/count" type="int" value="0"></Option>
           <Option name="variableNames" type="StringList">
-            <Option value="quickosm_query" type="QString"/>
+            <Option type="QString" value="quickosm_query"></Option>
           </Option>
           <Option name="variableValues" type="StringList">
-            <Option value="[out:xml] [timeout:25];&#xa; area(3600164069) -> .area_0;&#xa;(&#xa;    node[&quot;building&quot;](area.area_0);&#xa;    way[&quot;building&quot;](area.area_0);&#xa;    relation[&quot;building&quot;](area.area_0);&#xa;);&#xa;(._;>;);&#xa;out body;" type="QString"/>
+            <Option type="QString" value="[out:xml] [timeout:25];&#xA; area(3600164069) -> .area_0;&#xA;(&#xA;    node[&quot;building&quot;](area.area_0);&#xA;    way[&quot;building&quot;](area.area_0);&#xA;    relation[&quot;building&quot;](area.area_0);&#xA;);&#xA;(._;>;);&#xA;out body;"></Option>
           </Option>
         </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory sizeType="MM" backgroundAlpha="255" scaleDependency="Area" enabled="0" rotationOffset="270" width="15" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" scaleBasedVisibility="0" height="15" sizeScale="3x:0,0,0,0,0,0" opacity="1" showAxis="1" minimumSize="0" barWidth="5" penAlpha="255" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" minScaleDenominator="0" spacing="5" direction="0" spacingUnit="MM" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" backgroundColor="#ffffff">
-          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-          <attribute field="" label="" color="#000000" colorOpacity="1"/>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="0" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="5" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" colorOpacity="1" field="" label=""></attribute>
           <axisSymbol>
-            <symbol name="" force_rhr="0" type="line" alpha="1" clip_to_extent="1">
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
-              <layer locked="0" enabled="1" class="SimpleLine" pass="0">
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
                 <Option type="Map">
-                  <Option name="align_dash_pattern" value="0" type="QString"/>
-                  <Option name="capstyle" value="square" type="QString"/>
-                  <Option name="customdash" value="5;2" type="QString"/>
-                  <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="customdash_unit" value="MM" type="QString"/>
-                  <Option name="dash_pattern_offset" value="0" type="QString"/>
-                  <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-                  <Option name="draw_inside_polygon" value="0" type="QString"/>
-                  <Option name="joinstyle" value="bevel" type="QString"/>
-                  <Option name="line_color" value="35,35,35,255" type="QString"/>
-                  <Option name="line_style" value="solid" type="QString"/>
-                  <Option name="line_width" value="0.26" type="QString"/>
-                  <Option name="line_width_unit" value="MM" type="QString"/>
-                  <Option name="offset" value="0" type="QString"/>
-                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="offset_unit" value="MM" type="QString"/>
-                  <Option name="ring_filter" value="0" type="QString"/>
-                  <Option name="trim_distance_end" value="0" type="QString"/>
-                  <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-                  <Option name="trim_distance_start" value="0" type="QString"/>
-                  <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-                  <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-                  <Option name="use_custom_dash" value="0" type="QString"/>
-                  <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
                 </Option>
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="trim_distance_end" v="0"/>
-                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_end_unit" v="MM"/>
-                <prop k="trim_distance_start" v="0"/>
-                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_start_unit" v="MM"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" value="" type="QString"/>
-                    <Option name="properties"/>
-                    <Option name="type" value="collection" type="QString"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -982,113 +981,113 @@ def my_form_open(dialog, layer, feature):
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" priority="0" showAll="1" placement="1" dist="0" zIndex="0" linePlacementFlags="18">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
         <checkConfiguration type="Map">
           <Option name="QgsGeometryGapCheck" type="Map">
-            <Option name="allowedGapsBuffer" value="0" type="double"/>
-            <Option name="allowedGapsEnabled" value="false" type="bool"/>
-            <Option name="allowedGapsLayer" value="" type="QString"/>
+            <Option name="allowedGapsBuffer" type="double" value="0"></Option>
+            <Option name="allowedGapsEnabled" type="bool" value="false"></Option>
+            <Option name="allowedGapsLayer" type="QString" value=""></Option>
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector" showLabelLegend="0"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="osm_id" configurationFlags="None">
+        <field configurationFlags="None" name="osm_id">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="building" configurationFlags="None">
+        <field configurationFlags="None" name="building">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="osm_id" index="0"/>
-        <alias name="" field="building" index="1"/>
+        <alias field="osm_id" index="0" name=""></alias>
+        <alias field="building" index="1" name=""></alias>
       </aliases>
       <defaults>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="building" expression="" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="osm_id"></default>
+        <default applyOnUpdate="0" expression="" field="building"></default>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" field="osm_id" unique_strength="1" notnull_strength="1" constraints="3"/>
-        <constraint exp_strength="0" field="building" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint constraints="3" exp_strength="0" field="osm_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="building" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint field="osm_id" desc="" exp=""/>
-        <constraint field="building" desc="" exp=""/>
+        <constraint desc="" exp="" field="osm_id"></constraint>
+        <constraint desc="" exp="" field="building"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-        <actionsetting name="Navigateur OSM" shortTitle="Navigateur OSM" id="{abcde956-2978-4d82-8b7d-6d59fd28b58e}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+        <actionsetting action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0" icon="" id="{abcde956-2978-4d82-8b7d-6d59fd28b58e}" isEnabledOnlyWhenEditable="0" name="Navigateur OSM" notificationMessage="" shortTitle="Navigateur OSM" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="JOSM" shortTitle="JOSM" id="{7565bcb8-f06f-461a-93c3-fc6038695504}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" id="{7565bcb8-f06f-461a-93c3-fc6038695504}" isEnabledOnlyWhenEditable="0" name="JOSM" notificationMessage="" shortTitle="JOSM" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Éditeur de l'utilisateur par défaut" shortTitle="Éditeur de l'utilisateur par défaut" id="{f6dbbc48-1764-462e-8bd2-0165f70c9319}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0" icon="" id="{f6dbbc48-1764-462e-8bd2-0165f70c9319}" isEnabledOnlyWhenEditable="0" name="Éditeur de l'utilisateur par défaut" notificationMessage="" shortTitle="Éditeur de l'utilisateur par défaut" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="website" shortTitle="website" id="{7b7efb50-4250-41a9-b047-e3c4a9965717}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/external_link.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;website&quot;,&quot;[% &quot;website&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;website&quot;,&quot;[% &quot;website&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/external_link.png" id="{7b7efb50-4250-41a9-b047-e3c4a9965717}" isEnabledOnlyWhenEditable="0" name="website" notificationMessage="" shortTitle="website" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="wikipedia" shortTitle="wikipedia" id="{07a0689a-456d-431c-a3ec-54b023df6a69}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikipedia.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikipedia&quot;,&quot;[% &quot;wikipedia&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikipedia&quot;,&quot;[% &quot;wikipedia&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikipedia.png" id="{07a0689a-456d-431c-a3ec-54b023df6a69}" isEnabledOnlyWhenEditable="0" name="wikipedia" notificationMessage="" shortTitle="wikipedia" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="wikidata" shortTitle="wikidata" id="{3b8ba534-bc19-4799-abaa-fb4d1f6110e6}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikidata.png" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikidata&quot;,&quot;[% &quot;wikidata&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;wikidata&quot;,&quot;[% &quot;wikidata&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/wikidata.png" id="{3b8ba534-bc19-4799-abaa-fb4d1f6110e6}" isEnabledOnlyWhenEditable="0" name="wikidata" notificationMessage="" shortTitle="wikidata" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Relancer la requête dans un nouveau fichier" shortTitle="Relancer la requête dans un nouveau fichier" id="{7e656c02-b441-425f-a907-d401163887bf}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="" action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;building_Clermont-l'hérault&quot;)" capture="0">
-          <actionScope id="Layer"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;building_Clermont-l'hérault&quot;)" capture="0" icon="" id="{7e656c02-b441-425f-a907-d401163887bf}" isEnabledOnlyWhenEditable="0" name="Relancer la requête dans un nouveau fichier" notificationMessage="" shortTitle="Relancer la requête dans un nouveau fichier" type="1">
+          <actionScope id="Layer"></actionScope>
         </actionsetting>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="osm_id" width="-1" hidden="0" type="field"/>
-          <column name="building" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" name="osm_id" type="field" width="-1"></column>
+          <column hidden="0" name="building" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
 ouvert.
@@ -1104,27 +1103,27 @@ from qgis.PyQt.QtWidgets import QWidget
 def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="building" editable="1"/>
-        <field name="osm_id" editable="1"/>
+        <field editable="1" name="building"></field>
+        <field editable="1" name="osm_id"></field>
       </editable>
       <labelOnTop>
-        <field name="building" labelOnTop="0"/>
-        <field name="osm_id" labelOnTop="0"/>
+        <field labelOnTop="0" name="building"></field>
+        <field labelOnTop="0" name="osm_id"></field>
       </labelOnTop>
       <reuseLastValue>
-        <field name="building" reuseLastValue="0"/>
-        <field name="osm_id" reuseLastValue="0"/>
+        <field name="building" reuseLastValue="0"></field>
+        <field name="osm_id" reuseLastValue="0"></field>
       </reuseLastValue>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>"official_name"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" autoRefreshEnabled="0" symbologyReferenceScale="-1" simplifyDrawingHints="0" simplifyMaxScale="1" labelsEnabled="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" readOnly="0" autoRefreshTime="0" geometry="Point" minScale="100000000" wkbType="Point" legendPlaceholderImage="">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="Point">
       <extent>
         <xmin>731469.44300458999350667</xmin>
         <ymin>6278428.53377956990152597</ymin>
@@ -1174,7 +1173,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <rights>© contributeurs OpenStreetMap</rights>
         <license>https://openstreetmap.org/copyright</license>
@@ -1193,7 +1192,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="EPSG:2154" minx="0" miny="0" maxz="0" dimensions="2" maxx="0"/>
+          <spatial crs="EPSG:2154" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -1203,182 +1202,182 @@ def my_form_open(dialog, layer, feature):
         </extent>
       </resourceMetadata>
       <provider encoding="">postgres</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <metadataUrls/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" startExpression="" durationUnit="min" mode="0" accumulate="0" enabled="0" limitMode="0" startField="" durationField="" fixedDuration="0" endField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol name="0" force_rhr="0" type="marker" alpha="1" clip_to_extent="1">
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="marker">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
-                <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
               </Option>
             </data_defined_properties>
-            <layer locked="0" enabled="1" class="SvgMarker" pass="0">
+            <layer class="SvgMarker" enabled="1" locked="0" pass="0">
               <Option type="Map">
-                <Option name="angle" value="0" type="QString"/>
-                <Option name="color" value="219,30,42,255" type="QString"/>
-                <Option name="fixedAspectRatio" value="0" type="QString"/>
-                <Option name="horizontal_anchor_point" value="1" type="QString"/>
-                <Option name="name" value="transport/barrier_bollard.svg" type="QString"/>
-                <Option name="offset" value="0,0" type="QString"/>
-                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="MM" type="QString"/>
-                <Option name="outline_color" value="128,17,25,255" type="QString"/>
-                <Option name="outline_width" value="0.4" type="QString"/>
-                <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="outline_width_unit" value="MM" type="QString"/>
-                <Option name="parameters"/>
-                <Option name="scale_method" value="diameter" type="QString"/>
-                <Option name="size" value="5" type="QString"/>
-                <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="size_unit" value="MM" type="QString"/>
-                <Option name="vertical_anchor_point" value="1" type="QString"/>
+                <Option name="angle" type="QString" value="0"></Option>
+                <Option name="color" type="QString" value="219,30,42,255"></Option>
+                <Option name="fixedAspectRatio" type="QString" value="0"></Option>
+                <Option name="horizontal_anchor_point" type="QString" value="1"></Option>
+                <Option name="name" type="QString" value="transport/barrier_bollard.svg"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="128,17,25,255"></Option>
+                <Option name="outline_width" type="QString" value="0.4"></Option>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="parameters"></Option>
+                <Option name="scale_method" type="QString" value="diameter"></Option>
+                <Option name="size" type="QString" value="5"></Option>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="size_unit" type="QString" value="MM"></Option>
+                <Option name="vertical_anchor_point" type="QString" value="1"></Option>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="color" v="219,30,42,255"/>
-              <prop k="fixedAspectRatio" v="0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="transport/barrier_bollard.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,17,25,255"/>
-              <prop k="outline_width" v="0.4"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="parameters" v=""/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="5"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="219,30,42,255"></prop>
+              <prop k="fixedAspectRatio" v="0"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="name" v="transport/barrier_bollard.svg"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="128,17,25,255"></prop>
+              <prop k="outline_width" v="0.4"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="parameters" v=""></prop>
+              <prop k="scale_method" v="diameter"></prop>
+              <prop k="size" v="5"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
-        <rotation/>
-        <sizescale/>
+        <rotation></rotation>
+        <sizescale></sizescale>
       </renderer-v2>
       <customproperties>
         <Option type="Map">
-          <Option name="OnConvertFormatRegeneratePrimaryKey" value="false" type="bool"/>
+          <Option name="OnConvertFormatRegeneratePrimaryKey" type="bool" value="false"></Option>
           <Option name="dualview/previewExpressions" type="List">
-            <Option value="&quot;full_id&quot;" type="QString"/>
+            <Option type="QString" value="&quot;full_id&quot;"></Option>
           </Option>
-          <Option name="embeddedWidgets/count" value="0" type="int"/>
+          <Option name="embeddedWidgets/count" type="int" value="0"></Option>
           <Option name="variableNames" type="StringList">
-            <Option value="quickosm_query" type="QString"/>
+            <Option type="QString" value="quickosm_query"></Option>
           </Option>
           <Option name="variableValues" type="StringList">
-            <Option value="[out:xml] [timeout:25];&#xa; area(3600164069) -> .area_0;&#xa;(&#xa;    node[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xa;    way[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xa;    relation[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xa;);&#xa;(._;>;);&#xa;out body;" type="QString"/>
+            <Option type="QString" value="[out:xml] [timeout:25];&#xA; area(3600164069) -> .area_0;&#xA;(&#xA;    node[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xA;    way[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xA;    relation[&quot;emergency&quot;=&quot;fire_hydrant&quot;](area.area_0);&#xA;);&#xA;(._;>;);&#xA;out body;"></Option>
           </Option>
         </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory sizeType="MM" backgroundAlpha="255" scaleDependency="Area" enabled="0" rotationOffset="270" width="15" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" scaleBasedVisibility="0" height="15" sizeScale="3x:0,0,0,0,0,0" opacity="1" showAxis="1" minimumSize="0" barWidth="5" penAlpha="255" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" minScaleDenominator="0" spacing="5" direction="0" spacingUnit="MM" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" backgroundColor="#ffffff">
-          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-          <attribute field="" label="" color="#000000" colorOpacity="1"/>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="0" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="5" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" colorOpacity="1" field="" label=""></attribute>
           <axisSymbol>
-            <symbol name="" force_rhr="0" type="line" alpha="1" clip_to_extent="1">
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
-              <layer locked="0" enabled="1" class="SimpleLine" pass="0">
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
                 <Option type="Map">
-                  <Option name="align_dash_pattern" value="0" type="QString"/>
-                  <Option name="capstyle" value="square" type="QString"/>
-                  <Option name="customdash" value="5;2" type="QString"/>
-                  <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="customdash_unit" value="MM" type="QString"/>
-                  <Option name="dash_pattern_offset" value="0" type="QString"/>
-                  <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-                  <Option name="draw_inside_polygon" value="0" type="QString"/>
-                  <Option name="joinstyle" value="bevel" type="QString"/>
-                  <Option name="line_color" value="35,35,35,255" type="QString"/>
-                  <Option name="line_style" value="solid" type="QString"/>
-                  <Option name="line_width" value="0.26" type="QString"/>
-                  <Option name="line_width_unit" value="MM" type="QString"/>
-                  <Option name="offset" value="0" type="QString"/>
-                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="offset_unit" value="MM" type="QString"/>
-                  <Option name="ring_filter" value="0" type="QString"/>
-                  <Option name="trim_distance_end" value="0" type="QString"/>
-                  <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-                  <Option name="trim_distance_start" value="0" type="QString"/>
-                  <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-                  <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-                  <Option name="use_custom_dash" value="0" type="QString"/>
-                  <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
                 </Option>
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="trim_distance_end" v="0"/>
-                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_end_unit" v="MM"/>
-                <prop k="trim_distance_start" v="0"/>
-                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_start_unit" v="MM"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" value="" type="QString"/>
-                    <Option name="properties"/>
-                    <Option name="type" value="collection" type="QString"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -1386,103 +1385,103 @@ def my_form_open(dialog, layer, feature):
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" priority="0" showAll="1" placement="0" dist="0" zIndex="0" linePlacementFlags="18">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector" showLabelLegend="0"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="osm_id" configurationFlags="None">
+        <field configurationFlags="None" name="osm_id">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option name="IsMultiline" value="false" type="bool"/>
-                <Option name="UseHtml" value="false" type="bool"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="emergency" configurationFlags="None">
+        <field configurationFlags="None" name="emergency">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option name="IsMultiline" value="false" type="bool"/>
-                <Option name="UseHtml" value="false" type="bool"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="ID" field="osm_id" index="0"/>
-        <alias name="Emergency" field="emergency" index="1"/>
+        <alias field="osm_id" index="0" name="ID"></alias>
+        <alias field="emergency" index="1" name="Emergency"></alias>
       </aliases>
       <defaults>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="emergency" expression="" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="osm_id"></default>
+        <default applyOnUpdate="0" expression="" field="emergency"></default>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" field="osm_id" unique_strength="1" notnull_strength="1" constraints="3"/>
-        <constraint exp_strength="0" field="emergency" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint constraints="3" exp_strength="0" field="osm_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="emergency" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint field="osm_id" desc="" exp=""/>
-        <constraint field="emergency" desc="" exp=""/>
+        <constraint desc="" exp="" field="osm_id"></constraint>
+        <constraint desc="" exp="" field="emergency"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-        <actionsetting name="Navigateur OSM" shortTitle="Navigateur OSM" id="{3490bee0-3811-461b-b941-201bcee62c23}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+        <actionsetting action="http://www.openstreetmap.org/browse/[% &quot;osm_type&quot; %]/[% &quot;osm_id&quot; %]" capture="0" icon="" id="{3490bee0-3811-461b-b941-201bcee62c23}" isEnabledOnlyWhenEditable="0" name="Navigateur OSM" notificationMessage="" shortTitle="Navigateur OSM" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="JOSM" shortTitle="JOSM" id="{b68e1db8-16ee-4b47-a81d-c8912c8ec7de}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;josm&quot;,&quot;[% &quot;full_id&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/josm_icon.svg" id="{b68e1db8-16ee-4b47-a81d-c8912c8ec7de}" isEnabledOnlyWhenEditable="0" name="JOSM" notificationMessage="" shortTitle="JOSM" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Éditeur de l'utilisateur par défaut" shortTitle="Éditeur de l'utilisateur par défaut" id="{1ec2b723-f712-42aa-a79e-5b8ec992bb54}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="5" icon="" action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="http://www.openstreetmap.org/edit?[% &quot;osm_type&quot; %]=[% &quot;osm_id&quot; %]" capture="0" icon="" id="{1ec2b723-f712-42aa-a79e-5b8ec992bb54}" isEnabledOnlyWhenEditable="0" name="Éditeur de l'utilisateur par défaut" notificationMessage="" shortTitle="Éditeur de l'utilisateur par défaut" type="5">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="mapillary" shortTitle="mapillary" id="{a4bc1740-d28f-4b6a-a40b-2e81c10350b0}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/mapillary_logo.svg" action="from QuickOSM.core.actions import Actions;Actions.run(&quot;mapillary&quot;,&quot;[% &quot;mapillary&quot; %]&quot;)" capture="0">
-          <actionScope id="Feature"/>
-          <actionScope id="Field"/>
-          <actionScope id="Canvas"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run(&quot;mapillary&quot;,&quot;[% &quot;mapillary&quot; %]&quot;)" capture="0" icon="/home/etienne/.local/share/QGIS/QGIS3/profiles/default/python/plugins/QuickOSM/resources/icons/mapillary_logo.svg" id="{a4bc1740-d28f-4b6a-a40b-2e81c10350b0}" isEnabledOnlyWhenEditable="0" name="mapillary" notificationMessage="" shortTitle="mapillary" type="1">
+          <actionScope id="Feature"></actionScope>
+          <actionScope id="Field"></actionScope>
+          <actionScope id="Canvas"></actionScope>
         </actionsetting>
-        <actionsetting name="Relancer la requête dans un nouveau fichier" shortTitle="Relancer la requête dans un nouveau fichier" id="{6cdd4070-6bc8-45ce-84f4-e852ad4aa036}" notificationMessage="" isEnabledOnlyWhenEditable="0" type="1" icon="" action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;emergency_fire_hydrant_Clermont-l'hérault&quot;)" capture="0">
-          <actionScope id="Layer"/>
+        <actionsetting action="from QuickOSM.core.actions import Actions;Actions.run_reload(layer_name=&quot;emergency_fire_hydrant_Clermont-l'hérault&quot;)" capture="0" icon="" id="{6cdd4070-6bc8-45ce-84f4-e852ad4aa036}" isEnabledOnlyWhenEditable="0" name="Relancer la requête dans un nouveau fichier" notificationMessage="" shortTitle="Relancer la requête dans un nouveau fichier" type="1">
+          <actionScope id="Layer"></actionScope>
         </actionsetting>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="osm_id" width="-1" hidden="0" type="field"/>
-          <column name="emergency" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" name="osm_id" type="field" width="-1"></column>
+          <column hidden="0" name="emergency" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
 ouvert.
@@ -1498,27 +1497,27 @@ from qgis.PyQt.QtWidgets import QWidget
 def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="emergency" editable="1"/>
-        <field name="osm_id" editable="1"/>
+        <field editable="1" name="emergency"></field>
+        <field editable="1" name="osm_id"></field>
       </editable>
       <labelOnTop>
-        <field name="emergency" labelOnTop="0"/>
-        <field name="osm_id" labelOnTop="0"/>
+        <field labelOnTop="0" name="emergency"></field>
+        <field labelOnTop="0" name="osm_id"></field>
       </labelOnTop>
       <reuseLastValue>
-        <field name="emergency" reuseLastValue="0"/>
-        <field name="osm_id" reuseLastValue="0"/>
+        <field name="emergency" reuseLastValue="0"></field>
+        <field name="osm_id" reuseLastValue="0"></field>
       </reuseLastValue>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>"full_id"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" autoRefreshEnabled="0" symbologyReferenceScale="-1" simplifyDrawingHints="0" simplifyMaxScale="1" labelsEnabled="0" refreshOnNotifyEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" readOnly="0" autoRefreshTime="0" geometry="Point" minScale="100000000" wkbType="Point" legendPlaceholderImage="">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="Point">
       <extent>
         <xmin>733843.6778892909642309</xmin>
         <ymin>6280228.95680186990648508</ymin>
@@ -1566,7 +1565,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -1583,7 +1582,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="EPSG:2154" minx="0" miny="0" maxz="0" dimensions="2" maxx="0"/>
+          <spatial crs="EPSG:2154" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -1593,173 +1592,173 @@ def my_form_open(dialog, layer, feature):
         </extent>
       </resourceMetadata>
       <provider encoding="">postgres</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <metadataUrls/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" startExpression="" durationUnit="min" mode="0" accumulate="0" enabled="0" limitMode="0" startField="" durationField="" fixedDuration="0" endField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol name="0" force_rhr="0" type="marker" alpha="1" clip_to_extent="1">
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="marker">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
-                <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
               </Option>
             </data_defined_properties>
-            <layer locked="0" enabled="1" class="SvgMarker" pass="0">
+            <layer class="SvgMarker" enabled="1" locked="0" pass="0">
               <Option type="Map">
-                <Option name="angle" value="0" type="QString"/>
-                <Option name="color" value="255,153,1,255" type="QString"/>
-                <Option name="fixedAspectRatio" value="0" type="QString"/>
-                <Option name="horizontal_anchor_point" value="1" type="QString"/>
-                <Option name="name" value="amenity/amenity_firestation.svg" type="QString"/>
-                <Option name="offset" value="0,0" type="QString"/>
-                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="MM" type="QString"/>
-                <Option name="outline_color" value="128,58,50,255" type="QString"/>
-                <Option name="outline_width" value="0.4" type="QString"/>
-                <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="outline_width_unit" value="MM" type="QString"/>
-                <Option name="parameters"/>
-                <Option name="scale_method" value="diameter" type="QString"/>
-                <Option name="size" value="9.2" type="QString"/>
-                <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="size_unit" value="MM" type="QString"/>
-                <Option name="vertical_anchor_point" value="1" type="QString"/>
+                <Option name="angle" type="QString" value="0"></Option>
+                <Option name="color" type="QString" value="255,153,1,255"></Option>
+                <Option name="fixedAspectRatio" type="QString" value="0"></Option>
+                <Option name="horizontal_anchor_point" type="QString" value="1"></Option>
+                <Option name="name" type="QString" value="amenity/amenity_firestation.svg"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="128,58,50,255"></Option>
+                <Option name="outline_width" type="QString" value="0.4"></Option>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="parameters"></Option>
+                <Option name="scale_method" type="QString" value="diameter"></Option>
+                <Option name="size" type="QString" value="9.2"></Option>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="size_unit" type="QString" value="MM"></Option>
+                <Option name="vertical_anchor_point" type="QString" value="1"></Option>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,153,1,255"/>
-              <prop k="fixedAspectRatio" v="0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="amenity/amenity_firestation.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,58,50,255"/>
-              <prop k="outline_width" v="0.4"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="parameters" v=""/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="9.2"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="255,153,1,255"></prop>
+              <prop k="fixedAspectRatio" v="0"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="name" v="amenity/amenity_firestation.svg"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="128,58,50,255"></prop>
+              <prop k="outline_width" v="0.4"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="parameters" v=""></prop>
+              <prop k="scale_method" v="diameter"></prop>
+              <prop k="size" v="9.2"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
-        <rotation/>
-        <sizescale/>
+        <rotation></rotation>
+        <sizescale></sizescale>
       </renderer-v2>
       <customproperties>
         <Option type="Map">
-          <Option name="embeddedWidgets/count" value="0" type="int"/>
-          <Option name="variableNames"/>
-          <Option name="variableValues"/>
+          <Option name="embeddedWidgets/count" type="int" value="0"></Option>
+          <Option name="variableNames"></Option>
+          <Option name="variableValues"></Option>
         </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory sizeType="MM" backgroundAlpha="255" scaleDependency="Area" enabled="0" rotationOffset="270" width="15" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" scaleBasedVisibility="0" height="15" sizeScale="3x:0,0,0,0,0,0" opacity="1" showAxis="1" minimumSize="0" barWidth="5" penAlpha="255" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" minScaleDenominator="0" spacing="5" direction="0" spacingUnit="MM" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" backgroundColor="#ffffff">
-          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="0" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="5" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
           <axisSymbol>
-            <symbol name="" force_rhr="0" type="line" alpha="1" clip_to_extent="1">
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
-              <layer locked="0" enabled="1" class="SimpleLine" pass="0">
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
                 <Option type="Map">
-                  <Option name="align_dash_pattern" value="0" type="QString"/>
-                  <Option name="capstyle" value="square" type="QString"/>
-                  <Option name="customdash" value="5;2" type="QString"/>
-                  <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="customdash_unit" value="MM" type="QString"/>
-                  <Option name="dash_pattern_offset" value="0" type="QString"/>
-                  <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-                  <Option name="draw_inside_polygon" value="0" type="QString"/>
-                  <Option name="joinstyle" value="bevel" type="QString"/>
-                  <Option name="line_color" value="35,35,35,255" type="QString"/>
-                  <Option name="line_style" value="solid" type="QString"/>
-                  <Option name="line_width" value="0.26" type="QString"/>
-                  <Option name="line_width_unit" value="MM" type="QString"/>
-                  <Option name="offset" value="0" type="QString"/>
-                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="offset_unit" value="MM" type="QString"/>
-                  <Option name="ring_filter" value="0" type="QString"/>
-                  <Option name="trim_distance_end" value="0" type="QString"/>
-                  <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-                  <Option name="trim_distance_start" value="0" type="QString"/>
-                  <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                  <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-                  <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-                  <Option name="use_custom_dash" value="0" type="QString"/>
-                  <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
                 </Option>
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="trim_distance_end" v="0"/>
-                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_end_unit" v="MM"/>
-                <prop k="trim_distance_start" v="0"/>
-                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="trim_distance_start_unit" v="MM"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" value="" type="QString"/>
-                    <Option name="properties"/>
-                    <Option name="type" value="collection" type="QString"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -1767,80 +1766,80 @@ def my_form_open(dialog, layer, feature):
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" priority="0" showAll="1" placement="0" dist="0" zIndex="0" linePlacementFlags="18">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector" showLabelLegend="0"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="id" configurationFlags="None">
+        <field configurationFlags="None" name="id">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option name="IsMultiline" value="false" type="bool"/>
-                <Option name="UseHtml" value="false" type="bool"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="name" configurationFlags="None">
+        <field configurationFlags="None" name="name">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option name="IsMultiline" value="false" type="bool"/>
-                <Option name="UseHtml" value="false" type="bool"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="ID" field="id" index="0"/>
-        <alias name="Name" field="name" index="1"/>
+        <alias field="id" index="0" name="ID"></alias>
+        <alias field="name" index="1" name="Name"></alias>
       </aliases>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="id"></default>
+        <default applyOnUpdate="0" expression="" field="name"></default>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" field="id" unique_strength="1" notnull_strength="1" constraints="3"/>
-        <constraint exp_strength="0" field="name" unique_strength="0" notnull_strength="1" constraints="1"/>
+        <constraint constraints="3" exp_strength="0" field="id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="1" exp_strength="0" field="name" notnull_strength="1" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" desc="" exp=""/>
-        <constraint field="name" desc="" exp=""/>
+        <constraint desc="" exp="" field="id"></constraint>
+        <constraint desc="" exp="" field="name"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="id" width="-1" hidden="0" type="field"/>
-          <column name="name" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" name="id" type="field" width="-1"></column>
+          <column hidden="0" name="name" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
 ouvert.
@@ -1856,33 +1855,33 @@ from qgis.PyQt.QtWidgets import QWidget
 def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="id" editable="1"/>
-        <field name="name" editable="1"/>
+        <field editable="1" name="id"></field>
+        <field editable="1" name="name"></field>
       </editable>
       <labelOnTop>
-        <field name="id" labelOnTop="0"/>
-        <field name="name" labelOnTop="0"/>
+        <field labelOnTop="0" name="id"></field>
+        <field labelOnTop="0" name="name"></field>
       </labelOnTop>
       <reuseLastValue>
-        <field name="id" reuseLastValue="0"/>
-        <field name="name" reuseLastValue="0"/>
+        <field name="id" reuseLastValue="0"></field>
+        <field name="name" reuseLastValue="0"></field>
       </reuseLastValue>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>"name"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
   </projectlayers>
   <layerorder>
-    <layer id="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1"/>
-    <layer id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091"/>
-    <layer id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963"/>
-    <layer id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639"/>
-    <layer id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44"/>
+    <layer id="Stamen_Toner_Lite_69098ed6_0340_4930_bc82_4a9904fb15e1"></layer>
+    <layer id="emergency_fire_hydrant_04132268_86fb_4d5e_a426_ce3133494091"></layer>
+    <layer id="building_90f7692a_0ae2_4a7d_91de_b63cddb92963"></layer>
+    <layer id="boundary_1f12e774_2493_474c_a52f_f7823e6cf639"></layer>
+    <layer id="stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44"></layer>
   </layerorder>
   <properties>
     <DefaultStyles>
@@ -1953,7 +1952,7 @@ def my_form_open(dialog, layer, feature):
         <value></value>
       </variableValues>
     </Variables>
-    <WCSLayers type="QStringList"/>
+    <WCSLayers type="QStringList"></WCSLayers>
     <WCSUrl type="QString"></WCSUrl>
     <WFSLayers type="QStringList">
       <value>building_90f7692a_0ae2_4a7d_91de_b63cddb92963</value>
@@ -1964,9 +1963,9 @@ def my_form_open(dialog, layer, feature):
       <stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44 type="int">8</stations_1a71d61f_cb99_4ac4_8bd4_86304af9be44>
     </WFSLayersPrecision>
     <WFSTLayers>
-      <Delete type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
     </WFSTLayers>
     <WFSUrl type="QString"></WFSUrl>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
@@ -1999,7 +1998,7 @@ def my_form_open(dialog, layer, feature):
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSRootName type="QString"></WMSRootName>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WMSServiceAbstract type="QString">This demo shows you an example of &lt;a href="https://docs.lizmap.com/next/en/publish/configuration/action_popup.html">Lizmap Actions&lt;/a>.
+    <WMSServiceAbstract type="QString">This demo shows you an example of &lt;a href="https://docs.lizmap.com/next/en/publish/configuration/action_popup.html"&gt;Lizmap Actions&lt;/a&gt;.
 
 A SQL query can be performed when clicking on a fire hydrant and then clicking on the "house" icon.
 
@@ -2012,36 +2011,36 @@ Another SQL query can be executed to find the closest fire station.</WMSServiceA
     <WMSUrl type="QString"></WMSUrl>
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <WMTSGrids>
-      <CRS type="QStringList"/>
-      <Config type="QStringList"/>
+      <CRS type="QStringList"></CRS>
+      <Config type="QStringList"></Config>
     </WMTSGrids>
     <WMTSJpegLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSJpegLayers>
     <WMTSLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSLayers>
     <WMTSMinScale type="int">5000</WMTSMinScale>
     <WMTSPngLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSPngLayers>
     <WMTSUrl type="QString"></WMTSUrl>
   </properties>
   <dataDefinedServerProperties>
     <Option type="Map">
-      <Option name="name" value="" type="QString"/>
-      <Option name="properties"/>
-      <Option name="type" value="collection" type="QString"/>
+      <Option name="name" type="QString" value=""></Option>
+      <Option name="properties"></Option>
+      <Option name="type" type="QString" value="collection"></Option>
     </Option>
   </dataDefinedServerProperties>
-  <visibility-presets/>
-  <transformContext/>
+  <visibility-presets></visibility-presets>
+  <transformContext></transformContext>
   <projectMetadata>
     <identifier></identifier>
     <parentidentifier></parentidentifier>
@@ -2058,16 +2057,16 @@ Another SQL query can be executed to find the closest fire station.</WMSServiceA
       <email></email>
       <role></role>
     </contact>
-    <links/>
+    <links></links>
     <author>Etienne Trimaille</author>
     <creation>2022-11-18T10:40:42</creation>
   </projectMetadata>
-  <Annotations/>
-  <Layouts/>
-  <Bookmarks/>
+  <Annotations></Annotations>
+  <Layouts></Layouts>
+  <Bookmarks></Bookmarks>
   <ProjectViewSettings UseProjectScales="0" rotation="0">
-    <Scales/>
-    <DefaultViewExtent ymax="5410778.07594345416873693" ymin="5405208.52982959058135748" xmin="377935.28569807176245376" xmax="388852.42839199613081291">
+    <Scales></Scales>
+    <DefaultViewExtent xmax="387714.00348230800591409" xmin="379073.71060775988735259" ymax="5410778.07594345416873693" ymin="5405208.52982959058135748">
       <spatialrefsys>
         <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
@@ -2081,18 +2080,18 @@ Another SQL query can be executed to find the closest fire station.</WMSServiceA
       </spatialrefsys>
     </DefaultViewExtent>
   </ProjectViewSettings>
-  <ProjectTimeSettings frameRate="1" timeStepUnit="h" cumulativeTemporalRange="0" timeStep="1"/>
+  <ProjectTimeSettings cumulativeTemporalRange="0" frameRate="1" timeStep="1" timeStepUnit="h"></ProjectTimeSettings>
   <ProjectDisplaySettings>
     <BearingFormat id="bearing">
       <Option type="Map">
-        <Option name="decimal_separator" value="" type="QChar"/>
-        <Option name="decimals" value="6" type="int"/>
-        <Option name="direction_format" value="0" type="int"/>
-        <Option name="rounding_type" value="0" type="int"/>
-        <Option name="show_plus" value="false" type="bool"/>
-        <Option name="show_thousand_separator" value="true" type="bool"/>
-        <Option name="show_trailing_zeros" value="false" type="bool"/>
-        <Option name="thousand_separator" value="" type="QChar"/>
+        <Option name="decimal_separator" type="QChar" value=""></Option>
+        <Option name="decimals" type="int" value="6"></Option>
+        <Option name="direction_format" type="int" value="0"></Option>
+        <Option name="rounding_type" type="int" value="0"></Option>
+        <Option name="show_plus" type="bool" value="false"></Option>
+        <Option name="show_thousand_separator" type="bool" value="true"></Option>
+        <Option name="show_trailing_zeros" type="bool" value="false"></Option>
+        <Option name="thousand_separator" type="QChar" value=""></Option>
       </Option>
     </BearingFormat>
   </ProjectDisplaySettings>

@@ -1,13 +1,12 @@
-<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="3.16.15-Hannover" saveUserFull="Etienne Trimaille" saveUser="etienne" saveDateTime="2022-05-18T15:46:18">
-  <homePath path=""/>
+<qgis projectname="" saveDateTime="2023-01-10T12:27:37" saveUser="etienne" saveUserFull="Etienne Trimaille" version="3.22.14-Białowieża">
+  <homePath path=""></homePath>
   <title></title>
-  <autotransaction active="0"/>
-  <evaluateDefaultValues active="0"/>
-  <trust active="0"/>
+  <autotransaction active="0"></autotransaction>
+  <evaluateDefaultValues active="0"></evaluateDefaultValues>
+  <trust active="0"></trust>
   <projectCrs>
     <spatialrefsys>
-      <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+      <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
       <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
       <srsid>3857</srsid>
       <srid>3857</srid>
@@ -19,30 +18,46 @@
     </spatialrefsys>
   </projectCrs>
   <layer-tree-group>
-    <customproperties/>
-    <layer-tree-group expanded="1" mutually-exclusive-child="1" name="Choisir la donnée représentée" mutually-exclusive="1" checked="Qt::Checked">
+    <customproperties>
+      <Option></Option>
+    </customproperties>
+    <layer-tree-group checked="Qt::Checked" expanded="1" mutually-exclusive="1" mutually-exclusive-child="1" name="Choisir la donnée représentée">
       <customproperties>
-        <property value="" key="wmsAbstract"/>
-        <property value="choix_donnees" key="wmsShortName"/>
-        <property value="" key="wmsTitle"/>
+        <Option type="Map">
+          <Option name="wmsAbstract" type="QString" value=""></Option>
+          <Option name="wmsShortName" type="QString" value="choix_donnees"></Option>
+          <Option name="wmsTitle" type="QString" value=""></Option>
+        </Option>
       </customproperties>
-      <layer-tree-layer expanded="1" source="./data_covid_19_fr/france.gpkg|layername=departements" name="departements" patch_size="0,0" legend_exp="" providerKey="ogr" legend_split_behavior="0" id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" checked="Qt::Unchecked">
-        <customproperties/>
+      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" legend_exp="" legend_split_behavior="0" name="departements" patch_size="0,0" providerKey="ogr" source="./data_covid_19_fr/france.gpkg|layername=departements">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" source="./data_covid_19_fr/france.gpkg|layername=departements" name="departements_deces" patch_size="0,0" legend_exp="" providerKey="ogr" legend_split_behavior="0" id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97" checked="Qt::Checked">
-        <customproperties/>
+      <layer-tree-layer checked="Qt::Checked" expanded="1" id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97" legend_exp="" legend_split_behavior="0" name="departements_deces" patch_size="0,0" providerKey="ogr" source="./data_covid_19_fr/france.gpkg|layername=departements">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" name="data" checked="Qt::Checked">
-      <customproperties/>
-      <layer-tree-layer expanded="1" source="./data_covid_19_fr/france.gpkg|layername=population_departements" name="population_departements" patch_size="0,0" legend_exp="" providerKey="ogr" legend_split_behavior="0" id="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" checked="Qt::Checked">
-        <customproperties/>
+    <layer-tree-group checked="Qt::Checked" expanded="1" name="data">
+      <customproperties>
+        <Option></Option>
+      </customproperties>
+      <layer-tree-layer checked="Qt::Checked" expanded="1" id="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" legend_exp="" legend_split_behavior="0" name="population_departements" patch_size="0,0" providerKey="ogr" source="./data_covid_19_fr/france.gpkg|layername=population_departements">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" source="./data_covid_19_fr/france.gpkg|layername=france_last" name="france_last" patch_size="0,0" legend_exp="" providerKey="ogr" legend_split_behavior="0" id="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" checked="Qt::Checked">
-        <customproperties/>
+      <layer-tree-layer checked="Qt::Checked" expanded="1" id="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" legend_exp="" legend_split_behavior="0" name="france_last" patch_size="0,0" providerKey="ogr" source="./data_covid_19_fr/france.gpkg|layername=france_last">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" source="./data_covid_19_fr/france.gpkg|layername=france" name="france" patch_size="0,0" legend_exp="" providerKey="ogr" legend_split_behavior="0" id="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" checked="Qt::Checked">
-        <customproperties/>
+      <layer-tree-layer checked="Qt::Checked" expanded="1" id="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" legend_exp="" legend_split_behavior="0" name="france" patch_size="0,0" providerKey="ogr" source="./data_covid_19_fr/france.gpkg|layername=france">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
       </layer-tree-layer>
     </layer-tree-group>
     <custom-order enabled="0">
@@ -50,20 +65,21 @@
       <item>departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings tolerance="0" unit="2" enabled="1" self-snapping="0" type="1" intersection-snapping="0" scaleDependencyMode="0" mode="2" minScale="0" maxScale="0">
+  <snapping-settings enabled="1" intersection-snapping="0" maxScale="0" minScale="0" mode="2" scaleDependencyMode="0" self-snapping="0" tolerance="0" type="1" unit="2">
     <individual-layer-settings>
-      <layer-setting tolerance="0" enabled="0" type="1" units="2" minScale="0" maxScale="0" id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495"/>
-      <layer-setting tolerance="0" enabled="0" type="1" units="2" minScale="0" maxScale="0" id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97"/>
+      <layer-setting enabled="0" id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" maxScale="0" minScale="0" tolerance="0" type="1" units="2"></layer-setting>
+      <layer-setting enabled="0" id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97" maxScale="0" minScale="0" tolerance="0" type="1" units="2"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations>
-    <relation referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" name="Dernières données par département" strength="Association" id="france_com_maille_code_departemen_code">
-      <fieldRef referencingField="maille_code" referencedField="code"/>
+    <relation id="france_com_maille_code_departemen_code" name="Dernières données par département" referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" strength="Association">
+      <fieldRef referencedField="code" referencingField="maille_code"></fieldRef>
     </relation>
-    <relation referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" name="Données par département" strength="Association" id="france_fra_maille_code_departemen_code">
-      <fieldRef referencingField="maille_code" referencedField="code"/>
+    <relation id="france_fra_maille_code_departemen_code" name="Données par département" referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" strength="Association">
+      <fieldRef referencedField="code" referencingField="maille_code"></fieldRef>
     </relation>
   </relations>
+  <polymorphicRelations></polymorphicRelations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
@@ -75,7 +91,7 @@
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
-        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
         <srsid>3857</srsid>
         <srid>3857</srid>
@@ -87,43 +103,43 @@
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
+    <expressionContextScope></expressionContextScope>
   </mapcanvas>
-  <projectModels/>
+  <projectModels></projectModels>
   <legend updateDrawingOrder="true">
-    <legendgroup name="Choisir la donnée représentée" open="true" checked="Qt::Checked">
-      <legendlayer name="departements" drawingOrder="-1" open="true" showFeatureCount="0" checked="Qt::Unchecked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" visible="0" isInOverview="0"/>
+    <legendgroup checked="Qt::Checked" name="Choisir la donnée représentée" open="true">
+      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="departements" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" visible="0"></legendlayerfile>
         </filegroup>
       </legendlayer>
-      <legendlayer name="departements_deces" drawingOrder="-1" open="true" showFeatureCount="0" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97" visible="1" isInOverview="0"/>
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="departements_deces" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97" visible="1"></legendlayerfile>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup name="data" open="true" checked="Qt::Checked">
-      <legendlayer name="population_departements" drawingOrder="-1" open="true" showFeatureCount="0" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" visible="1" isInOverview="0"/>
+    <legendgroup checked="Qt::Checked" name="data" open="true">
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="population_departements" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" visible="1"></legendlayerfile>
         </filegroup>
       </legendlayer>
-      <legendlayer name="france_last" drawingOrder="-1" open="true" showFeatureCount="0" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" visible="1" isInOverview="0"/>
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="france_last" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" visible="1"></legendlayerfile>
         </filegroup>
       </legendlayer>
-      <legendlayer name="france" drawingOrder="-1" open="true" showFeatureCount="0" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" visible="1" isInOverview="0"/>
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="france" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" visible="1"></legendlayerfile>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
-  <mapViewDocks/>
-  <mapViewDocks3D/>
-  <main-annotation-layer refreshOnNotifyMessage="" type="annotation" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" autoRefreshTime="0">
+  <mapViewDocks></mapViewDocks>
+  <mapViewDocks3D></mapViewDocks3D>
+  <main-annotation-layer autoRefreshEnabled="0" autoRefreshTime="0" legendPlaceholderImage="" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="annotation">
     <id>Annotations_2c50e513_59dc_4cce_8b64_e521eaade812</id>
     <datasource></datasource>
     <keywordList>
@@ -150,7 +166,7 @@
       <type></type>
       <title></title>
       <abstract></abstract>
-      <links/>
+      <links></links>
       <fees></fees>
       <encoding></encoding>
       <crs>
@@ -166,19 +182,27 @@
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </crs>
-      <extent/>
+      <extent></extent>
     </resourceMetadata>
-    <items/>
+    <items></items>
     <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect></paintEffect>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer autoRefreshTime="0" simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" simplifyAlgorithm="0" refreshOnNotifyMessage="" minScale="100000000" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" autoRefreshEnabled="0" wkbType="MultiPolygon" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" simplifyLocal="1" type="vector" maxScale="0" readOnly="0">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="MultiPolygon">
       <extent>
         <xmin>-61.80957999999999686</xmin>
         <ymin>-21.38935999999999993</ymin>
         <xmax>55.8366800000000012</xmax>
         <ymax>51.08899999999999864</ymax>
       </extent>
+      <wgs84extent>
+        <xmin>-61.80957999999999686</xmin>
+        <ymin>-21.38935999999999993</ymin>
+        <xmax>55.8366800000000012</xmax>
+        <ymax>51.08899999999999864</ymax>
+      </wgs84extent>
       <id>departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495</id>
       <datasource>./data_covid_19_fr/france.gpkg|layername=departements</datasource>
       <title>Filtrer par département</title>
@@ -188,7 +212,7 @@
       <layername>departements</layername>
       <srs>
         <spatialrefsys>
-          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
           <srsid>3452</srsid>
           <srid>4326</srid>
@@ -215,7 +239,7 @@
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -232,7 +256,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minx="0" crs="" miny="0" maxy="0" maxx="0" maxz="0" dimensions="2" minz="0"/>
+          <spatial crs="" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -242,67 +266,113 @@
         </extent>
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
+        <Private>0</Private>
       </flags>
-      <temporal durationUnit="min" enabled="0" endField="" startField="" fixedDuration="0" accumulate="0" startExpression="" endExpression="" mode="0" durationField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="nullSymbol"/>
+      <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" symbollevels="0" type="nullSymbol"></renderer-v2>
       <customproperties>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
+        <Option type="Map">
+          <Option name="embeddedWidgets/count" type="QString" value="0"></Option>
+          <Option name="variableNames" type="invalid"></Option>
+          <Option name="variableValues" type="invalid"></Option>
+        </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" spacingUnit="MM" width="15" direction="1" showAxis="0" enabled="0" lineSizeType="MM" scaleBasedVisibility="0" penAlpha="255" minimumSize="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" spacing="0" height="15" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" penWidth="0" opacity="1" barWidth="5" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundColor="#ffffff" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" maxScaleDenominator="1e+08">
-          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute color="#000000" label="" field=""/>
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" colorOpacity="1" field="" label=""></attribute>
           <axisSymbol>
-            <symbol force_rhr="0" type="line" name="" alpha="1" clip_to_extent="1">
-              <layer enabled="1" locked="0" class="SimpleLine" pass="0">
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+                <Option type="Map">
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                </Option>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option value="" type="QString" name="name"/>
-                    <Option name="properties"/>
-                    <Option value="collection" type="QString" name="type"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -310,95 +380,95 @@
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" dist="0" showAll="1" placement="1" linePlacementFlags="18" obstacle="0" zIndex="0">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
-            <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="fid" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="fid">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="code" configurationFlags="None">
+        <field configurationFlags="None" name="code">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="nom" configurationFlags="None">
+        <field configurationFlags="None" name="nom">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="Identifiant" index="0" field="fid"/>
-        <alias name="Code" index="1" field="code"/>
-        <alias name="Département" index="2" field="nom"/>
+        <alias field="fid" index="0" name="Identifiant"></alias>
+        <alias field="code" index="1" name="Code"></alias>
+        <alias field="nom" index="2" name="Département"></alias>
       </aliases>
       <defaults>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="code" applyOnUpdate="0"/>
-        <default expression="" field="nom" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="fid"></default>
+        <default applyOnUpdate="0" expression="" field="code"></default>
+        <default applyOnUpdate="0" expression="" field="nom"></default>
       </defaults>
       <constraints>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="code"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="nom"/>
+        <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="nom" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="fid"/>
-        <constraint desc="" exp="" field="code"/>
-        <constraint desc="" exp="" field="nom"/>
+        <constraint desc="" exp="" field="fid"></constraint>
+        <constraint desc="" exp="" field="code"></constraint>
+        <constraint desc="" exp="" field="nom"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="-1" type="field" name="fid" hidden="0"/>
-          <column width="-1" type="field" name="code" hidden="0"/>
-          <column width="-1" type="field" name="nom" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column hidden="0" name="fid" type="field" width="-1"></column>
+          <column hidden="0" name="code" type="field" width="-1"></column>
+          <column hidden="0" name="nom" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
 
@@ -413,25 +483,26 @@ def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
 
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="code"/>
-        <field editable="1" name="fid"/>
-        <field editable="1" name="nom"/>
+        <field editable="1" name="code"></field>
+        <field editable="1" name="fid"></field>
+        <field editable="1" name="nom"></field>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="code"/>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="nom"/>
+        <field labelOnTop="0" name="code"></field>
+        <field labelOnTop="0" name="fid"></field>
+        <field labelOnTop="0" name="nom"></field>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <reuseLastValue></reuseLastValue>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" wkbType="NoGeometry" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" geometry="No geometry" autoRefreshTime="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="No geometry" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="vector" wkbType="NoGeometry">
       <id>france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e</id>
       <datasource>./data_covid_19_fr/france.gpkg|layername=france_last</datasource>
       <keywordList>
@@ -467,7 +538,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -484,7 +555,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minx="0" crs="" miny="0" maxy="0" maxx="0" maxz="0" dimensions="2" minz="0"/>
+          <spatial crs="" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -495,230 +566,234 @@ def my_form_open(dialog, layer, feature):
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
       <vectorjoins>
-        <join memoryCache="1" customPrefix="" editable="0" upsertOnEdit="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" targetFieldName="maille_code" dynamicForm="0" cascadedDelete="0">
+        <join cascadedDelete="0" customPrefix="" dynamicForm="0" editable="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" memoryCache="1" targetFieldName="maille_code" upsertOnEdit="0">
           <joinFieldsSubset>
-            <field name="population_2020"/>
+            <field name="population_2020"></field>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
-      <layerDependencies/>
-      <dataDependencies/>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
       <expressionfields>
-        <field precision="0" subType="0" type="6" expression="round(&quot;reanimation&quot; * 10000 / &quot;population_2020&quot;, 2)" name="reanimation_10k" comment="" length="-1" typeName="double precision"/>
-        <field precision="0" subType="0" type="6" expression="round(&quot;hospitalises&quot; * 10000 / &quot;population_2020&quot;, 2)" name="hospitalises_10k" comment="" length="-1" typeName="double precision"/>
-        <field precision="0" subType="0" type="6" expression="round(&quot;deces&quot; * 10000 / &quot;population_2020&quot;, 2)" name="deces_10k" comment="" length="-1" typeName="double precision"/>
+        <field comment="" expression="round(&quot;reanimation&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="reanimation_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
+        <field comment="" expression="round(&quot;hospitalises&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="hospitalises_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
+        <field comment="" expression="round(&quot;deces&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="deces_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
       </expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
+        <Private>0</Private>
       </flags>
-      <temporal durationUnit="min" enabled="0" endField="" startField="" fixedDuration="0" accumulate="0" startExpression="" endExpression="" mode="0" durationField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-          <value>"fid"</value>
-          <value>fid</value>
-        </property>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
+        <Option type="Map">
+          <Option name="dualview/previewExpressions" type="StringList">
+            <Option type="QString" value="fid"></Option>
+            <Option type="QString" value="&quot;fid&quot;"></Option>
+            <Option type="QString" value="fid"></Option>
+          </Option>
+          <Option name="embeddedWidgets/count" type="QString" value="0"></Option>
+          <Option name="variableNames" type="invalid"></Option>
+          <Option name="variableValues" type="invalid"></Option>
+        </Option>
       </customproperties>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector"/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
       <referencedLayers>
-        <relation referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" dataSource="./data_covid_19_fr/france.gpkg|layername=departements" name="Dernières données par département" strength="Association" providerKey="ogr" layerId="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" layerName="departements" id="france_com_maille_code_departemen_code">
-          <fieldRef referencingField="maille_code" referencedField="code"/>
+        <relation dataSource="./data_covid_19_fr/france.gpkg|layername=departements" id="france_com_maille_code_departemen_code" layerId="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" layerName="departements" name="Dernières données par département" providerKey="ogr" referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" strength="Association">
+          <fieldRef referencedField="code" referencingField="maille_code"></fieldRef>
         </relation>
       </referencedLayers>
       <fieldConfiguration>
-        <field name="fid" configurationFlags="None">
+        <field configurationFlags="None" name="fid">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="maille_code" configurationFlags="None">
+        <field configurationFlags="None" name="maille_code">
           <editWidget type="RelationReference">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="sexe" configurationFlags="None">
+        <field configurationFlags="None" name="sexe">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="date" configurationFlags="None">
+        <field configurationFlags="None" name="date">
           <editWidget type="DateTime">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="hospitalises" configurationFlags="None">
+        <field configurationFlags="None" name="hospitalises">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="reanimation" configurationFlags="None">
+        <field configurationFlags="None" name="reanimation">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="gueris" configurationFlags="None">
+        <field configurationFlags="None" name="gueris">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="deces" configurationFlags="None">
+        <field configurationFlags="None" name="deces">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="population_2020" configurationFlags="None">
+        <field configurationFlags="None" name="population_2020">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="reanimation_10k" configurationFlags="None">
+        <field configurationFlags="None" name="reanimation_10k">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="hospitalises_10k" configurationFlags="None">
+        <field configurationFlags="None" name="hospitalises_10k">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="deces_10k" configurationFlags="None">
+        <field configurationFlags="None" name="deces_10k">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="fid"/>
-        <alias name="" index="1" field="maille_code"/>
-        <alias name="" index="2" field="sexe"/>
-        <alias name="" index="3" field="date"/>
-        <alias name="" index="4" field="hospitalises"/>
-        <alias name="" index="5" field="reanimation"/>
-        <alias name="" index="6" field="gueris"/>
-        <alias name="" index="7" field="deces"/>
-        <alias name="" index="8" field="population_2020"/>
-        <alias name="" index="9" field="reanimation_10k"/>
-        <alias name="" index="10" field="hospitalises_10k"/>
-        <alias name="" index="11" field="deces_10k"/>
+        <alias field="fid" index="0" name=""></alias>
+        <alias field="maille_code" index="1" name=""></alias>
+        <alias field="sexe" index="2" name=""></alias>
+        <alias field="date" index="3" name=""></alias>
+        <alias field="hospitalises" index="4" name=""></alias>
+        <alias field="reanimation" index="5" name=""></alias>
+        <alias field="gueris" index="6" name=""></alias>
+        <alias field="deces" index="7" name=""></alias>
+        <alias field="population_2020" index="8" name=""></alias>
+        <alias field="reanimation_10k" index="9" name=""></alias>
+        <alias field="hospitalises_10k" index="10" name=""></alias>
+        <alias field="deces_10k" index="11" name=""></alias>
       </aliases>
       <defaults>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="maille_code" applyOnUpdate="0"/>
-        <default expression="" field="sexe" applyOnUpdate="0"/>
-        <default expression="" field="date" applyOnUpdate="0"/>
-        <default expression="" field="hospitalises" applyOnUpdate="0"/>
-        <default expression="" field="reanimation" applyOnUpdate="0"/>
-        <default expression="" field="gueris" applyOnUpdate="0"/>
-        <default expression="" field="deces" applyOnUpdate="0"/>
-        <default expression="" field="population_2020" applyOnUpdate="0"/>
-        <default expression="" field="reanimation_10k" applyOnUpdate="0"/>
-        <default expression="" field="hospitalises_10k" applyOnUpdate="0"/>
-        <default expression="" field="deces_10k" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="fid"></default>
+        <default applyOnUpdate="0" expression="" field="maille_code"></default>
+        <default applyOnUpdate="0" expression="" field="sexe"></default>
+        <default applyOnUpdate="0" expression="" field="date"></default>
+        <default applyOnUpdate="0" expression="" field="hospitalises"></default>
+        <default applyOnUpdate="0" expression="" field="reanimation"></default>
+        <default applyOnUpdate="0" expression="" field="gueris"></default>
+        <default applyOnUpdate="0" expression="" field="deces"></default>
+        <default applyOnUpdate="0" expression="" field="population_2020"></default>
+        <default applyOnUpdate="0" expression="" field="reanimation_10k"></default>
+        <default applyOnUpdate="0" expression="" field="hospitalises_10k"></default>
+        <default applyOnUpdate="0" expression="" field="deces_10k"></default>
       </defaults>
       <constraints>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="maille_code"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="sexe"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="date"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="hospitalises"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="reanimation"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="gueris"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="deces"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="population_2020"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="reanimation_10k"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="hospitalises_10k"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="deces_10k"/>
+        <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="maille_code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sexe" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="date" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="hospitalises" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="reanimation" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="gueris" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="deces" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population_2020" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="reanimation_10k" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="hospitalises_10k" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="deces_10k" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="fid"/>
-        <constraint desc="" exp="" field="maille_code"/>
-        <constraint desc="" exp="" field="sexe"/>
-        <constraint desc="" exp="" field="date"/>
-        <constraint desc="" exp="" field="hospitalises"/>
-        <constraint desc="" exp="" field="reanimation"/>
-        <constraint desc="" exp="" field="gueris"/>
-        <constraint desc="" exp="" field="deces"/>
-        <constraint desc="" exp="" field="population_2020"/>
-        <constraint desc="" exp="" field="reanimation_10k"/>
-        <constraint desc="" exp="" field="hospitalises_10k"/>
-        <constraint desc="" exp="" field="deces_10k"/>
+        <constraint desc="" exp="" field="fid"></constraint>
+        <constraint desc="" exp="" field="maille_code"></constraint>
+        <constraint desc="" exp="" field="sexe"></constraint>
+        <constraint desc="" exp="" field="date"></constraint>
+        <constraint desc="" exp="" field="hospitalises"></constraint>
+        <constraint desc="" exp="" field="reanimation"></constraint>
+        <constraint desc="" exp="" field="gueris"></constraint>
+        <constraint desc="" exp="" field="deces"></constraint>
+        <constraint desc="" exp="" field="population_2020"></constraint>
+        <constraint desc="" exp="" field="reanimation_10k"></constraint>
+        <constraint desc="" exp="" field="hospitalises_10k"></constraint>
+        <constraint desc="" exp="" field="deces_10k"></constraint>
       </constraintExpressions>
       <expressionfields>
-        <field precision="0" subType="0" type="6" expression="round(&quot;reanimation&quot; * 10000 / &quot;population_2020&quot;, 2)" name="reanimation_10k" comment="" length="-1" typeName="double precision"/>
-        <field precision="0" subType="0" type="6" expression="round(&quot;hospitalises&quot; * 10000 / &quot;population_2020&quot;, 2)" name="hospitalises_10k" comment="" length="-1" typeName="double precision"/>
-        <field precision="0" subType="0" type="6" expression="round(&quot;deces&quot; * 10000 / &quot;population_2020&quot;, 2)" name="deces_10k" comment="" length="-1" typeName="double precision"/>
+        <field comment="" expression="round(&quot;reanimation&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="reanimation_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
+        <field comment="" expression="round(&quot;hospitalises&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="hospitalises_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
+        <field comment="" expression="round(&quot;deces&quot; * 10000 / &quot;population_2020&quot;, 2)" length="-1" name="deces_10k" precision="0" subType="0" type="6" typeName="double precision"></field>
       </expressionfields>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
-      <attributetableconfig sortExpression="&quot;maille_code&quot;" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;maille_code&quot;" sortOrder="0">
         <columns>
-          <column width="-1" type="field" name="fid" hidden="0"/>
-          <column width="-1" type="field" name="date" hidden="0"/>
-          <column width="-1" type="field" name="maille_code" hidden="0"/>
-          <column width="-1" type="field" name="deces" hidden="0"/>
-          <column width="-1" type="field" name="reanimation" hidden="0"/>
-          <column width="-1" type="field" name="hospitalises" hidden="0"/>
-          <column width="-1" type="field" name="gueris" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
-          <column width="-1" type="field" name="sexe" hidden="0"/>
-          <column width="-1" type="field" name="population_2020" hidden="0"/>
-          <column width="-1" type="field" name="reanimation_10k" hidden="0"/>
-          <column width="-1" type="field" name="hospitalises_10k" hidden="0"/>
+          <column hidden="0" name="fid" type="field" width="-1"></column>
+          <column hidden="0" name="date" type="field" width="-1"></column>
+          <column hidden="0" name="maille_code" type="field" width="-1"></column>
+          <column hidden="0" name="deces" type="field" width="-1"></column>
+          <column hidden="0" name="reanimation" type="field" width="-1"></column>
+          <column hidden="0" name="hospitalises" type="field" width="-1"></column>
+          <column hidden="0" name="gueris" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+          <column hidden="0" name="sexe" type="field" width="-1"></column>
+          <column hidden="0" name="population_2020" type="field" width="-1"></column>
+          <column hidden="0" name="reanimation_10k" type="field" width="-1"></column>
+          <column hidden="0" name="hospitalises_10k" type="field" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
 
@@ -733,46 +808,53 @@ def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
 
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="date"/>
-        <field editable="1" name="deces"/>
-        <field editable="1" name="fid"/>
-        <field editable="1" name="gueris"/>
-        <field editable="1" name="hospitalises"/>
-        <field editable="1" name="maille_code"/>
-        <field editable="0" name="population_2020"/>
-        <field editable="1" name="reanimation"/>
-        <field editable="1" name="sexe"/>
+        <field editable="1" name="date"></field>
+        <field editable="1" name="deces"></field>
+        <field editable="1" name="fid"></field>
+        <field editable="1" name="gueris"></field>
+        <field editable="1" name="hospitalises"></field>
+        <field editable="1" name="maille_code"></field>
+        <field editable="0" name="population_2020"></field>
+        <field editable="1" name="reanimation"></field>
+        <field editable="1" name="sexe"></field>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="date"/>
-        <field labelOnTop="0" name="deces"/>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="gueris"/>
-        <field labelOnTop="0" name="hospitalises"/>
-        <field labelOnTop="0" name="maille_code"/>
-        <field labelOnTop="0" name="population_2020"/>
-        <field labelOnTop="0" name="reanimation"/>
-        <field labelOnTop="0" name="sexe"/>
+        <field labelOnTop="0" name="date"></field>
+        <field labelOnTop="0" name="deces"></field>
+        <field labelOnTop="0" name="fid"></field>
+        <field labelOnTop="0" name="gueris"></field>
+        <field labelOnTop="0" name="hospitalises"></field>
+        <field labelOnTop="0" name="maille_code"></field>
+        <field labelOnTop="0" name="population_2020"></field>
+        <field labelOnTop="0" name="reanimation"></field>
+        <field labelOnTop="0" name="sexe"></field>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <reuseLastValue></reuseLastValue>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshTime="0" simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" simplifyAlgorithm="0" refreshOnNotifyMessage="" minScale="100000000" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" autoRefreshEnabled="0" wkbType="MultiPolygon" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" simplifyLocal="1" type="vector" maxScale="0" readOnly="0">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" legendPlaceholderImage="" maxScale="0" minScale="100000000" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" type="vector" wkbType="MultiPolygon">
       <extent>
         <xmin>-61.80957999999999686</xmin>
         <ymin>-21.38935999999999993</ymin>
         <xmax>55.8366800000000012</xmax>
         <ymax>51.08899999999999864</ymax>
       </extent>
+      <wgs84extent>
+        <xmin>-61.80957999999999686</xmin>
+        <ymin>-21.38935999999999993</ymin>
+        <xmax>55.8366800000000012</xmax>
+        <ymax>51.08899999999999864</ymax>
+      </wgs84extent>
       <id>france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97</id>
       <datasource>./data_covid_19_fr/france.gpkg|layername=departements</datasource>
-      <title>Nombre de décès&lt;br>pour 10 000 habitants</title>
+      <title>Nombre de décès&lt;br&gt;pour 10 000 habitants</title>
       <abstract>Nombre de décès par département rapporté à sa population</abstract>
       <keywordList>
         <value></value>
@@ -780,7 +862,7 @@ def my_form_open(dialog, layer, feature):
       <layername>departements_deces</layername>
       <srs>
         <spatialrefsys>
-          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
           <srsid>3452</srsid>
           <srid>4326</srid>
@@ -807,7 +889,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -824,7 +906,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minx="0" crs="" miny="0" maxy="0" maxx="0" maxz="0" dimensions="2" minz="0"/>
+          <spatial crs="" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -835,255 +917,428 @@ def my_form_open(dialog, layer, feature):
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
       <vectorjoins>
-        <join memoryCache="1" customPrefix="" editable="0" upsertOnEdit="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" targetFieldName="code" dynamicForm="0" cascadedDelete="0">
+        <join cascadedDelete="0" customPrefix="" dynamicForm="0" editable="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" memoryCache="1" targetFieldName="code" upsertOnEdit="0">
           <joinFieldsSubset>
-            <field name="population_2020"/>
+            <field name="population_2020"></field>
           </joinFieldsSubset>
         </join>
-        <join memoryCache="1" customPrefix="last_" editable="0" upsertOnEdit="0" hasCustomPrefix="1" joinFieldName="maille_code" joinLayerId="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" targetFieldName="code" dynamicForm="0" cascadedDelete="0">
+        <join cascadedDelete="0" customPrefix="last_" dynamicForm="0" editable="0" hasCustomPrefix="1" joinFieldName="maille_code" joinLayerId="france_comdep_last_ebd71245_5b49_49e0_9946_72ee29f0ce5e" memoryCache="1" targetFieldName="code" upsertOnEdit="0">
           <joinFieldsSubset>
-            <field name="fid"/>
-            <field name="date"/>
-            <field name="hospitalises"/>
-            <field name="reanimation"/>
-            <field name="gueris"/>
-            <field name="deces"/>
+            <field name="fid"></field>
+            <field name="date"></field>
+            <field name="hospitalises"></field>
+            <field name="reanimation"></field>
+            <field name="gueris"></field>
+            <field name="deces"></field>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
-      <layerDependencies/>
-      <dataDependencies/>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
       <expressionfields>
-        <field precision="0" subType="0" type="2" expression="&quot;last_deces&quot; * 100000 / &quot;population_2020&quot;" name="deces_pop" comment="" length="0" typeName="integer"/>
+        <field comment="" expression="&quot;last_deces&quot; * 100000 / &quot;population_2020&quot;" length="0" name="deces_pop" precision="0" subType="0" type="2" typeName="integer"></field>
       </expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
+        <Private>0</Private>
       </flags>
-      <temporal durationUnit="min" enabled="0" endField="" startField="" fixedDuration="0" accumulate="0" startExpression="" endExpression="" mode="0" durationField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="graduatedSymbol" symbollevels="0" attr="&quot;last_deces&quot; * 10000 / &quot;population_2020&quot;" graduatedMethod="GraduatedColor" enableorderby="0" forceraster="0">
+      <renderer-v2 attr="&quot;last_deces&quot; * 10000 / &quot;population_2020&quot;" enableorderby="0" forceraster="0" graduatedMethod="GraduatedColor" referencescale="-1" symbollevels="0" type="graduatedSymbol">
         <ranges>
-          <range symbol="0" label="0,7 - 3,8 " upper="3.778705636743215" render="true" lower="0.651193835985204"/>
-          <range symbol="1" label="3,8 - 5,7 " upper="5.671832001736561" render="true" lower="3.778705636743215"/>
-          <range symbol="2" label="5,7 - 8,6 " upper="8.573647424281646" render="true" lower="5.671832001736561"/>
-          <range symbol="3" label="8,6 - 11,4 " upper="11.404000000000000" render="true" lower="8.573647424281646"/>
-          <range symbol="4" label="11,4 - 100 " upper="100.000000000000000" render="true" lower="11.404000000000000"/>
+          <range label="0,7 - 3,8 " lower="0.651193835985204" render="true" symbol="0" upper="3.778705636743215"></range>
+          <range label="3,8 - 5,7 " lower="3.778705636743215" render="true" symbol="1" upper="5.671832001736561"></range>
+          <range label="5,7 - 8,6 " lower="5.671832001736561" render="true" symbol="2" upper="8.573647424281646"></range>
+          <range label="8,6 - 11,4 " lower="8.573647424281646" render="true" symbol="3" upper="11.404000000000000"></range>
+          <range label="11,4 - 100 " lower="11.404000000000000" render="true" symbol="4" upper="100.000000000000000"></range>
         </ranges>
         <symbols>
-          <symbol force_rhr="0" type="fill" name="0" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,245,240,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="255,245,240,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="255,245,240,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol force_rhr="0" type="fill" name="1" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="253,190,165,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="1" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="253,190,165,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="253,190,165,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol force_rhr="0" type="fill" name="2" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="252,112,80,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="2" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="252,112,80,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="252,112,80,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol force_rhr="0" type="fill" name="3" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="212,32,32,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="3" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="212,32,32,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="212,32,32,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol force_rhr="0" type="fill" name="4" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="103,0,13,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="4" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="103,0,13,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="103,0,13,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol force_rhr="0" type="fill" name="0" alpha="1" clip_to_extent="1">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="190,178,151,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,251,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""></Option>
+                <Option name="properties"></Option>
+                <Option name="type" type="QString" value="collection"></Option>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="color" type="QString" value="190,178,151,255"></Option>
+                <Option name="joinstyle" type="QString" value="bevel"></Option>
+                <Option name="offset" type="QString" value="0,0"></Option>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                <Option name="offset_unit" type="QString" value="MM"></Option>
+                <Option name="outline_color" type="QString" value="247,251,255,255"></Option>
+                <Option name="outline_style" type="QString" value="solid"></Option>
+                <Option name="outline_width" type="QString" value="0.26"></Option>
+                <Option name="outline_width_unit" type="QString" value="MM"></Option>
+                <Option name="style" type="QString" value="solid"></Option>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="color" v="190,178,151,255"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="247,251,255,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0.26"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="style" v="solid"></prop>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="gradient" name="[source]">
-          <prop k="color1" v="255,245,240,255"/>
-          <prop k="color2" v="103,0,13,255"/>
-          <prop k="discrete" v="0"/>
-          <prop k="rampType" v="gradient"/>
-          <prop k="stops" v="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255"/>
+        <colorramp name="[source]" type="gradient">
+          <Option type="Map">
+            <Option name="color1" type="QString" value="255,245,240,255"></Option>
+            <Option name="color2" type="QString" value="103,0,13,255"></Option>
+            <Option name="discrete" type="QString" value="0"></Option>
+            <Option name="rampType" type="QString" value="gradient"></Option>
+            <Option name="stops" type="QString" value="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255"></Option>
+          </Option>
+          <prop k="color1" v="255,245,240,255"></prop>
+          <prop k="color2" v="103,0,13,255"></prop>
+          <prop k="discrete" v="0"></prop>
+          <prop k="rampType" v="gradient"></prop>
+          <prop k="stops" v="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255"></prop>
         </colorramp>
         <classificationMethod id="Quantile">
-          <symmetricMode enabled="0" symmetrypoint="0" astride="0"/>
-          <labelFormat labelprecision="4" format="%1 - %2" trimtrailingzeroes="1"/>
+          <symmetricMode astride="0" enabled="0" symmetrypoint="0"></symmetricMode>
+          <labelFormat format="%1 - %2" labelprecision="4" trimtrailingzeroes="1"></labelFormat>
           <parameters>
-            <Option/>
+            <Option></Option>
           </parameters>
-          <extraInformation/>
+          <extraInformation></extraInformation>
         </classificationMethod>
-        <rotation/>
-        <sizescale/>
+        <rotation></rotation>
+        <sizescale></sizescale>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>"fid"</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-          <value>COALESCE( "nom", '&lt;NULL>' )</value>
-        </property>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
+        <Option type="Map">
+          <Option name="dualview/previewExpressions" type="StringList">
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="&quot;fid&quot;"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;nom&quot;, '&lt;NULL>' )"></Option>
+          </Option>
+          <Option name="embeddedWidgets/count" type="QString" value="0"></Option>
+          <Option name="variableNames" type="invalid"></Option>
+          <Option name="variableValues" type="invalid"></Option>
+        </Option>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" spacingUnit="MM" width="15" direction="1" showAxis="0" enabled="0" lineSizeType="MM" scaleBasedVisibility="0" penAlpha="255" minimumSize="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" spacing="0" height="15" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" penWidth="0" opacity="1" barWidth="5" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundColor="#ffffff" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" maxScaleDenominator="1e+08">
-          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute color="#000000" label="" field=""/>
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" colorOpacity="1" field="" label=""></attribute>
           <axisSymbol>
-            <symbol force_rhr="0" type="line" name="" alpha="1" clip_to_extent="1">
-              <layer enabled="1" locked="0" class="SimpleLine" pass="0">
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+                <Option type="Map">
+                  <Option name="align_dash_pattern" type="QString" value="0"></Option>
+                  <Option name="capstyle" type="QString" value="square"></Option>
+                  <Option name="customdash" type="QString" value="5;2"></Option>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="customdash_unit" type="QString" value="MM"></Option>
+                  <Option name="dash_pattern_offset" type="QString" value="0"></Option>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"></Option>
+                  <Option name="draw_inside_polygon" type="QString" value="0"></Option>
+                  <Option name="joinstyle" type="QString" value="bevel"></Option>
+                  <Option name="line_color" type="QString" value="35,35,35,255"></Option>
+                  <Option name="line_style" type="QString" value="solid"></Option>
+                  <Option name="line_width" type="QString" value="0.26"></Option>
+                  <Option name="line_width_unit" type="QString" value="MM"></Option>
+                  <Option name="offset" type="QString" value="0"></Option>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="offset_unit" type="QString" value="MM"></Option>
+                  <Option name="ring_filter" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end" type="QString" value="0"></Option>
+                  <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_end_unit" type="QString" value="MM"></Option>
+                  <Option name="trim_distance_start" type="QString" value="0"></Option>
+                  <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                  <Option name="trim_distance_start_unit" type="QString" value="MM"></Option>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"></Option>
+                  <Option name="use_custom_dash" type="QString" value="0"></Option>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"></Option>
+                </Option>
+                <prop k="align_dash_pattern" v="0"></prop>
+                <prop k="capstyle" v="square"></prop>
+                <prop k="customdash" v="5;2"></prop>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="customdash_unit" v="MM"></prop>
+                <prop k="dash_pattern_offset" v="0"></prop>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="dash_pattern_offset_unit" v="MM"></prop>
+                <prop k="draw_inside_polygon" v="0"></prop>
+                <prop k="joinstyle" v="bevel"></prop>
+                <prop k="line_color" v="35,35,35,255"></prop>
+                <prop k="line_style" v="solid"></prop>
+                <prop k="line_width" v="0.26"></prop>
+                <prop k="line_width_unit" v="MM"></prop>
+                <prop k="offset" v="0"></prop>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="offset_unit" v="MM"></prop>
+                <prop k="ring_filter" v="0"></prop>
+                <prop k="trim_distance_end" v="0"></prop>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_end_unit" v="MM"></prop>
+                <prop k="trim_distance_start" v="0"></prop>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+                <prop k="trim_distance_start_unit" v="MM"></prop>
+                <prop k="tweak_dash_pattern_on_corners" v="0"></prop>
+                <prop k="use_custom_dash" v="0"></prop>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option value="" type="QString" name="name"/>
-                    <Option name="properties"/>
-                    <Option value="collection" type="QString" name="type"/>
+                    <Option name="name" type="QString" value=""></Option>
+                    <Option name="properties"></Option>
+                    <Option name="type" type="QString" value="collection"></Option>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -1091,244 +1346,244 @@ def my_form_open(dialog, layer, feature):
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" dist="0" showAll="1" placement="1" linePlacementFlags="18" obstacle="0" zIndex="0">
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
         <properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
-            <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
         <checkConfiguration type="Map">
-          <Option type="Map" name="QgsGeometryGapCheck">
-            <Option value="0" type="double" name="allowedGapsBuffer"/>
-            <Option value="false" type="bool" name="allowedGapsEnabled"/>
-            <Option value="" type="QString" name="allowedGapsLayer"/>
+          <Option name="QgsGeometryGapCheck" type="Map">
+            <Option name="allowedGapsBuffer" type="double" value="0"></Option>
+            <Option name="allowedGapsEnabled" type="bool" value="false"></Option>
+            <Option name="allowedGapsLayer" type="QString" value=""></Option>
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="fid" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="fid">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="code" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="code">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="nom" configurationFlags="None">
+        <field configurationFlags="None" name="nom">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="population_2020" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="population_2020">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_fid" configurationFlags="HideFromWms|HideFromWfs">
+        <field configurationFlags="HideFromWms|HideFromWfs" name="last_fid">
           <editWidget type="TextEdit">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_date" configurationFlags="None">
+        <field configurationFlags="None" name="last_date">
           <editWidget type="DateTime">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="allow_null"/>
-                <Option value="true" type="bool" name="calendar_popup"/>
-                <Option value="yyyy-MM-dd" type="QString" name="display_format"/>
-                <Option value="yyyy-MM-dd" type="QString" name="field_format"/>
-                <Option value="false" type="bool" name="field_iso_format"/>
+                <Option name="allow_null" type="bool" value="true"></Option>
+                <Option name="calendar_popup" type="bool" value="true"></Option>
+                <Option name="display_format" type="QString" value="yyyy-MM-dd"></Option>
+                <Option name="field_format" type="QString" value="yyyy-MM-dd"></Option>
+                <Option name="field_iso_format" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_hospitalises" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="last_hospitalises">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_reanimation" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="last_reanimation">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_gueris" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="last_gueris">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="last_deces" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="last_deces">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="deces_pop" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="deces_pop">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="fid"/>
-        <alias name="" index="1" field="code"/>
-        <alias name="Département" index="2" field="nom"/>
-        <alias name="Population (2020)" index="3" field="population_2020"/>
-        <alias name="" index="4" field="last_fid"/>
-        <alias name="Date" index="5" field="last_date"/>
-        <alias name="Hospitalisés" index="6" field="last_hospitalises"/>
-        <alias name="En réanimation" index="7" field="last_reanimation"/>
-        <alias name="Guéris" index="8" field="last_gueris"/>
-        <alias name="Décès" index="9" field="last_deces"/>
-        <alias name="Décès / 100 000 hab" index="10" field="deces_pop"/>
+        <alias field="fid" index="0" name=""></alias>
+        <alias field="code" index="1" name=""></alias>
+        <alias field="nom" index="2" name="Département"></alias>
+        <alias field="population_2020" index="3" name="Population (2020)"></alias>
+        <alias field="last_fid" index="4" name=""></alias>
+        <alias field="last_date" index="5" name="Date"></alias>
+        <alias field="last_hospitalises" index="6" name="Hospitalisés"></alias>
+        <alias field="last_reanimation" index="7" name="En réanimation"></alias>
+        <alias field="last_gueris" index="8" name="Guéris"></alias>
+        <alias field="last_deces" index="9" name="Décès"></alias>
+        <alias field="deces_pop" index="10" name="Décès / 100 000 hab"></alias>
       </aliases>
       <defaults>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="code" applyOnUpdate="0"/>
-        <default expression="" field="nom" applyOnUpdate="0"/>
-        <default expression="" field="population_2020" applyOnUpdate="0"/>
-        <default expression="" field="last_fid" applyOnUpdate="0"/>
-        <default expression="" field="last_date" applyOnUpdate="0"/>
-        <default expression="" field="last_hospitalises" applyOnUpdate="0"/>
-        <default expression="" field="last_reanimation" applyOnUpdate="0"/>
-        <default expression="" field="last_gueris" applyOnUpdate="0"/>
-        <default expression="" field="last_deces" applyOnUpdate="0"/>
-        <default expression="" field="deces_pop" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="fid"></default>
+        <default applyOnUpdate="0" expression="" field="code"></default>
+        <default applyOnUpdate="0" expression="" field="nom"></default>
+        <default applyOnUpdate="0" expression="" field="population_2020"></default>
+        <default applyOnUpdate="0" expression="" field="last_fid"></default>
+        <default applyOnUpdate="0" expression="" field="last_date"></default>
+        <default applyOnUpdate="0" expression="" field="last_hospitalises"></default>
+        <default applyOnUpdate="0" expression="" field="last_reanimation"></default>
+        <default applyOnUpdate="0" expression="" field="last_gueris"></default>
+        <default applyOnUpdate="0" expression="" field="last_deces"></default>
+        <default applyOnUpdate="0" expression="" field="deces_pop"></default>
       </defaults>
       <constraints>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="code"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="nom"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="population_2020"/>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="last_fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="last_date"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="last_hospitalises"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="last_reanimation"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="last_gueris"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="last_deces"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="deces_pop"/>
+        <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="nom" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population_2020" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="3" exp_strength="0" field="last_fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="last_date" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="last_hospitalises" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="last_reanimation" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="last_gueris" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="last_deces" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="deces_pop" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="fid"/>
-        <constraint desc="" exp="" field="code"/>
-        <constraint desc="" exp="" field="nom"/>
-        <constraint desc="" exp="" field="population_2020"/>
-        <constraint desc="" exp="" field="last_fid"/>
-        <constraint desc="" exp="" field="last_date"/>
-        <constraint desc="" exp="" field="last_hospitalises"/>
-        <constraint desc="" exp="" field="last_reanimation"/>
-        <constraint desc="" exp="" field="last_gueris"/>
-        <constraint desc="" exp="" field="last_deces"/>
-        <constraint desc="" exp="" field="deces_pop"/>
+        <constraint desc="" exp="" field="fid"></constraint>
+        <constraint desc="" exp="" field="code"></constraint>
+        <constraint desc="" exp="" field="nom"></constraint>
+        <constraint desc="" exp="" field="population_2020"></constraint>
+        <constraint desc="" exp="" field="last_fid"></constraint>
+        <constraint desc="" exp="" field="last_date"></constraint>
+        <constraint desc="" exp="" field="last_hospitalises"></constraint>
+        <constraint desc="" exp="" field="last_reanimation"></constraint>
+        <constraint desc="" exp="" field="last_gueris"></constraint>
+        <constraint desc="" exp="" field="last_deces"></constraint>
+        <constraint desc="" exp="" field="deces_pop"></constraint>
       </constraintExpressions>
       <expressionfields>
-        <field precision="0" subType="0" type="2" expression="&quot;last_deces&quot; * 100000 / &quot;population_2020&quot;" name="deces_pop" comment="" length="0" typeName="integer"/>
+        <field comment="" expression="&quot;last_deces&quot; * 100000 / &quot;population_2020&quot;" length="0" name="deces_pop" precision="0" subType="0" type="2" typeName="integer"></field>
       </expressionfields>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
-      <attributetableconfig sortExpression="&quot;nom&quot;" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;nom&quot;" sortOrder="0">
         <columns>
-          <column width="-1" type="field" name="fid" hidden="0"/>
-          <column width="-1" type="field" name="code" hidden="0"/>
-          <column width="-1" type="field" name="nom" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
-          <column width="-1" type="field" name="last_fid" hidden="0"/>
-          <column width="-1" type="field" name="last_date" hidden="0"/>
-          <column width="-1" type="field" name="last_deces" hidden="0"/>
-          <column width="-1" type="field" name="last_reanimation" hidden="0"/>
-          <column width="-1" type="field" name="last_hospitalises" hidden="0"/>
-          <column width="-1" type="field" name="last_gueris" hidden="0"/>
-          <column width="181" type="field" name="deces_pop" hidden="0"/>
-          <column width="-1" type="field" name="population_2020" hidden="0"/>
+          <column hidden="0" name="fid" type="field" width="-1"></column>
+          <column hidden="0" name="code" type="field" width="-1"></column>
+          <column hidden="0" name="nom" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+          <column hidden="0" name="last_fid" type="field" width="-1"></column>
+          <column hidden="0" name="last_date" type="field" width="-1"></column>
+          <column hidden="0" name="last_deces" type="field" width="-1"></column>
+          <column hidden="0" name="last_reanimation" type="field" width="-1"></column>
+          <column hidden="0" name="last_hospitalises" type="field" width="-1"></column>
+          <column hidden="0" name="last_gueris" type="field" width="-1"></column>
+          <column hidden="0" name="deces_pop" type="field" width="181"></column>
+          <column hidden="0" name="population_2020" type="field" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
 
@@ -1343,73 +1598,78 @@ def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
 
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer visibilityExpression="" visibilityExpressionEnabled="0" showLabel="1" name="Général" columnCount="1" groupBox="0">
-          <attributeEditorField showLabel="1" name="fid" index="0"/>
-          <attributeEditorField showLabel="1" name="code" index="1"/>
-          <attributeEditorField showLabel="1" name="nom" index="2"/>
-          <attributeEditorField showLabel="1" name="last_fid" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_date" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_cas_confirmes" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_deces" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_reanimation" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_hospitalises" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_gueris" index="-1"/>
-          <attributeEditorField showLabel="1" name="last_depistes" index="-1"/>
-          <attributeEditorField showLabel="1" name="population_2020" index="-1"/>
-          <attributeEditorField showLabel="1" name="deces_pop" index="3"/>
+        <attributeEditorContainer columnCount="1" groupBox="0" name="Général" showLabel="1" visibilityExpression="" visibilityExpressionEnabled="0">
+          <attributeEditorField index="0" name="fid" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="1" name="code" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="2" name="nom" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_fid" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_date" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_cas_confirmes" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_deces" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_reanimation" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_hospitalises" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_gueris" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="last_depistes" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="-1" name="population_2020" showLabel="1"></attributeEditorField>
+          <attributeEditorField index="3" name="deces_pop" showLabel="1"></attributeEditorField>
         </attributeEditorContainer>
-        <attributeEditorContainer visibilityExpression="" visibilityExpressionEnabled="0" showLabel="1" name="Données filles" columnCount="1" groupBox="0">
-          <attributeEditorRelation showLabel="1" relation="" label="" buttons="AllButtons" name="" forceSuppressFormPopup="0" nmRelationId=""/>
+        <attributeEditorContainer columnCount="1" groupBox="0" name="Données filles" showLabel="1" visibilityExpression="" visibilityExpressionEnabled="0">
+          <attributeEditorRelation forceSuppressFormPopup="0" label="" name="" nmRelationId="" relation="" relationWidgetTypeId="" showLabel="1">
+            <editor_configuration type="Map">
+              <Option name="buttons" type="QString" value="AllButtons"></Option>
+            </editor_configuration>
+          </attributeEditorRelation>
         </attributeEditorContainer>
       </attributeEditorForm>
       <editable>
-        <field editable="1" name="code"/>
-        <field editable="0" name="deces_pop"/>
-        <field editable="1" name="fid"/>
-        <field editable="0" name="france population_departements_population_2020"/>
-        <field editable="0" name="last_cas_confirmes"/>
-        <field editable="0" name="last_date"/>
-        <field editable="0" name="last_deces"/>
-        <field editable="0" name="last_depistes"/>
-        <field editable="0" name="last_fid"/>
-        <field editable="0" name="last_gueris"/>
-        <field editable="0" name="last_hospitalises"/>
-        <field editable="0" name="last_reanimation"/>
-        <field editable="1" name="nom"/>
-        <field editable="0" name="population_2020"/>
+        <field editable="1" name="code"></field>
+        <field editable="0" name="deces_pop"></field>
+        <field editable="1" name="fid"></field>
+        <field editable="0" name="france population_departements_population_2020"></field>
+        <field editable="0" name="last_cas_confirmes"></field>
+        <field editable="0" name="last_date"></field>
+        <field editable="0" name="last_deces"></field>
+        <field editable="0" name="last_depistes"></field>
+        <field editable="0" name="last_fid"></field>
+        <field editable="0" name="last_gueris"></field>
+        <field editable="0" name="last_hospitalises"></field>
+        <field editable="0" name="last_reanimation"></field>
+        <field editable="1" name="nom"></field>
+        <field editable="0" name="population_2020"></field>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="code"/>
-        <field labelOnTop="0" name="deces_pop"/>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="france population_departements_population_2020"/>
-        <field labelOnTop="0" name="last_cas_confirmes"/>
-        <field labelOnTop="0" name="last_date"/>
-        <field labelOnTop="0" name="last_deces"/>
-        <field labelOnTop="0" name="last_depistes"/>
-        <field labelOnTop="0" name="last_fid"/>
-        <field labelOnTop="0" name="last_gueris"/>
-        <field labelOnTop="0" name="last_hospitalises"/>
-        <field labelOnTop="0" name="last_reanimation"/>
-        <field labelOnTop="0" name="nom"/>
-        <field labelOnTop="0" name="population_2020"/>
+        <field labelOnTop="0" name="code"></field>
+        <field labelOnTop="0" name="deces_pop"></field>
+        <field labelOnTop="0" name="fid"></field>
+        <field labelOnTop="0" name="france population_departements_population_2020"></field>
+        <field labelOnTop="0" name="last_cas_confirmes"></field>
+        <field labelOnTop="0" name="last_date"></field>
+        <field labelOnTop="0" name="last_deces"></field>
+        <field labelOnTop="0" name="last_depistes"></field>
+        <field labelOnTop="0" name="last_fid"></field>
+        <field labelOnTop="0" name="last_gueris"></field>
+        <field labelOnTop="0" name="last_hospitalises"></field>
+        <field labelOnTop="0" name="last_reanimation"></field>
+        <field labelOnTop="0" name="nom"></field>
+        <field labelOnTop="0" name="population_2020"></field>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
+      <reuseLastValue></reuseLastValue>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
       <widgets>
         <widget name="france_fra_maille_code_france_dep_code">
           <config type="Map">
-            <Option value="" type="QString" name="nm-rel"/>
+            <Option name="nm-rel" type="QString" value=""></Option>
           </config>
         </widget>
       </widgets>
-      <previewExpression>COALESCE( "nom", '&lt;NULL>' )</previewExpression>
+      <previewExpression>COALESCE( "nom", '&lt;NULL&gt;' )</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" wkbType="NoGeometry" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" geometry="No geometry" autoRefreshTime="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="No geometry" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="vector" wkbType="NoGeometry">
       <id>france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf</id>
       <datasource>./data_covid_19_fr/france.gpkg|layername=france</datasource>
       <keywordList>
@@ -1445,7 +1705,7 @@ def my_form_open(dialog, layer, feature):
           <email></email>
           <role></role>
         </contact>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -1462,7 +1722,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minx="0" crs="" miny="0" maxy="0" maxx="0" maxz="0" dimensions="2" minz="0"/>
+          <spatial crs="" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
           <temporal>
             <period>
               <start></start>
@@ -1473,230 +1733,234 @@ def my_form_open(dialog, layer, feature):
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
       <vectorjoins>
-        <join memoryCache="1" customPrefix="" editable="0" upsertOnEdit="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" targetFieldName="maille_code" dynamicForm="0" cascadedDelete="0">
+        <join cascadedDelete="0" customPrefix="" dynamicForm="0" editable="0" hasCustomPrefix="1" joinFieldName="code" joinLayerId="france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93" memoryCache="1" targetFieldName="maille_code" upsertOnEdit="0">
           <joinFieldsSubset>
-            <field name="population_2020"/>
+            <field name="population_2020"></field>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
+        <Private>0</Private>
       </flags>
-      <temporal durationUnit="min" enabled="0" endField="" startField="" fixedDuration="0" accumulate="0" startExpression="" endExpression="" mode="0" durationField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>COALESCE( "date", '&lt;NULL>' )</value>
-          <value>COALESCE( "date", '&lt;NULL>' )</value>
-          <value>COALESCE( "date", '&lt;NULL>' )</value>
-          <value>fid</value>
-          <value>COALESCE( "date", '&lt;NULL>' )</value>
-          <value>COALESCE( "date", '&lt;NULL>' )</value>
-        </property>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
+        <Option type="Map">
+          <Option name="dualview/previewExpressions" type="StringList">
+            <Option type="QString" value="COALESCE( &quot;date&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;date&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;date&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="fid"></Option>
+            <Option type="QString" value="COALESCE( &quot;date&quot;, '&lt;NULL>' )"></Option>
+            <Option type="QString" value="COALESCE( &quot;date&quot;, '&lt;NULL>' )"></Option>
+          </Option>
+          <Option name="embeddedWidgets/count" type="QString" value="0"></Option>
+          <Option name="variableNames" type="invalid"></Option>
+          <Option name="variableValues" type="invalid"></Option>
+        </Option>
       </customproperties>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector"/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
       <referencedLayers>
-        <relation referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" dataSource="./data_covid_19_fr/france.gpkg|layername=departements" name="Données par département" strength="Association" providerKey="ogr" layerId="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" layerName="departements" id="france_fra_maille_code_departemen_code">
-          <fieldRef referencingField="maille_code" referencedField="code"/>
+        <relation dataSource="./data_covid_19_fr/france.gpkg|layername=departements" id="france_fra_maille_code_departemen_code" layerId="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" layerName="departements" name="Données par département" providerKey="ogr" referencedLayer="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495" referencingLayer="france_france_comdep_a15baff3_f561_4081_916b_2f5cbd0c82cf" strength="Association">
+          <fieldRef referencedField="code" referencingField="maille_code"></fieldRef>
         </relation>
       </referencedLayers>
       <fieldConfiguration>
-        <field name="fid" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="fid">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="maille_code" configurationFlags="HideFromWms">
+        <field configurationFlags="HideFromWms" name="maille_code">
           <editWidget type="TextEdit">
             <config>
               <Option type="Map">
-                <Option value="false" type="bool" name="IsMultiline"/>
-                <Option value="false" type="bool" name="UseHtml"/>
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="sexe" configurationFlags="None">
+        <field configurationFlags="None" name="sexe">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="date" configurationFlags="None">
+        <field configurationFlags="None" name="date">
           <editWidget type="DateTime">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="allow_null"/>
-                <Option value="true" type="bool" name="calendar_popup"/>
-                <Option value="yyyy-MM-dd" type="QString" name="display_format"/>
-                <Option value="yyyy-MM-dd" type="QString" name="field_format"/>
-                <Option value="false" type="bool" name="field_iso_format"/>
+                <Option name="allow_null" type="bool" value="true"></Option>
+                <Option name="calendar_popup" type="bool" value="true"></Option>
+                <Option name="display_format" type="QString" value="yyyy-MM-dd"></Option>
+                <Option name="field_format" type="QString" value="yyyy-MM-dd"></Option>
+                <Option name="field_iso_format" type="bool" value="false"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="hospitalises" configurationFlags="None">
+        <field configurationFlags="None" name="hospitalises">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="reanimation" configurationFlags="None">
+        <field configurationFlags="None" name="reanimation">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="gueris" configurationFlags="None">
+        <field configurationFlags="None" name="gueris">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="deces" configurationFlags="None">
+        <field configurationFlags="None" name="deces">
           <editWidget type="Range">
             <config>
               <Option type="Map">
-                <Option value="true" type="bool" name="AllowNull"/>
-                <Option value="2147483647" type="int" name="Max"/>
-                <Option value="-2147483648" type="int" name="Min"/>
-                <Option value="0" type="int" name="Precision"/>
-                <Option value="1" type="int" name="Step"/>
-                <Option value="SpinBox" type="QString" name="Style"/>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="Max" type="int" value="2147483647"></Option>
+                <Option name="Min" type="int" value="-2147483648"></Option>
+                <Option name="Precision" type="int" value="0"></Option>
+                <Option name="Step" type="int" value="1"></Option>
+                <Option name="Style" type="QString" value="SpinBox"></Option>
               </Option>
             </config>
           </editWidget>
         </field>
-        <field name="population_2020" configurationFlags="None">
+        <field configurationFlags="None" name="population_2020">
           <editWidget type="Range">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="fid"/>
-        <alias name="Code du département" index="1" field="maille_code"/>
-        <alias name="" index="2" field="sexe"/>
-        <alias name="Date" index="3" field="date"/>
-        <alias name="Hospitalisés" index="4" field="hospitalises"/>
-        <alias name="Réanimations" index="5" field="reanimation"/>
-        <alias name="Guéris" index="6" field="gueris"/>
-        <alias name="Décès" index="7" field="deces"/>
-        <alias name="" index="8" field="population_2020"/>
+        <alias field="fid" index="0" name=""></alias>
+        <alias field="maille_code" index="1" name="Code du département"></alias>
+        <alias field="sexe" index="2" name=""></alias>
+        <alias field="date" index="3" name="Date"></alias>
+        <alias field="hospitalises" index="4" name="Hospitalisés"></alias>
+        <alias field="reanimation" index="5" name="Réanimations"></alias>
+        <alias field="gueris" index="6" name="Guéris"></alias>
+        <alias field="deces" index="7" name="Décès"></alias>
+        <alias field="population_2020" index="8" name=""></alias>
       </aliases>
       <defaults>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="maille_code" applyOnUpdate="0"/>
-        <default expression="" field="sexe" applyOnUpdate="0"/>
-        <default expression="" field="date" applyOnUpdate="0"/>
-        <default expression="" field="hospitalises" applyOnUpdate="0"/>
-        <default expression="" field="reanimation" applyOnUpdate="0"/>
-        <default expression="" field="gueris" applyOnUpdate="0"/>
-        <default expression="" field="deces" applyOnUpdate="0"/>
-        <default expression="" field="population_2020" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="fid"></default>
+        <default applyOnUpdate="0" expression="" field="maille_code"></default>
+        <default applyOnUpdate="0" expression="" field="sexe"></default>
+        <default applyOnUpdate="0" expression="" field="date"></default>
+        <default applyOnUpdate="0" expression="" field="hospitalises"></default>
+        <default applyOnUpdate="0" expression="" field="reanimation"></default>
+        <default applyOnUpdate="0" expression="" field="gueris"></default>
+        <default applyOnUpdate="0" expression="" field="deces"></default>
+        <default applyOnUpdate="0" expression="" field="population_2020"></default>
       </defaults>
       <constraints>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="maille_code"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="sexe"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="date"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="hospitalises"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="reanimation"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="gueris"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="deces"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="population_2020"/>
+        <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="maille_code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sexe" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="date" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="hospitalises" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="reanimation" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="gueris" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="deces" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population_2020" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="fid"/>
-        <constraint desc="" exp="" field="maille_code"/>
-        <constraint desc="" exp="" field="sexe"/>
-        <constraint desc="" exp="" field="date"/>
-        <constraint desc="" exp="" field="hospitalises"/>
-        <constraint desc="" exp="" field="reanimation"/>
-        <constraint desc="" exp="" field="gueris"/>
-        <constraint desc="" exp="" field="deces"/>
-        <constraint desc="" exp="" field="population_2020"/>
+        <constraint desc="" exp="" field="fid"></constraint>
+        <constraint desc="" exp="" field="maille_code"></constraint>
+        <constraint desc="" exp="" field="sexe"></constraint>
+        <constraint desc="" exp="" field="date"></constraint>
+        <constraint desc="" exp="" field="hospitalises"></constraint>
+        <constraint desc="" exp="" field="reanimation"></constraint>
+        <constraint desc="" exp="" field="gueris"></constraint>
+        <constraint desc="" exp="" field="deces"></constraint>
+        <constraint desc="" exp="" field="population_2020"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
-      <attributetableconfig sortExpression="&quot;source_nom&quot;" actionWidgetStyle="dropDown" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;source_nom&quot;" sortOrder="1">
         <columns>
-          <column width="-1" type="field" name="fid" hidden="0"/>
-          <column width="-1" type="field" name="date" hidden="0"/>
-          <column width="181" type="field" name="maille_code" hidden="0"/>
-          <column width="-1" type="field" name="deces" hidden="0"/>
-          <column width="-1" type="field" name="reanimation" hidden="0"/>
-          <column width="-1" type="field" name="hospitalises" hidden="0"/>
-          <column width="-1" type="field" name="gueris" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
-          <column width="-1" type="field" name="population_2020" hidden="0"/>
-          <column width="-1" type="field" name="sexe" hidden="0"/>
+          <column hidden="0" name="fid" type="field" width="-1"></column>
+          <column hidden="0" name="date" type="field" width="-1"></column>
+          <column hidden="0" name="maille_code" type="field" width="181"></column>
+          <column hidden="0" name="deces" type="field" width="-1"></column>
+          <column hidden="0" name="reanimation" type="field" width="-1"></column>
+          <column hidden="0" name="hospitalises" type="field" width="-1"></column>
+          <column hidden="0" name="gueris" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+          <column hidden="0" name="population_2020" type="field" width="-1"></column>
+          <column hidden="0" name="sexe" type="field" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+      <editforminitcode># -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
 
@@ -1711,55 +1975,56 @@ def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     control = dialog.findChild(QWidget, "MyLineEdit")
 
-]]></editforminitcode>
+</editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="cas_confirmes"/>
-        <field editable="1" name="date"/>
-        <field editable="1" name="deces"/>
-        <field editable="0" name="deces_pop"/>
-        <field editable="1" name="depistes"/>
-        <field editable="1" name="fid"/>
-        <field editable="1" name="granularite"/>
-        <field editable="1" name="gueris"/>
-        <field editable="1" name="hospitalises"/>
-        <field editable="1" name="maille_code"/>
-        <field editable="1" name="maille_nom"/>
-        <field editable="0" name="population_2020"/>
-        <field editable="1" name="reanimation"/>
-        <field editable="1" name="sexe"/>
-        <field editable="1" name="source_archive"/>
-        <field editable="1" name="source_nom"/>
-        <field editable="1" name="source_type"/>
-        <field editable="1" name="source_url"/>
+        <field editable="1" name="cas_confirmes"></field>
+        <field editable="1" name="date"></field>
+        <field editable="1" name="deces"></field>
+        <field editable="0" name="deces_pop"></field>
+        <field editable="1" name="depistes"></field>
+        <field editable="1" name="fid"></field>
+        <field editable="1" name="granularite"></field>
+        <field editable="1" name="gueris"></field>
+        <field editable="1" name="hospitalises"></field>
+        <field editable="1" name="maille_code"></field>
+        <field editable="1" name="maille_nom"></field>
+        <field editable="0" name="population_2020"></field>
+        <field editable="1" name="reanimation"></field>
+        <field editable="1" name="sexe"></field>
+        <field editable="1" name="source_archive"></field>
+        <field editable="1" name="source_nom"></field>
+        <field editable="1" name="source_type"></field>
+        <field editable="1" name="source_url"></field>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="cas_confirmes"/>
-        <field labelOnTop="0" name="date"/>
-        <field labelOnTop="0" name="deces"/>
-        <field labelOnTop="0" name="deces_pop"/>
-        <field labelOnTop="0" name="depistes"/>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="granularite"/>
-        <field labelOnTop="0" name="gueris"/>
-        <field labelOnTop="0" name="hospitalises"/>
-        <field labelOnTop="0" name="maille_code"/>
-        <field labelOnTop="0" name="maille_nom"/>
-        <field labelOnTop="0" name="population_2020"/>
-        <field labelOnTop="0" name="reanimation"/>
-        <field labelOnTop="0" name="sexe"/>
-        <field labelOnTop="0" name="source_archive"/>
-        <field labelOnTop="0" name="source_nom"/>
-        <field labelOnTop="0" name="source_type"/>
-        <field labelOnTop="0" name="source_url"/>
+        <field labelOnTop="0" name="cas_confirmes"></field>
+        <field labelOnTop="0" name="date"></field>
+        <field labelOnTop="0" name="deces"></field>
+        <field labelOnTop="0" name="deces_pop"></field>
+        <field labelOnTop="0" name="depistes"></field>
+        <field labelOnTop="0" name="fid"></field>
+        <field labelOnTop="0" name="granularite"></field>
+        <field labelOnTop="0" name="gueris"></field>
+        <field labelOnTop="0" name="hospitalises"></field>
+        <field labelOnTop="0" name="maille_code"></field>
+        <field labelOnTop="0" name="maille_nom"></field>
+        <field labelOnTop="0" name="population_2020"></field>
+        <field labelOnTop="0" name="reanimation"></field>
+        <field labelOnTop="0" name="sexe"></field>
+        <field labelOnTop="0" name="source_archive"></field>
+        <field labelOnTop="0" name="source_nom"></field>
+        <field labelOnTop="0" name="source_type"></field>
+        <field labelOnTop="0" name="source_url"></field>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
-      <widgets/>
-      <previewExpression>COALESCE( "date", '&lt;NULL>' )</previewExpression>
+      <reuseLastValue></reuseLastValue>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
+      <previewExpression>COALESCE( "date", '&lt;NULL&gt;' )</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" type="vector" wkbType="NoGeometry" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" geometry="No geometry" autoRefreshTime="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="No geometry" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="vector" wkbType="NoGeometry">
       <id>france_population_departements_365e8db8_90fc_4d66_b61f_73a96a657d93</id>
       <datasource>./data_covid_19_fr/france.gpkg|layername=population_departements</datasource>
       <keywordList>
@@ -1786,7 +2051,7 @@ def my_form_open(dialog, layer, feature):
         <type></type>
         <title></title>
         <abstract></abstract>
-        <links/>
+        <links></links>
         <fees></fees>
         <encoding></encoding>
         <crs>
@@ -1802,129 +2067,134 @@ def my_form_open(dialog, layer, feature):
             <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
-        <extent/>
+        <extent></extent>
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <expressionfields></expressionfields>
       <map-layer-style-manager current="défaut">
-        <map-layer-style name="défaut"/>
+        <map-layer-style name="défaut"></map-layer-style>
       </map-layer-style-manager>
-      <auxiliaryLayer/>
+      <auxiliaryLayer></auxiliaryLayer>
+      <metadataUrls></metadataUrls>
       <flags>
         <Identifiable>1</Identifiable>
         <Removable>1</Removable>
         <Searchable>1</Searchable>
+        <Private>0</Private>
       </flags>
-      <temporal durationUnit="min" enabled="0" endField="" startField="" fixedDuration="0" accumulate="0" startExpression="" endExpression="" mode="0" durationField="">
+      <temporal accumulate="0" durationField="" durationUnit="min" enabled="0" endExpression="" endField="" fixedDuration="0" limitMode="0" mode="0" startExpression="" startField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
       <customproperties>
-        <property value="&quot;fid&quot;" key="dualview/previewExpressions"/>
+        <Option type="Map">
+          <Option name="dualview/previewExpressions" type="QString" value="&quot;fid&quot;"></Option>
+        </Option>
       </customproperties>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks type="StringList">
-          <Option value="" type="QString"/>
+          <Option type="QString" value=""></Option>
         </activeChecks>
-        <checkConfiguration/>
+        <checkConfiguration></checkConfiguration>
       </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
+      <legend showLabelLegend="0" type="default-vector"></legend>
+      <referencedLayers></referencedLayers>
       <fieldConfiguration>
-        <field name="fid" configurationFlags="None">
+        <field configurationFlags="None" name="fid">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="code" configurationFlags="None">
+        <field configurationFlags="None" name="code">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="nom" configurationFlags="None">
+        <field configurationFlags="None" name="nom">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
-        <field name="population_2020" configurationFlags="None">
+        <field configurationFlags="None" name="population_2020">
           <editWidget type="">
             <config>
-              <Option/>
+              <Option></Option>
             </config>
           </editWidget>
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="fid"/>
-        <alias name="" index="1" field="code"/>
-        <alias name="" index="2" field="nom"/>
-        <alias name="" index="3" field="population_2020"/>
+        <alias field="fid" index="0" name=""></alias>
+        <alias field="code" index="1" name=""></alias>
+        <alias field="nom" index="2" name=""></alias>
+        <alias field="population_2020" index="3" name=""></alias>
       </aliases>
       <defaults>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="code" applyOnUpdate="0"/>
-        <default expression="" field="nom" applyOnUpdate="0"/>
-        <default expression="" field="population_2020" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="fid"></default>
+        <default applyOnUpdate="0" expression="" field="code"></default>
+        <default applyOnUpdate="0" expression="" field="nom"></default>
+        <default applyOnUpdate="0" expression="" field="population_2020"></default>
       </defaults>
       <constraints>
-        <constraint constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0" field="fid"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="code"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="nom"/>
-        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="population_2020"/>
+        <constraint constraints="3" exp_strength="0" field="fid" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="code" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="nom" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="population_2020" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="fid"/>
-        <constraint desc="" exp="" field="code"/>
-        <constraint desc="" exp="" field="nom"/>
-        <constraint desc="" exp="" field="population_2020"/>
+        <constraint desc="" exp="" field="fid"></constraint>
+        <constraint desc="" exp="" field="code"></constraint>
+        <constraint desc="" exp="" field="nom"></constraint>
+        <constraint desc="" exp="" field="population_2020"></constraint>
       </constraintExpressions>
-      <expressionfields/>
+      <expressionfields></expressionfields>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="-1" type="field" name="fid" hidden="0"/>
-          <column width="162" type="field" name="code" hidden="0"/>
-          <column width="-1" type="field" name="nom" hidden="0"/>
-          <column width="-1" type="field" name="population_2020" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column hidden="0" name="fid" type="field" width="-1"></column>
+          <column hidden="0" name="code" type="field" width="162"></column>
+          <column hidden="0" name="nom" type="field" width="-1"></column>
+          <column hidden="0" name="population_2020" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions/>
+      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
-      <editforminit/>
+      <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
-      <dataDefinedFieldProperties/>
-      <widgets/>
+      <editable></editable>
+      <labelOnTop></labelOnTop>
+      <reuseLastValue></reuseLastValue>
+      <dataDefinedFieldProperties></dataDefinedFieldProperties>
+      <widgets></widgets>
       <previewExpression>"fid"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
   </projectlayers>
   <layerorder>
-    <layer id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97"/>
-    <layer id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495"/>
+    <layer id="france_departements_123985cd_ead1_4f66_8c32_e6e76539bc97"></layer>
+    <layer id="departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495"></layer>
   </layerorder>
   <properties>
     <DefaultStyles>
@@ -1997,7 +2267,7 @@ def my_form_open(dialog, layer, feature):
         <value></value>
       </variableValues>
     </Variables>
-    <WCSLayers type="QStringList"/>
+    <WCSLayers type="QStringList"></WCSLayers>
     <WCSUrl type="QString"></WCSUrl>
     <WFSLayers type="QStringList">
       <value>departements_aa9a6fa7_2347_49a5_bb95_9621e90e8495</value>
@@ -2023,9 +2293,9 @@ def my_form_open(dialog, layer, feature):
       <regions_avec_outre_mer_63da1eb3_949f_4ed7_a1f0_a4d7c821708d type="int">8</regions_avec_outre_mer_63da1eb3_949f_4ed7_a1f0_a4d7c821708d>
     </WFSLayersPrecision>
     <WFSTLayers>
-      <Delete type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
     </WFSTLayers>
     <WFSUrl type="QString"></WFSUrl>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
@@ -2056,12 +2326,12 @@ def my_form_open(dialog, layer, feature):
     <WMSOnlineResource type="QString"></WMSOnlineResource>
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSRestrictedComposers type="QStringList"/>
-    <WMSRestrictedLayers type="QStringList"/>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
     <WMSRootName type="QString"></WMSRootName>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WMSServiceAbstract type="QString">Sources des données COVID-19: https://github.com/opencovid19-fr/ &lt;br/>
-Source des données spatiales: https://github.com/gregoiredavid/france-geojson/ &lt;br/>
+    <WMSServiceAbstract type="QString">Sources des données COVID-19: https://github.com/opencovid19-fr/ &lt;br/&gt;
+Source des données spatiales: https://github.com/gregoiredavid/france-geojson/ &lt;br/&gt;
 Licence ouverte LO</WMSServiceAbstract>
     <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
     <WMSServiceTitle type="QString">Évolution du COVID-19 en France</WMSServiceTitle>
@@ -2069,23 +2339,23 @@ Licence ouverte LO</WMSServiceAbstract>
     <WMSUrl type="QString"></WMSUrl>
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <WMTSGrids>
-      <CRS type="QStringList"/>
-      <Config type="QStringList"/>
+      <CRS type="QStringList"></CRS>
+      <Config type="QStringList"></Config>
     </WMTSGrids>
     <WMTSJpegLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSJpegLayers>
     <WMTSLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSLayers>
     <WMTSMinScale type="int">5000</WMTSMinScale>
     <WMTSPngLayers>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
       <Project type="bool">false</Project>
     </WMTSPngLayers>
     <WMTSUrl type="QString"></WMTSUrl>
@@ -2099,13 +2369,13 @@ Licence ouverte LO</WMSServiceAbstract>
   </properties>
   <dataDefinedServerProperties>
     <Option type="Map">
-      <Option value="" type="QString" name="name"/>
-      <Option name="properties"/>
-      <Option value="collection" type="QString" name="type"/>
+      <Option name="name" type="QString" value=""></Option>
+      <Option name="properties"></Option>
+      <Option name="type" type="QString" value="collection"></Option>
     </Option>
   </dataDefinedServerProperties>
-  <visibility-presets/>
-  <transformContext/>
+  <visibility-presets></visibility-presets>
+  <transformContext></transformContext>
   <projectMetadata>
     <identifier></identifier>
     <parentidentifier></parentidentifier>
@@ -2122,18 +2392,18 @@ Licence ouverte LO</WMSServiceAbstract>
       <email></email>
       <role></role>
     </contact>
-    <links/>
+    <links></links>
     <author>mdouchin</author>
     <creation>2020-03-30T21:24:25</creation>
   </projectMetadata>
-  <Annotations/>
-  <Layouts/>
-  <Bookmarks/>
-  <ProjectViewSettings UseProjectScales="0">
-    <Scales/>
-    <DefaultViewExtent ymax="6574685.27970088738948107" xmax="1155573.08105209027417004" xmin="-659283.37913239630870521" ymin="5130001.92290323693305254">
+  <Annotations></Annotations>
+  <Layouts></Layouts>
+  <Bookmarks></Bookmarks>
+  <ProjectViewSettings UseProjectScales="0" rotation="0">
+    <Scales></Scales>
+    <DefaultViewExtent xmax="1223669.54894056892953813" xmin="-727379.8470208749640733" ymax="6481168.32628577947616577" ymin="5223518.87631834484636784">
       <spatialrefsys>
-        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
         <srsid>3857</srsid>
         <srid>3857</srid>
@@ -2145,18 +2415,18 @@ Licence ouverte LO</WMSServiceAbstract>
       </spatialrefsys>
     </DefaultViewExtent>
   </ProjectViewSettings>
-  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" frameRate="1" timeStepUnit="h"/>
+  <ProjectTimeSettings cumulativeTemporalRange="0" frameRate="1" timeStep="1" timeStepUnit="h"></ProjectTimeSettings>
   <ProjectDisplaySettings>
     <BearingFormat id="bearing">
       <Option type="Map">
-        <Option value="" type="QChar" name="decimal_separator"/>
-        <Option value="6" type="int" name="decimals"/>
-        <Option value="0" type="int" name="direction_format"/>
-        <Option value="0" type="int" name="rounding_type"/>
-        <Option value="false" type="bool" name="show_plus"/>
-        <Option value="true" type="bool" name="show_thousand_separator"/>
-        <Option value="false" type="bool" name="show_trailing_zeros"/>
-        <Option value="" type="QChar" name="thousand_separator"/>
+        <Option name="decimal_separator" type="QChar" value=""></Option>
+        <Option name="decimals" type="int" value="6"></Option>
+        <Option name="direction_format" type="int" value="0"></Option>
+        <Option name="rounding_type" type="int" value="0"></Option>
+        <Option name="show_plus" type="bool" value="false"></Option>
+        <Option name="show_thousand_separator" type="bool" value="true"></Option>
+        <Option name="show_trailing_zeros" type="bool" value="false"></Option>
+        <Option name="thousand_separator" type="QChar" value=""></Option>
       </Option>
     </BearingFormat>
   </ProjectDisplaySettings>
