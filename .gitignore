@@ -6,7 +6,7 @@
 __pycache__/
 
 # Service file
-env.py
+projects/env.py
 
 *.bak
 *~
