@@ -6,6 +6,7 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 
 * [Cats](cats/): Showcase of relations, atlas and dataviz
 * [Covid 19](covid_19_fr/): Show a simple dashboard with Covid-19 data in France
+* [Drawing](drawing/): Show the drawing tool
 * [QGIS expression during rendering](expression_map/): Use of QGIS expression during the map rendering
 * [Fire hydrants](fire_hydrant_actions/): Use PostgreSQL queries in a popup
 * [Mapillary](mapillary/): Mapillary street view in Lizmap
