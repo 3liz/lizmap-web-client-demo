@@ -8,10 +8,12 @@ __pycache__/
 # Service file
 projects/env.py
 
+# Heavy data
+projects/flatgeobuf/data_flatgeobuf
+
 *.bak
 *~
 *-shm
 *-wal
 
 *.qgs~
-*.zip
