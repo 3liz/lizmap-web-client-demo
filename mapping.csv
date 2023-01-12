@@ -6,6 +6,7 @@ fire_hydrant_actions,features
 lampadaires,features
 mapillary,features
 multi_atlas,features
+observations,features
 pgmetadata,modules
 snapping,features
 time_manager_earthquake,features

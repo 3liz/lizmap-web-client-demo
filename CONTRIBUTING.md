@@ -8,6 +8,8 @@ Each project must have the same structure.
 
 ### Remove some lines
 
+The name of the service is `PG_SERVICE`.
+
 ```sql
 SELECT pg_catalog.set_config('search_path', '', false);
 SET default_table_access_method = heap;

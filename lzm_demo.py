@@ -290,6 +290,14 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
                         str(destination_media),
                         dirs_exist_ok=True,
                     )
+                elif media_file.name == 'upload':
+                    print(f"  upload media folder related to this project : {media_file}")
+                    destination_media = destination / 'media' / "upload"
+                    copy_tree(
+                        str(media_file),
+                        str(destination_media),
+                        dirs_exist_ok=True,
+                    )
 
     print("\n")
     # Generate zip
