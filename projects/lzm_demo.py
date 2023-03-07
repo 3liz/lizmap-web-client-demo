@@ -22,7 +22,7 @@ lizMap.events.on({
 
     'layersadded': function(e) {
         var html = '';
-        html+= '<div class="modal-header"><a class="close" data-dismiss="modal">Ã—</a><h3>Welcome on this map</h3></div>';
+        html+= '<div class="modal-header"><a class="close" data-dismiss="modal">X</a><h3>Welcome on this map</h3></div>';
 
         html+= '<div class="modal-body">';
         html+= $('#metadata').html();
