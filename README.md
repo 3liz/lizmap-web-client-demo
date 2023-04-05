@@ -1,5 +1,7 @@
 # Lizmap Web Client demo projects
 
+Follow the [installation guide](./INSTALLATION.md) for some notes about loading projects in your own instance.
+
 ## Core features
 
 Demo projects for Lizmap Web Client including QGIS projects, lizmap configuration and spatial data
