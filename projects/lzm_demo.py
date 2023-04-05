@@ -7,6 +7,14 @@ from pathlib import Path
 from shutil import copytree as copy_tree
 from typing import Tuple
 
+INSTALLATION_SQL = """This project is using some SQL data with a PostgreSQL service.
+
+lease read the online documentation how to use SQL data.
+
+https://github.com/3liz/lizmap-web-client-demo/blob/master/INSTALLATION.md
+
+"""
+
 JS_DOWNLOAD = """
 lizMap.events.on({
     'uicreated': function(evt){
@@ -305,6 +313,14 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
 
     destination_folder = destination / 'media' / 'js' / project_name
     destination_folder.mkdir(exist_ok=True, parents=True)
+
+    if use_pg_service:
+        with open(folder / 'INSTALLATION.md', 'w') as f:
+            f.write(INSTALLATION_SQL)
+
+    tilde = Path(folder / f'{project_name}.qgs~')
+    if tilde.exists():
+        tilde.unlink()
 
     shutil.make_archive(str(destination / 'media' / f'{project_name}'), 'zip', str(folder))
 

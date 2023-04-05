@@ -8,6 +8,10 @@ __pycache__/
 # Service file
 projects/env.py
 
+# Automatically generated
+projects/*/INSTALLATION.md
+projects/*/*_attachments.zip
+
 # Heavy data
 projects/flatgeobuf/data_flatgeobuf
 
