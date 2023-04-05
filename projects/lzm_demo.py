@@ -7,6 +7,10 @@ from pathlib import Path
 from shutil import copytree as copy_tree
 from typing import Tuple
 
+SCHEMAS = (
+    'pgmetadata', 'pgmetadata_demo', 'demo_snapping', 'fire_hydrant_actions', 'observations'
+)
+
 INSTALLATION_SQL = """This project is using some SQL data with a PostgreSQL service.
 
 lease read the online documentation how to use SQL data.
@@ -208,9 +212,7 @@ def main():
                 print(
                     f"psql service={service_name} "
                     f"-c \""
-                    f"DROP SCHEMA IF EXISTS pgmetadata CASCADE;"
-                    f"DROP SCHEMA IF EXISTS pgmetadata_demo CASCADE;"
-                    f"DROP SCHEMA IF EXISTS demo_snapping CASCADE;"
+                    f"{''.join([f'DROP SCHEMA IF EXISTS {i} CASCADE;' for i in SCHEMAS])}"
                     f"\"")
                 print(f"psql service={service_name} -f {' -f '.join(psql)}")
 
