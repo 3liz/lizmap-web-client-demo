@@ -16,6 +16,7 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 * [Paris by night](projects/lampadaires/): Use a personal JavaScript script to activate/deactivate a layer
 * [Snapping](projects/snapping/): Snapping while editing data
 * [Time Manager](projects/time_manager_earthquake/): Use the time manager feature
+* [Land use](projects/landuse/): Land use map with dataviz and filters
 
 ## Modules
 
