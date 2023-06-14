@@ -347,7 +347,7 @@ def read_service_name() -> str:
         print('No PG_SERVICE environment variable detected')
 
         try:
-            from env import SERVICES
+            from env import SERVERS
         except ImportError:
             print("No env.py files, quit")
             exit(1)
@@ -355,7 +355,7 @@ def read_service_name() -> str:
         if not os.getenv("LWC_INSTANCE"):
             print("No LWC_INSTANCE environment variable")
             exit(2)
-        service_name = SERVICES.get(os.getenv("LWC_INSTANCE"))
+        service_name = SERVERS.get(os.getenv("LWC_INSTANCE")).service
         if not service_name:
             print(f"No service found for {os.getenv('LWC_INSTANCE')}")
             exit(3)
