@@ -6,6 +6,7 @@ expression_map,features
 flatgeobuf,miscellaneous
 fire_hydrant_actions,features
 lampadaires,javascript
+land_use,features
 mapillary,javascript
 multi_atlas,features
 observations,features
@@ -13,4 +14,3 @@ pgmetadata,modules
 qgis_info,miscellaneous
 snapping,features
 time_manager_earthquake,features
-land_use,features

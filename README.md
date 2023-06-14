@@ -11,12 +11,12 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 * [Drawing](projects/drawing/): Show the drawing tool
 * [QGIS expression during rendering](projects/expression_map/): Use of QGIS expression during the map rendering
 * [Fire hydrants](projects/fire_hydrant_actions/): Use PostgreSQL queries in a popup
+* [Land use](projects/landuse/): Land use map with dataviz and filters
 * [Multi atlas](projects/multi_atlas/): Use the atlas feature
 * [Faunal observations](projects/observations/): Layer editing capabilities
 * [Paris by night](projects/lampadaires/): Use a personal JavaScript script to activate/deactivate a layer
 * [Snapping](projects/snapping/): Snapping while editing data
 * [Time Manager](projects/time_manager_earthquake/): Use the time manager feature
-* [Land use](projects/landuse/): Land use map with dataviz and filters
 
 ## Modules
 
