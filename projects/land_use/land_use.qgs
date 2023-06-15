@@ -4536,7 +4536,7 @@ Data from &lt;a href="https://ckan.openig.org/dataset/occupation-du-sol-sur-le-t
 
 Project from &lt;br/>
 &lt;a href="https://www.legrandnarbonne.com/" target="_blank">
-&lt;img style="display:block;height:80px;" src="media/data_land_use/logo.png" title="Le Grand Narbonne">
+&lt;img style="display:block;height:80px;" src="https://demo.lizmap.com/lizmap/index.php/view/media/getMedia?repository=features&project=land_use&path=media%2Fdata_land_use%2Flogo.png" title="Le Grand Narbonne">
 &lt;/a>
 </WMSServiceAbstract>
     <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
