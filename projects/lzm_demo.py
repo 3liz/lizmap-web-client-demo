@@ -343,22 +343,31 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
 
 def read_service_name() -> str:
     service_name = os.getenv("PG_SERVICE")
-    if not service_name:
-        print('No PG_SERVICE environment variable detected')
+    if service_name:
+        return service_name
 
-        try:
-            from env import SERVERS
-        except ImportError:
-            print("No env.py files, quit")
-            exit(1)
-        print("Checking instance name LWC_INSTANCE from environment variable")
-        if not os.getenv("LWC_INSTANCE"):
-            print("No LWC_INSTANCE environment variable")
-            exit(2)
-        service_name = SERVERS.get(os.getenv("LWC_INSTANCE")).service
-        if not service_name:
-            print(f"No service found for {os.getenv('LWC_INSTANCE')}")
-            exit(3)
+    print('No PG_SERVICE environment variable detected')
+
+    try:
+        from env import SERVERS
+    except ImportError:
+        print("No env.py files, quit")
+        exit(1)
+
+    print("Checking instance name LWC_INSTANCE from environment variable")
+    lwc_instance = os.getenv("LWC_INSTANCE")
+    if not lwc_instance:
+        print("No LWC_INSTANCE environment variable")
+        exit(2)
+
+    if lwc_instance not in SERVERS.keys():
+        print(f"Unknown server {lwc_instance} in your own configuration file")
+        exit(3)
+
+    service_name = SERVERS.get(lwc_instance).service
+    if not service_name:
+        print(f"No service found for {lwc_instance}")
+        exit(4)
 
     return service_name
 
