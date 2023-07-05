@@ -23,6 +23,7 @@ Demo projects for Lizmap Web Client including QGIS projects, lizmap configuratio
 The following projects show additional features provided by Lizmap Web Client modules:
 
 * [PgMetadata](projects/pgmetadata/): Shows the features of the [PgMetadata module](https://github.com/3liz/lizmap-pgmetadata-module/)
+* [PgRouting](projects/pgrouting/): Shows the features of the [PgRouting module](https://github.com/3liz/lizmap-pgrouting-module/)
 
 ## Javascript
 

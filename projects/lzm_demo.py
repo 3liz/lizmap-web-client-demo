@@ -214,6 +214,13 @@ def main():
                     f"-c \""
                     f"{''.join([f'DROP SCHEMA IF EXISTS {i} CASCADE;' for i in SCHEMAS])}"
                     f"\"")
+                print(
+                    f"psql service={service_name} "
+                    f"-c \"SELECT pg_catalog.setval('pgrouting.edges_id_seq', 1, true)\"")
+                print(
+                    f"psql service={service_name} "
+                    f"-c \"TRUNCATE pgrouting.nodes CASCADE; "
+                    f"SELECT pg_catalog.setval('pgrouting.nodes_id_seq', 1, true)\"")
                 print(f"psql service={service_name} -f {' -f '.join(psql)}")
 
     elif args.command == 'deploy':

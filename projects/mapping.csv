@@ -11,6 +11,7 @@ mapillary,javascript
 multi_atlas,features
 observations,features
 pgmetadata,modules
+pgrouting,modules
 qgis_info,miscellaneous
 snapping,features
 time_manager_earthquake,features
