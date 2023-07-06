@@ -7,7 +7,7 @@ The ZIP downloaded from [demo server](https://demo.lizmap.com) contains everythi
 Some projects are using SQL data. By default, projects are using a
 [PostgreSQL service](https://www.postgresql.org/docs/current/libpq-pgservice.html) called `PG_SERVICE`.
 
-1. You should first have a look to the content of the SQL file, to see for instance the associated SQL schema it will
+1. You should first have a look at the content of the SQL file, to see for instance the associated SQL schema it will
 **overwrite**.
 
 2. Load the SQL in your database
@@ -24,7 +24,7 @@ Or :
    1. Open the QGS project
    2. Press "Ignore for 10 seconds"
       ![service prompt](./docs/service-prompt.jpg)
-   3. **Either** edit the datasource manually according to your imported data, **or** press gain "Keep unavailable layers"
+   3. **Either** edit the datasource manually, according to your imported data, **or** press again "Keep unavailable layers"
       ![bad layer handler](./docs/bad-layer-hander.jpg)
    4. On an unavailable layer, do this to repair the datasource :
       ![repair datasource](./docs/repair-datasource.jpg) 

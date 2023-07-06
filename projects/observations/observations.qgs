@@ -1309,7 +1309,7 @@
                 <Option name="Layer" type="QString" value="nomenclature20160621120243353"></Option>
                 <Option name="LayerName" type="QString" value="nomenclature"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='lizmap_demo_lizmap_3_0' host=qgisdb.lizmap.com port=5432 user='demo@demo' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="service='PG_SERVICE' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="true"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
@@ -1329,7 +1329,7 @@
                 <Option name="Layer" type="QString" value="espece20160621120237434"></Option>
                 <Option name="LayerName" type="QString" value="espece"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='lizmap_demo_lizmap_3_0' host=qgisdb.lizmap.com port=5432 user='demo@demo' sslmode=disable key='es_id' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;espece&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="service='PG_SERVICE' sslmode=disable key='es_id' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;espece&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="true"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
@@ -1359,7 +1359,7 @@
                 <Option name="Layer" type="QString" value="nomenclature20160621120243353"></Option>
                 <Option name="LayerName" type="QString" value="nomenclature"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='lizmap_demo_lizmap_3_0' host=qgisdb.lizmap.com port=5432 user='demo@demo' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="service='PG_SERVICE' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="false"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
@@ -1379,7 +1379,7 @@
                 <Option name="Layer" type="QString" value="nomenclature20160621120243353"></Option>
                 <Option name="LayerName" type="QString" value="nomenclature"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='lizmap_demo_lizmap_3_0' host=qgisdb.lizmap.com port=5432 user='demo@demo' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="service='PG_SERVICE' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="true"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
@@ -1399,7 +1399,7 @@
                 <Option name="Layer" type="QString" value="nomenclature20160621120243353"></Option>
                 <Option name="LayerName" type="QString" value="nomenclature"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='lizmap_demo_lizmap_3_0' host=qgisdb.lizmap.com port=5432 user='demo@demo' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="service='PG_SERVICE' sslmode=disable key='champ,code' estimatedmetadata=true checkPrimaryKeyUnicity='1' table=&quot;observatoire&quot;.&quot;nomenclature&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="true"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
