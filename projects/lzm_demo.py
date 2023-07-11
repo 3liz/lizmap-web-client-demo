@@ -331,6 +331,10 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
     if tilde.exists():
         tilde.unlink()
 
+    side_zip = Path(folder / f'{project_name}_attachments.zip')
+    if side_zip.exists():
+        side_zip.unlink()
+
     shutil.make_archive(str(destination / 'media' / f'{project_name}'), 'zip', str(folder))
 
     download_file = destination_folder / '_download.js'
