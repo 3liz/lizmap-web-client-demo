@@ -1121,6 +1121,17 @@ SELECT pg_catalog.setval('pgrouting.edges_id_seq', 617, true);
 SELECT pg_catalog.setval('pgrouting.nodes_id_seq', 475, true);
 
 
+DROP SCHEMA IF EXISTS pgrouting_demo CASCADE;
+
+CREATE SCHEMA pgrouting_demo;
+
+CREATE TABLE pgrouting_demo.edition (
+    id serial primary key,
+    geom public.geometry(LineString,2154)
+);
+
+CREATE INDEX sidx_edition_geom ON pgrouting_demo.edition USING gist (geom);
+
 --
 -- PostgreSQL database dump complete
 --

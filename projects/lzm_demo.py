@@ -8,7 +8,7 @@ from shutil import copytree as copy_tree
 from typing import Tuple
 
 SCHEMAS = (
-    'pgmetadata', 'pgmetadata_demo', 'demo_snapping', 'fire_hydrant_actions', 'observations'
+    'pgmetadata', 'pgmetadata_demo', 'demo_snapping', 'fire_hydrant_actions', 'observations', 'pgrouting_demo'
 )
 
 INSTALLATION_SQL = """This project is using some SQL data with a PostgreSQL service.
