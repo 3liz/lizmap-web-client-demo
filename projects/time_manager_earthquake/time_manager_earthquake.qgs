@@ -2048,7 +2048,7 @@ def my_form_open(dialog, layer, feature):
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSRootName type="QString"></WMSRootName>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WMSServiceAbstract type="QString">Using the time manager tool, you can filter a layer by date and move backward and forward in time. The dataviz will follow data displayed in the map.<br><br>Picture from USGS, via Wikimedia Commons</WMSServiceAbstract>
+    <WMSServiceAbstract type="QString">Using the time manager tool, you can filter a layer by date and move backward and forward in time. The dataviz will follow data displayed in the map. Picture from USGS, via Wikimedia Commons</WMSServiceAbstract>
     <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
     <WMSServiceTitle type="QString">Earthquakes ≥ 4 MMI in Indonesia in 2020</WMSServiceTitle>
     <WMSTileBuffer type="int">0</WMSTileBuffer>
