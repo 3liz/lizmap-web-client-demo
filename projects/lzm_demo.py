@@ -13,7 +13,7 @@ SCHEMAS = (
 
 INSTALLATION_SQL = """This project is using some SQL data with a PostgreSQL service.
 
-lease read the online documentation how to use SQL data.
+Please read the online documentation how to use SQL data.
 
 https://github.com/3liz/lizmap-web-client-demo/blob/master/INSTALLATION.md
 

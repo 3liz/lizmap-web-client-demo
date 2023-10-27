@@ -7,6 +7,10 @@ The ZIP downloaded from [demo server](https://demo.lizmap.com) contains everythi
 Some projects are using SQL data. By default, projects are using a
 [PostgreSQL service](https://www.postgresql.org/docs/current/libpq-pgservice.html) called `PG_SERVICE`.
 
+See also the documentation about PostgreSQL service file on
+[qgis.org](https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file)
+website.
+
 1. You should first have a look at the content of the SQL file, to see for instance the associated SQL schema it will
 **overwrite**.
 
