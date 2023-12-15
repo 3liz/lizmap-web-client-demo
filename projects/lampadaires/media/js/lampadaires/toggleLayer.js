@@ -10,15 +10,24 @@ lizMap.events.on({
         .css('margin-left', 'calc(50% - 80px)')
         ;
         $('#toggleLight').click(function(){
+            // LWC ≤ 3.6
             $('#layer-lampadaires button.checkbox[value="lampadaires"]').click();
+            // LWC ≥ 3.7
+            $('#node-lampadaires').click();
             var btnText = getBtnText();
             $(this).text(btnText);
         });
 
         function getBtnText(){
             var btnText = 'Switch the lights on !';
-            if( $('#layer-lampadaires button.checkbox[value="lampadaires"]').hasClass('checked') )
+            if( $('#layer-lampadaires button.checkbox[value="lampadaires"]').hasClass('checked') ) {
+                // LWC ≤ 3.6
                 btnText = 'Switch the lights off !';
+            }
+            if( $('#node-lampadaires').hasClass('checked') ) {
+                // LWC ≥ 3.7
+                btnText = 'Switch the lights off !';
+            }
             return btnText;
         }
     }
