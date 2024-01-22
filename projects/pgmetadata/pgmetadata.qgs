@@ -2872,7 +2872,9 @@ def my_form_open(dialog, layer, feature):
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSRootName type="QString"></WMSRootName>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceAbstract type="QString">In the "Layers" panel, click on the small "i" button, next to "Trees" for instance. It will display a new tab "Fact sheet".
+
+All the content from this "Fact sheet" is coming from the PgMetadata QGIS plugin.</WMSServiceAbstract>
     <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
     <WMSServiceTitle type="QString">PgMetadata demo</WMSServiceTitle>
     <WMSTileBuffer type="int">0</WMSTileBuffer>
