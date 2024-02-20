@@ -1,3 +1,5 @@
+// JavaScript to add the custom button in the center of the map
+// and to toggle ON or OFF the layer
 lizMap.events.on({
     'uicreated':function(evt){
         var html = '<button id="toggleLight" class="btn btn-warning">Switch the lights on !</button>';

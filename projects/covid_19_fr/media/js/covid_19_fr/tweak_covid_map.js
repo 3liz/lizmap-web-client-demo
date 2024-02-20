@@ -1,3 +1,5 @@
+// Javascript file to hide buttons which are not necessary for the demonstration
+// or to activate a key feature by default in the project
 lizMap.events.on({
     'uicreated':function(evt){
         var newbt = '<span style="text-align: right;"><button style="margin: 5px;" class="btn btn-mini btn-info" id="dv-locate-clear">Annuler le filtre</button></span>';
@@ -9,7 +11,3 @@ lizMap.events.on({
         $('li.dataviz a').click()
     }
 });
-
-//if( $('#dock:visible').width() ){
-    //lizMap.map.moveByPx(-$('#dock').width() / 2, 0)
-//}

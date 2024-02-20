@@ -2,6 +2,17 @@
 
 The ZIP downloaded from [demo server](https://demo.lizmap.com) contains everything inside.
 
+## JavaScript
+
+Most of ZIP files include one or more JavaScript files. It's **mainly** for demonstration purpose, for instance to hide
+buttons which are not necessary for the main feature to demonstrate.
+
+These files can be removed if wanted. You should check their content.
+
+But in a few demonstration projects, the JavaScript file is **required**, for instance for the Mapillary project.
+
+If you want to activate it, do not forget the right "Enable JavaScript" at the **repository** level.
+
 ## SQL data
 
 Some projects are using SQL data. By default, projects are using a

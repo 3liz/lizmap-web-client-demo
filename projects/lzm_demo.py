@@ -323,9 +323,8 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
     destination_folder = destination / 'media' / 'js' / project_name
     destination_folder.mkdir(exist_ok=True, parents=True)
 
-    if use_pg_service:
-        with open(folder / 'INSTALLATION.md', 'w') as f:
-            f.write(INSTALLATION_SQL)
+    with open(folder / 'INSTALLATION.md', 'w') as f:
+        f.write(INSTALLATION_SQL)
 
     tilde = Path(folder / f'{project_name}.qgs~')
     if tilde.exists():
