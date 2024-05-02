@@ -30,6 +30,25 @@ lizMap.events.on({
         $('#title').append(
             '<a class="btn btn-info" href="'+mediaLink+'" target="_blank"><i class="icon-download"></i>Download project</a>'
         );
+
+        var script = document.createElement('script');
+        script.setAttribute('src','SERVER');
+        script.setAttribute('data-domain','DOMAIN');
+        script.setAttribute('defer','');
+        script.setAttribute('event-repository', lizUrls.params.repository);
+        script.setAttribute('event-project', lizUrls.params.project);
+        script.setAttribute('event-project-id', lizUrls.params.repository + '~' + lizUrls.params.project);
+        script.setAttribute('event-language', navigator.language.toString().substr(0,2).toLowerCase());
+        document.head.appendChild(script);
+        window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments)}
+
+        $('#button-attributeLayers').on('click', function(e) { plausible('AttributeTableOpened'); });
+        $('#button-dataviz').on('click', function(e) { plausible('DatavizOpened'); });
+    },
+
+    'lizmapeditionformdisplayed': function(evt){
+        // $('#jforms_view_edition').addClass("plausible-event-name--Form");
+        $(document).ready(function() { $('#jforms_view_edition__submit_submit').on('click', function(e) { plausible('FormSaved'); }); });
     },
 
     'layersadded': function(e) {
@@ -339,7 +358,11 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
     download_file = destination_folder / '_download.js'
     print(f"\nGenerating JS file {download_file}")
     with open(download_file, 'w') as f:
-        f.write(JS_DOWNLOAD.replace('FOLDER', project_name))
+        js_content = str(JS_DOWNLOAD)
+        js_content = js_content.replace('FOLDER', project_name)
+        js_content = js_content.replace('SERVER', 'https://bourbon.3liz.com/js/script.pageview-props.tagged-events.js')
+        js_content = js_content.replace('DOMAIN', 'demo.lizmap.com')
+        f.write(js_content)
 
     psql = ''
     if use_pg_service:
