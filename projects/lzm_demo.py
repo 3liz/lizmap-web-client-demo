@@ -207,9 +207,6 @@ def main():
             exit(1)
 
         import csv
-
-        service_name = read_service_name()
-
         with open('mapping.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
 
@@ -227,6 +224,7 @@ def main():
 
             print("FTP directory ready")
             if psql:
+                service_name = read_service_name()
                 print("Please run")
                 print(
                     f"psql service={service_name} "
