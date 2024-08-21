@@ -398,7 +398,9 @@ def read_service_name() -> str:
     print("Checking instance name LWC_INSTANCE from environment variable")
     lwc_instance = os.getenv("LWC_INSTANCE")
     if not lwc_instance:
-        print("No LWC_INSTANCE environment variable")
+        lwc_instance = os.getenv("INSTANCE")
+    if not lwc_instance:
+        print("No LWC_INSTANCE environment variable (or INSTANCE as a fallback as well)")
         exit(2)
 
     if lwc_instance not in SERVERS.keys():
