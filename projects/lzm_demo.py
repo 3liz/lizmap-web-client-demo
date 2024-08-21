@@ -194,8 +194,8 @@ def main():
         #         target_file.rename(Path(target_file.parent.joinpath('README.md')))
 
     elif args.command == 'deploy-all':
-        if not os.getenv("LWC_INSTANCE"):
-            print("No LWC_INSTANCE environment variable")
+        if not os.getenv("LWC_INSTANCE") or not os.getenv("INSTANCE"):
+            print("No LWC_INSTANCE environment variable (or INSTANCE as fallback)")
             exit(2)
 
         destination = Path(args.DESTINATION)
