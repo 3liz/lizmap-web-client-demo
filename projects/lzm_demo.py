@@ -5,6 +5,7 @@ import os
 import shutil
 from pathlib import Path
 from shutil import copytree as copy_tree
+from string import Template
 from typing import Tuple
 
 SCHEMAS = (
@@ -19,21 +20,52 @@ https://github.com/3liz/lizmap-web-client-demo/blob/master/INSTALLATION.md
 
 """
 
-JS_DOWNLOAD = """
+WELCOME_BOOTSTRAP_2 = """
+var html = '';
+html+= '<div class="modal-header"><a class="close" data-dismiss="modal">X</a><h3>Welcome on this map</h3></div>';
+
+html+= '<div class="modal-body">';
+html+= $('#metadata').html();
+html+= '</div>';
+
+html+= '<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Ok</button></div>';
+
+$('#lizmap-modal').html(html).modal('show');
+"""
+
+WELCOME_BOOTSTRAP_5 = """
+var html = '<div class="modal-dialog modal-dialog-scrollable"><div class="modal-content">';
+html+= '<div class="modal-header"><h3>Welcome on this map</h3><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>';
+
+html+= '<div class="modal-body">';
+html+= document.getElementById('metadata')?.innerHTML;
+html+= '</div>';
+
+html+= '<div class="modal-footer"><button type="button" class="btn btn-default" data-bs-dismiss="modal">Ok</button></div>';
+
+html += '</div></div>'
+
+const modalElt = document.getElementById('lizmap-modal');
+modalElt.innerHTML = html;
+const myModal = new bootstrap.Modal(modalElt);
+myModal.show();
+"""
+
+JS_DOWNLOAD = Template("""
 lizMap.events.on({
     'uicreated': function(evt){
         var mediaLink = OpenLayers.Util.urlAppend(
             lizUrls.media,
             OpenLayers.Util.getParameterString(lizUrls.params)
         );
-        mediaLink += '&path=/media/FOLDER.zip';
+        mediaLink += '&path=/media/${FOLDER}.zip';
         $('#title').append(
             '<a class="btn btn-info" href="'+mediaLink+'" target="_blank"><i class="icon-download"></i>Download project</a>'
         );
 
         var script = document.createElement('script');
-        script.setAttribute('src','SERVER');
-        script.setAttribute('data-domain','DOMAIN');
+        script.setAttribute('src','${SERVER}');
+        script.setAttribute('data-domain','${DOMAIN}');
         script.setAttribute('defer','');
         script.setAttribute('event-repository', lizUrls.params.repository);
         script.setAttribute('event-project', lizUrls.params.project);
@@ -52,19 +84,10 @@ lizMap.events.on({
     },
 
     'layersadded': function(e) {
-        var html = '';
-        html+= '<div class="modal-header"><a class="close" data-dismiss="modal">X</a><h3>Welcome on this map</h3></div>';
-
-        html+= '<div class="modal-body">';
-        html+= $('#metadata').html();
-        html+= '</div>';
-
-        html+= '<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Ok</button></div>';
-
-        $('#lizmap-modal').html(html).modal('show');
+        ${WELCOME_DIALOG}
     }
 });
-"""
+""")
 
 
 # def basename_from_project(qgis_project: str, directory: Path = Path()) -> str:
@@ -366,10 +389,12 @@ def deploy_project(project_name: str, destination: Path) -> Tuple[bool, str]:
     download_file = destination_folder / '_download.js'
     print(f"\nGenerating JS file {download_file}")
     with open(download_file, 'w') as f:
-        js_content = str(JS_DOWNLOAD)
-        js_content = js_content.replace('FOLDER', project_name)
-        js_content = js_content.replace('SERVER', 'https://bourbon.3liz.com/js/script.pageview-props.tagged-events.js')
-        js_content = js_content.replace('DOMAIN', 'demo.lizmap.com')
+        js_content = JS_DOWNLOAD.substitute({
+            'FOLDER': project_name,
+            'SERVER': 'https://bourbon.3liz.com/js/script.pageview-props.tagged-events.js',
+            'DOMAIN': 'demo.lizmap.com',
+            'WELCOME_DIALOG': WELCOME_BOOTSTRAP_2,
+        })
         f.write(js_content)
 
     psql = ''
