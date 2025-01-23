@@ -9,6 +9,7 @@ __pycache__/
 projects/env.py
 
 # Automatically generated
+projects/demo_psql.sh
 projects/*/INSTALLATION.md
 projects/*/*_attachments.zip
 
