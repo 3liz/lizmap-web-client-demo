@@ -59,7 +59,7 @@ lizMap.events.on({
             OpenLayers.Util.getParameterString(lizUrls.params)
         );
         mediaLink += '&path=/media/${FOLDER}.zip';
-        $('#title').append(
+        $$('#title').append(
             '<a class="btn btn-info" href="'+mediaLink+'" target="_blank"><i class="icon-download"></i>Download project</a>'
         );
 
@@ -74,13 +74,13 @@ lizMap.events.on({
         document.head.appendChild(script);
         window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments)}
 
-        $('#button-attributeLayers').on('click', function(e) { plausible('AttributeTableOpened'); });
-        $('#button-dataviz').on('click', function(e) { plausible('DatavizOpened'); });
+        $$('#button-attributeLayers').on('click', function(e) { plausible('AttributeTableOpened'); });
+        $$('#button-dataviz').on('click', function(e) { plausible('DatavizOpened'); });
     },
 
     'lizmapeditionformdisplayed': function(evt){
-        // $('#jforms_view_edition').addClass("plausible-event-name--Form");
-        $(document).ready(function() { $('#jforms_view_edition__submit_submit').on('click', function(e) { plausible('FormSaved'); }); });
+        // $$('#jforms_view_edition').addClass("plausible-event-name--Form");
+        $$(document).ready(function() { $$('#jforms_view_edition__submit_submit').on('click', function(e) { plausible('FormSaved'); }); });
     },
 
     'layersadded': function(e) {
@@ -217,7 +217,7 @@ def main():
         #         target_file.rename(Path(target_file.parent.joinpath('README.md')))
 
     elif args.command == 'deploy-all':
-        if not os.getenv("LWC_INSTANCE") or not os.getenv("INSTANCE"):
+        if not os.getenv("LWC_INSTANCE") and not os.getenv("INSTANCE"):
             print("No LWC_INSTANCE environment variable (or INSTANCE as fallback)")
             exit(2)
 
