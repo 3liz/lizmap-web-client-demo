@@ -13,9 +13,6 @@ projects/demo_psql.sh
 projects/*/INSTALLATION.md
 projects/*/*_attachments.zip
 
-# Heavy data
-projects/flatgeobuf/data_flatgeobuf
-
 *.bak
 *~
 *-shm
