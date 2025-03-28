@@ -6,16 +6,19 @@ lizMap.events.on({
 
         $('#map-content').append(html);
         $('#toggleLight')
-        .css('position', 'absolute')
-        .css('top', '30px')
-        .css('z-index', '1000')
-        .css('margin-left', 'calc(50% - 80px)')
+            .css('position', 'absolute')
+            .css('top', '30px')
+            .css('z-index', '1000')
+            .css('margin-left', 'calc(50% - 80px)')
         ;
+        // LWC ≥ 3.7
+        let checkbox = lizMap.mainLizmap.state.rootMapGroup.getMapLayerByName('lampadaires');
+
         $('#toggleLight').click(function(){
             // LWC ≤ 3.6
             $('#layer-lampadaires button.checkbox[value="lampadaires"]').click();
             // LWC ≥ 3.7
-            $('#node-lampadaires').click();
+            checkbox.checked = !checkbox.checked;
             var btnText = getBtnText();
             $(this).text(btnText);
         });
@@ -26,7 +29,7 @@ lizMap.events.on({
                 // LWC ≤ 3.6
                 btnText = 'Switch the lights off !';
             }
-            if( $('#node-lampadaires').hasClass('checked') ) {
+            if( checkbox.checked ) {
                 // LWC ≥ 3.7
                 btnText = 'Switch the lights off !';
             }
